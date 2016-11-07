@@ -1,0 +1,43 @@
+New log file opened at Tue Nov 01 13:52:43 EDT 2016 by 12924@akzysk-W370ST
+Taking next connection to: 60610
+New client attempting to connect on port: 60611-60610
+  Address = /192.168.56.1:60610
+This client on port 60611 has uuid bd3a277f-f066-4757-9b80-d06c7df10abc configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-bd3a277f-f066-4757-9b80-d06c7df10abc
+Taking next connection to: 60610
+New client attempting to connect on port: 60614-60610
+  Address = /192.168.56.1:60610
+Handshake exception on socket: 60614
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 60610
+New client attempting to connect on port: 60615-60610
+  Address = /192.168.56.1:60610
+This client on port 60615 has uuid 0c26cc11-a79b-4d75-ac8a-cc0fd5f25df0 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-bd3a277f-f066-4757-9b80-d06c7df10abc, play-fork-run-0c26cc11-a79b-4d75-ac8a-cc0fd5f25df0
+Taking next connection to: 60610
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60610
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60610
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60610
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60610
