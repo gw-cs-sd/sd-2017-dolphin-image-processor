@@ -1,3 +1,12 @@
+Dolphin Image Processor
+=================================
+
+Play Application. Currently:
+-Allows image upload
+-Applies example filters on images, based on backend algorithms that edit the image on the pixel level.
+
+
+
 This is your new Play application
 =================================
 
