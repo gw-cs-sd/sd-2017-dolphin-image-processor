@@ -5,11 +5,19 @@ import views.html.*;
 import java.io.File;
 import java.nio.file.StandardCopyOption;
 
+import ij.*;
 import ij.ImagePlus;
 import ij.process.ImageConverter;
 import ij.io.Opener;
 import ij.io.FileSaver;
 import ij.process.ImageProcessor;
+
+import services.DolphinAnalyzer;
+import services.GenericDialog_Test;
+import java.util.*;
+import java.awt.*;
+
+import ij.gui.GenericDialog;
 
 public class Application extends Controller {
 
@@ -35,125 +43,57 @@ public Result upload() {
 			dstFile.toPath(),
 			StandardCopyOption.REPLACE_EXISTING
 		);
-
-		// 2 of X: open, transform, save as rotated.jpeg
-		//
-		//Red-ify------------------------------------------------------------------------------
+		
+		
+		ImageJ imageJApplication = new ImageJ(2);
+		
 		Opener opener = new Opener();
 		ImagePlus imp = opener.openImage("public/dolphinImages/image1.jpg");
-		int height = imp.getHeight();
-		int width = imp.getWidth();
-		int[] pixel = imp.getPixel(0,0); /* get pixel at x,y */
 
-		ImageProcessor ip = imp.getProcessor();
-		// get 
-		int[] rgb = new int[3];
-		ip.getPixel(0,0,rgb);
-
-        //red-ify every pixel
-        for(int i = 0; i < width; i++)
+        imp.show();
+        //Activate plug-ins that will be used
+        IJ.runPlugIn("ij.plugin.Zoom", null);
+        IJ.runPlugIn("ij.plugin.frame.RoiManager", null);
+        
+        DolphinAnalyzer da = new DolphinAnalyzer();
+        da.grayscaleUpload();
+        da.isolateRedUpload();
+        da.redifyUpload();
+        
+        //imp.setRoi(100, 100, 50, 50); //add selection
+        //IJ.run("To Selection"); //zoom to selection
+        
+		da.isolateRed(imp);
+        
+        /*
+        GenericDialog gd = new GenericDialog("Dolphin Image Controller");
+        gd.addMessage("User Control");
+        String[] array = new String[1];
+        array[0] = "OK";
+        gd.addChoice("Zoom to Selection?", array, "OK");
+        gd.show();
+        String answer = gd.getNextChoice();
+        if(answer.equals("OK"))
         {
-            for(int j = 0; j < height; j++)
-            {
-                ip.getPixel(i, j, rgb);
-                rgb[1] = 0;
-                rgb[2] = 0;
-                ip.putPixel(i, j, rgb);
-                /*
-                int[] myRgb = new int[3];
-        		myRgb[0] = 10;
-        		myRgb[1] = 20;
-        		myRgb[2] = 30;
-        		*/
-            }
+            IJ.run("To Selection");
         }
-		// put
-		/*
-		int[] myRgb = new int[3];
-		myRgb[0] = 10;
-		myRgb[1] = 20;
-		myRgb[2] = 30;
-		ip.putPixel(0,0,myRgb);
-		*/
-
-		//ip.rotateRight();
-		/*
-		ip.flipVertical();
-		*/
-		
-   		// Save results
+        */
+        
+        /*
+        GenericDialog_Test gdt = new GenericDialog_Test();
+        gdt.run("Test");
+        */
+        
+        Rectangle rect = da.highestScoreRect(imp);
+        imp.setRoi(rect); //add selection
+        
+        IJ.run("To Selection");
+        
    		FileSaver fs = new FileSaver(imp);
-   		boolean ret = fs.saveAsJpeg("public/dolphinImages/redified.jpg");
-   		
-   		//Grayscale--------------------------------------------------------------------
-   		imp = opener.openImage("public/dolphinImages/image1.jpg");
-   		height = imp.getHeight();
-		width = imp.getWidth();
-
-		ip = imp.getProcessor();
-		// get 
-		rgb = new int[3];
-		ip.getPixel(0,0,rgb);
-
-        //grayscale every pixel
-        for(int i = 0; i < width; i++)
-        {
-            for(int j = 0; j < height; j++)
-            {
-                ip.getPixel(i, j, rgb);
-                int grayscale = (int)((rgb[0] * 0.21) + (rgb[1] * 0.72) + (rgb[2] * 0.07));
-                rgb[0] = grayscale;
-                rgb[1] = grayscale;
-                rgb[2] = grayscale;
-                ip.putPixel(i, j, rgb);
-            }
-        }
-        FileSaver fs1 = new FileSaver(imp);
-   		fs1.saveAsJpeg("public/dolphinImages/grayscaled.jpg");
-   		
-   		//isolate red----------------------------------------------------------------------
-   		imp = opener.openImage("public/dolphinImages/image1.jpg");
-   		height = imp.getHeight();
-		width = imp.getWidth();
-
-		ip = imp.getProcessor();
-		// get 
-		rgb = new int[3];
-		ip.getPixel(0,0,rgb);
-
-        //grayscale every pixel
-        for(int i = 0; i < width; i++)
-        {
-            for(int j = 0; j < height; j++)
-            {
-                ip.getPixel(i, j, rgb);
-                if(rgb[0] < rgb[1] * 1.4 || rgb[0] < rgb[2] * 1.4)
-                {
-                    int grayscale = (int)((rgb[0] * 0.21) + (rgb[1] * 0.72) + (rgb[2] * 0.07));
-                    rgb[0] = grayscale;
-                    rgb[1] = grayscale;
-                    rgb[2] = grayscale;
-                    ip.putPixel(i, j, rgb);
-                }
-            }
-        }
-        FileSaver fs2 = new FileSaver(imp);
-   		fs2.saveAsJpeg("public/dolphinImages/redIsolated.jpg");
-   		
+   		boolean ret = fs.saveAsJpeg("public/dolphinImages/imageEdited.jpg");
+  
    		//navigate back to index?
 		if (ret) {
-		    /*
-			return ok("File uploaded to public/dolphinImages/" + fileName 
-			+ "\nheight:"+height
-			+ "\nwidth:"+width
-			+ "\nred:"+pixel[0]
-			+ "\ngreen:"+pixel[1]
-			+ "\nblue:"+pixel[2]
-			+ "\nrgb.r:"+rgb[0]
-			+ "\nrgb.g:"+rgb[1]
-			+ "\nrgb.b:"+rgb[2]
-			);
-			*/
 			return ok(index.render("File Uploaded"));
 		} else {
 			return ok("ERROR: File uploaded to public/dolphinImages/" + fileName ); 

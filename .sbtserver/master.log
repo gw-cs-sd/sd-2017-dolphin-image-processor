@@ -1,5 +1,5 @@
-New log file opened at Tue Nov 01 13:52:43 EDT 2016 by 12924@akzysk-W370ST
-jvm 12924@akzysk-W370ST
+New log file opened at Sat Nov 12 15:20:02 EST 2016 by 12752@akzysk-W370ST
+jvm 12752@akzysk-W370ST
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.102-b14
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Andrew\play-java-1\project, returning: (play-java-1-build)
 Loading project definition from C:\Users\Andrew\play-java-1\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3fb75c07, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4ebebe7d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,59 +67,15 @@ Set current project to play-java (in build file:/C:/Users/Andrew/play-java-1/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@29c76832, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 2 s, completed Nov 1, 2016 1:53:06 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@21d1cc9e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Nov 1, 2016 1:53:08 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@6c9ff37c, check cycles: false
-Total time: 0 s, completed Nov 1, 2016 1:53:08 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@50e11969, check cycles: false
+Total time: 0 s, completed Nov 12, 2016 3:20:14 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@56710a0c, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@60e1c0ca, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -136,30 +92,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Nov 1, 2016 1:53:09 PM
+Total time: 6 s, completed Nov 12, 2016 3:20:20 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@d08e4ba, check cycles: false
-Total time: 1 s, completed Nov 1, 2016 1:53:22 PM
+Received execution starting without a waiting first ExecutionStarting(3)
+Received execution starting without a waiting first ExecutionStarting(3)
+Use 'last' for the full log.
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@e6dbc47, check cycles: false
-Total time: 1 s, completed Nov 1, 2016 1:53:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e90b0a5, check cycles: false
-Total time: 0 s, completed Nov 1, 2016 1:53:38 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@282f1482, check cycles: false
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6791645b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -176,115 +120,13 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 4 s, completed Nov 1, 2016 1:54:20 PM
+Total time: 1 s, completed Nov 12, 2016 3:20:21 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@44a4d6f3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 3 s, completed Nov 1, 2016 1:55:33 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@76f4589e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Nov 1, 2016 1:55:35 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@56fab925, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 3 s, completed Nov 1, 2016 2:02:43 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@4f261182, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Nov 1, 2016 2:05:18 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 12752@akzysk-W370ST logs at Sat Nov 12 15:47:03 EST 2016, goodbye.
