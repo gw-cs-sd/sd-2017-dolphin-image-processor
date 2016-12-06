@@ -1,0 +1,34 @@
+Filtering an image with blood:
+Current algorithm:
+
+Image > Adjust > Color Threshold...
+
+Default
+Red
+HSB
+Dark Background
+Hue: 0, 255 (Pass)
+Saturation: 0, 255 (Pass)
+Brightness: 82, 255 (Pass)
+
+Process > Binary > Convert to Mask
+Process > Binary > Erode (x4)
+
+Edit > Selection > Create Selection
+
+
+Better way:
+
+Image > Adjust > Color Threshold...
+
+Default
+RGB
+No Dark Background
+Red: 255 (Pass)
+Green: 88 (Pass)
+Blue: 88 (Pass)
+
+Analyze > Analyze Particles...
+
+Show Masks, Clear Results, Include Holes > OK
+

@@ -17,31 +17,34 @@
     </head>
     <body>
     
-    <form action="" method="post" enctype="multipart/form-data">
-        <input type="file" name="fileupload" value="fileupload" id="fileupload">
-        <label for="fileupload"> Select a file to upload</label>
-        <input type="submit" value="submit">
+    <form action='' method='POST' enctype="multipart/form-data">
+        <input type='file' name='fileupload'><br>
+        <input type='submit' value='run SetThresholdRGB macro on the selected image'>
     </form>
+<!-- COMMENT OUT FOR NOW
     <p>
-        Original:
+        Original (1 of 4):
     </p>
     <img src=@routes.Assets.versioned("dolphinImages/image1.jpg") />
     
     <p>
-        Red Isolated:
+        Red Isolated (2 of 4):
     </p>
     <img src=@routes.Assets.versioned("dolphinImages/redIsolated.jpg") />
     
     <p>
-        Red-ified:
+        Red-ified (3 of 4):
     </p>
     <img src=@routes.Assets.versioned("dolphinImages/redified.jpg") />
     
     <p>
-        Grayscale:
+        Grayscale (4 of 4):
     </p>
     <img src=@routes.Assets.versioned("dolphinImages/grayscaled.jpg") />
-    
+
+END COMMENT OUT -->    
+
+
     @* this is currently hard-coded. Need to make this generic to display different images *@
     
         @* And here's where we render the `Html` object containing
