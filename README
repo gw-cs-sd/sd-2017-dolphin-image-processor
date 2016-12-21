@@ -1,58 +1,36 @@
 Dolphin Image Processor
 =================================
 
-Play Application. Currently:
--Allows image upload
--Applies example filters on images, based on backend algorithms that edit the image on the pixel level.
+Play Application.
 
+CONTROLLER:
+Application.java:
+-Opens browser for image upload
+-Uploads image chosen by user.
+-Currently drives operations of the application. Creates objects that perform the image analysis steps on the image.
 
+SERVICES:
+Threshold.java:
+-Contains minimum Color and maximum Color, to define the threshold range
 
-This is your new Play application
-=================================
+DolphinAnalyzer.java:
+-Creates binary mask image from the original, based on the threshold.
+-Contains sample algorithms to edit images on the pixel level.
+-Includes functions for Executive Control, which scores different parts of the image and selects the best one to suggest to the user.
 
-This file will be packaged with your application when using `activator dist`.
+GenericDialog_Test.java
+-Shows a dialog box that makes Executive Control suggestions to the user. Currently not used by the current version.
 
-There are several demonstration files available in this template.
+Pixel.java
+-Contains x, y location of a pixel, and its RGB color values.
+-Given a threshold, the Pixel can determine if it is within the threshold.
 
-Controllers
-===========
+ImageSegmenter.java
+-Uses a 2D array of labels and a binary mask image to label each contiguous segment in the image.
+-To do this, calls a depth-first search on every pixel within the threshold.
+-After calculating the segments, creates the SegmentTable.
 
-- HomeController.java:
-
-  Shows how to handle simple HTTP requests.
-
-- AsyncController.java:
-
-  Shows how to do asynchronous programming when handling a request.
-
-- CountController.java:
-
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
-
-Components
-==========
-
-- Module.java:
-
-  Shows how to use Guice to bind all the components needed by your application.
-
-- Counter.java:
-
-  An example of a component that contains state, in this case a simple counter.
-
-- ApplicationTimer.java:
-
-  An example of a component that starts when the application starts and stops
-  when the application stops.
-
-Filters
-=======
-
-- Filters.java:
-
-  Creates the list of HTTP filters used by your application.
-
-- ExampleFilter.java
-
-  A simple filter that adds a header to every response.
+SegmentTable.java
+-Data structure that is a list of lists of pixels.
+-Each sublist contains all the pixels in a given segment.
+-The integer index of each list refers to each segment in the image.
