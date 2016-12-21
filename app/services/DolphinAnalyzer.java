@@ -1,4 +1,9 @@
 package services;
+/*DolphinAnalyzer.java
+ * The DolphinAnalyzer performs operations to edit images on the pixel level.
+ * Most notably, it is critical in the Thresholding step, as it creates the Mask (Binary) image,
+ * which will be passed to the ImageSegmenter for the Segmentation step.
+ */
 
 import ij.*;
 import java.util.*;
@@ -14,13 +19,65 @@ import ij.process.ImageProcessor;
 
 public class DolphinAnalyzer
 {
-    
-    
     public DolphinAnalyzer()
     {
+    }
+
+    /*======================================================================================
+     * 	MASK
+     * =====================================================================================
+     * Creates image mask based on the input original image, and color threshold.
+     * An image mask is an image of just white (255,255,255) and back (0,0,0) pixels.
+     * White pixels will be ignored later by ImageSegmenter.
+     */
+    public ImagePlus mask(ImagePlus imp, Threshold thresh)
+    {
+        ImagePlus maskImage = imp.duplicate();
+        int height = maskImage.getHeight();
+		int width = maskImage.getWidth();
+        ImageProcessor ip = maskImage.getProcessor();
         
+        int[] rgb = new int[3];
+        for(int i = 0; i < width; i++)
+        {
+            for(int j = 0; j < height; j++)
+            {
+                ip.getPixel(i, j, rgb);
+                Pixel p = new Pixel(i, j, rgb);
+                if(p.isBackground(thresh))
+                {
+                    //black
+                    rgb[0] = 0;
+                    rgb[1] = 0;
+                    rgb[2] = 0;
+                }
+                else
+                {
+                    //white
+                    rgb[0] = 255;
+                    rgb[1] = 255;
+                    rgb[2] = 255;
+                }
+                ip.putPixel(i, j, rgb);
+            }
+        }
+        return maskImage;
     }
     
+    public Pixel getPixel(ImagePlus imp, int x, int y)
+    {
+        ImageProcessor ip = imp.getProcessor();
+        int[] rgb = new int[3];
+        ip.getPixel(x, y, rgb);
+        Pixel p = new Pixel(x, y, rgb);
+        return p;
+    }
+
+    /* ===============================================================================================================
+     * UPLOAD METHODS
+     * ===============================================================================================================
+     * Methods to perform specified operations on images, and upload them as a saved image.
+     */
     public void redifyUpload()
     {
         Opener opener = new Opener();
@@ -54,6 +111,12 @@ public class DolphinAnalyzer
    		boolean ret = fs.saveAsJpeg("public/dolphinImages/grayscaled.jpg");
     }
     
+    /* ===============================================================================================================
+     * OPERATION METHODS
+     * ===============================================================================================================
+     * Methods to perform specified operations on images on the pixel level.
+     */
+    
     public void isolateRed(ImagePlus imp)
     {
         int height = imp.getHeight();
@@ -81,7 +144,6 @@ public class DolphinAnalyzer
     
     public void redify(ImagePlus imp)
     {
-        //Red-ify------------------------------------------------------------------------------
 		int height = imp.getHeight();
 		int width = imp.getWidth();
 
@@ -124,6 +186,13 @@ public class DolphinAnalyzer
         }
     }
     
+    /* ===============================================================================================================
+     * EXECUTIVE CONTROL METHODS
+     * ===============================================================================================================
+     * Methods to "score" regions of an image to determine a best selection for the user to look at.
+     * The contents of the scoring methods are subject to change.
+     */
+    
     public int selectionScore(ImagePlus imp, Rectangle rect)
     {
         //calculate the score, AKA importance, of this selection
@@ -156,7 +225,6 @@ public class DolphinAnalyzer
                 }
             }
         }
-        
         return score;
     }
     
@@ -176,10 +244,6 @@ public class DolphinAnalyzer
             {
                 Rectangle rect = new Rectangle(i, j, xInterval, yInterval);
                 currentScore = selectionScore(imp, rect);
-                
-                //System.out.println("RECTANGLE = " + rect.toString());
-                //System.out.println("SCORE = " + currentScore);
-                
                 if(currentScore > maxScore)
                 {
                     System.out.println("maxScore = " + currentScore);
@@ -190,7 +254,7 @@ public class DolphinAnalyzer
         }
         
         return resultRect;
-        
-        
     }
+    
+    
 }

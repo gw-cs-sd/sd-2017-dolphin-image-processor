@@ -30,7 +30,7 @@ public class GenericDialog_Test implements PlugIn, DialogListener{
   gd.centerDialog(true);
   //if(dialog.wasOKed()) IJ.run("To Selection");
 
-  //Of course, here I would call a function to do calculations 
+  //call a method to do calculations 
  }
 
  public boolean dialogItemChanged(GenericDialog gd, AWTEvent e) {
