@@ -1,4 +1,5 @@
 Dolphin Image Processor
+Updated 12/20/2016
 =================================
 
 Play Application.
@@ -34,3 +35,5 @@ SegmentTable.java
 -Data structure that is a list of lists of pixels.
 -Each sublist contains all the pixels in a given segment.
 -The integer index of each list refers to each segment in the image.
+
+This project is excellent.
