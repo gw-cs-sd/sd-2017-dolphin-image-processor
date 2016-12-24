@@ -2,21 +2,21 @@
 [debug] Initial source changes: 
 [debug] 	removed:Set()
 [debug] 	added: Set()
-[debug] 	modified: Set(C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java)
+[debug] 	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\Application.java)
 [debug] Removed products: Set()
 [debug] External API changes: API Changes: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java)
+[debug] Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\Application.java)
 [debug] 
 [debug] Sources indirectly invalidated by:
 [debug] 	product: Set()
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java)
+[debug] All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\Application.java)
 [info] Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-[debug] Java compilation took 2.259416113 s
-[debug] Java analysis took 0.080242669 s
-[debug] Java compile + analysis took 2.405427459 s
+[debug] Java compilation took 3.110973311 s
+[debug] Java analysis took 0.224587388 s
+[debug] Java compile + analysis took 3.386785138 s
 [debug] New invalidations:
 [debug] 	Set()
 [debug] Initial set of included nodes: Set()

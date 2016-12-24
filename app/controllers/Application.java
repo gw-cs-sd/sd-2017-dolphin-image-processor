@@ -138,22 +138,15 @@ public Result upload() {
 	
 	System.out.println("Current Label = " + curlab);
 	
-	/*
-	for(int i = 0; i < imp.getWidth(); i++)
-	{
-	    for(int j = 0; j < imp.getHeight(); j++)
-	    {
-	        System.out.print(labels[i][j] + "   ");
-	    }
-	    System.out.println();
-	}
-	*/
 	
 	System.out.println("7.2 of X: Segmentation: ImageSegmenter produces SegmentTable");
 	SegmentTable st = is.getSegmentTable();
-	//st.printTable();
 	
+	System.out.println("8.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
+	SegmentAttributor sa = new SegmentAttributor(st);
+	SegAttributesTable sat = sa.getSegAttributesTable();
 
+	sat.printTable();
     /*
 	System.out.println("Install Macro");
 	// can skip and run the macro without installing

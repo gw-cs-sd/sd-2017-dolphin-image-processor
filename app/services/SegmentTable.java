@@ -2,9 +2,9 @@ package services;
 
 /*SegmentTable.java
  * Data structure produced by ImageSegmenter.
- * SegmentTable is a list of sublists.
- * Each sublist contains all the pixels in each segment of the image.
- * Each sublist corresponds to the integer index (label) of its segment.
+ * SegmentTable is a list of segments.
+ * Each segment contains all the pixels in each segment of the image.
+ * Each segment corresponds to the integer index (label) of its segment.
  * 
  */
 import ij.*;
@@ -21,7 +21,7 @@ import ij.process.ImageProcessor;
 
 public class SegmentTable
 {
-	ArrayList<ArrayList<Pixel>> segmentTable;
+	ArrayList<Segment> segmentTable;
 	int[][] labels;
 	ImagePlus orig;
 	int numSegments;
@@ -45,16 +45,16 @@ public class SegmentTable
     	}
 		numSegments++;
 		
-		segmentTable = new ArrayList<ArrayList<Pixel>>();
+		segmentTable = new ArrayList<Segment>();
     	for(int k = 0; k < numSegments; k++)
     	{
-    		segmentTable.add(new ArrayList<Pixel>());
+    		segmentTable.add(new Segment());
     	}
     	populate();
 	}
 	
 	//Build a list of sublists. Each index in the list represents a segment label.
-	//Each sublist attached to each index is the list of all pixels in that segment.
+	//Each Segment attached to each index is the list of all pixels in that segment.
 	public void populate()
 	{
 		int height = orig.getHeight();
@@ -67,18 +67,23 @@ public class SegmentTable
     			int segmentLabel = labels[i][j];
     			if(segmentLabel >= 0)
     			{
-    				ArrayList<Pixel> currentSegmentList = segmentTable.get(segmentLabel);
+    				Segment currentSegment = segmentTable.get(segmentLabel);
         			Pixel p = getPixelFromOrig(i, j);
-        			currentSegmentList.add(p);
+        			currentSegment.add(p);
     			}
     		}
     	}
 	}
 	
-	//return the list of the given index segmentLabel
-	public ArrayList<Pixel> getSegment(int segmentLabel)
+	//return the Segment of the given index segmentLabel
+	public Segment getSegment(int segmentLabel)
 	{
 		return segmentTable.get(segmentLabel);
+	}
+	
+	public int size()
+	{
+		return segmentTable.size();
 	}
 	
 	//return the index label of the given pixel
@@ -100,12 +105,9 @@ public class SegmentTable
 	{
 		for(int i = 0; i < numSegments; i++)
 		{
-			ArrayList<Pixel> arr = segmentTable.get(i);
+			Segment seg = segmentTable.get(i);
 			System.out.print(i + ": ");
-			for(Pixel p : arr)
-			{
-				System.out.print(p.toStringXY() + ", ");
-			}
+			seg.print();
 			System.out.println();
 		}
 	}
