@@ -2,21 +2,30 @@
 [debug] Initial source changes: 
 [debug] 	removed:Set()
 [debug] 	added: Set()
-[debug] 	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\Application.java)
+[debug] 	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
 [debug] Removed products: Set()
 [debug] External API changes: API Changes: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\Application.java)
+[debug] Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
 [debug] 
 [debug] Sources indirectly invalidated by:
 [debug] 	product: Set()
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\Application.java)
+[debug] All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
 [info] Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-[debug] Java compilation took 3.110973311 s
-[debug] Java analysis took 0.224587388 s
-[debug] Java compile + analysis took 3.386785138 s
+[debug] Java compilation took 2.336854219 s
+[debug] Java analysis took 0.161098167 s
+[debug] Java compile + analysis took 2.538572367 s
+[debug] Invalidating C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java...
+[debug] Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+[debug] The C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java source file has the following regular definitions changed:
+[debug] 	deleteSample.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+[debug] None of the modified names appears in C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala. This dependency is not being considered for invalidation.
 [debug] New invalidations:
 [debug] 	Set()
 [debug] Initial set of included nodes: Set()

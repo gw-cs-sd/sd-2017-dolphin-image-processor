@@ -14,3 +14,9 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 #az
 POST    /                           controllers.Application.upload
+POST	/addNewUser					controllers.UsersController.addNewUser
+POST	/requestDeleteUser			controllers.UsersController.requestDeleteUser
+POST	/loginUser					controllers.UsersController.loginUser
+POST	/confirm					controllers.ConfirmUserDeleteController.confirm
+POST	/backToUsers				controllers.SamplesController.backToUsers
+POST	/addSample					controllers.SamplesController.addSample

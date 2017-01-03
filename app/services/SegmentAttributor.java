@@ -41,7 +41,7 @@ public class SegmentAttributor {
 	//Wraps pure outputs of attribute calculations as type SegmentAttribute
 	//0
 	public SegmentAttribute getArea(Segment seg){
-		return new SegmentAttribute("Area", new Integer(seg.getArea()));
+		return new SegmentAttribute("Area", seg.getArea());
 	}
 	
 	//1

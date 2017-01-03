@@ -1,0 +1,9 @@
+@(selectedUser: String, users: List[DBUser])
+
+<h1>Welcome @selectedUser!</h1>
+
+<ul>
+@for(user <- users) {
+  <li>@user.getName()</li>
+}
+</ul>

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Tue Nov 01 13:11:53 EDT 2016
+// @DATE:Mon Jan 02 23:08:45 EST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -28,6 +28,27 @@ package controllers {
   
   }
 
+  // @LINE:21
+  class ReverseSamplesController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:21
+    def backToUsers(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "backToUsers")
+    }
+  
+    // @LINE:22
+    def addSample(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "addSample")
+    }
+  
+  }
+
   // @LINE:8
   class ReverseCountController(_prefix: => String) {
     def _defaultPrefix: String = {
@@ -39,6 +60,48 @@ package controllers {
     def count(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "count")
+    }
+  
+  }
+
+  // @LINE:20
+  class ReverseConfirmUserDeleteController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:20
+    def confirm(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "confirm")
+    }
+  
+  }
+
+  // @LINE:17
+  class ReverseUsersController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:19
+    def loginUser(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "loginUser")
+    }
+  
+    // @LINE:18
+    def requestDeleteUser(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "requestDeleteUser")
+    }
+  
+    // @LINE:17
+    def addNewUser(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "addNewUser")
     }
   
   }

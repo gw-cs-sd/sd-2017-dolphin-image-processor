@@ -76,7 +76,7 @@ public class ImageSegmenter
     public void dfs(int x, int y)
     {
         Pixel p = getPixel(x, y);
-        Stack<Pixel> dfsStack= new Stack<Pixel>();
+        Stack<Pixel> dfsStack = new Stack<Pixel>();
         
         dfsStack.push(p);
         

@@ -23,13 +23,11 @@ public class Pixel
         }
     }
     
-    public int getX()
-    {
+    public int getX(){
         return x;
     }
     
-    public int getY()
-    {
+    public int getY(){
         return y;
     }
     
@@ -72,6 +70,10 @@ public class Pixel
             }
         }
         return true;
+    }
+    
+    public PixelPolar translateToPolar(){
+    	return new PixelPolar(this);
     }
     
     public String toString()

@@ -1,34 +1,36 @@
 package controllers;
 /*Application.java
+
  * This is the main controller of the application.
  * When the user uploads an image, Application.java 
  * creates the objects that will carry out the primary operations.
  * 
  */
+import play.*;
+import play.data.DynamicForm;
+import play.data.DynamicForm.Dynamic;
+import play.data.FormFactory;
+//import play.data.DynamicForm;
+//import play.api.db.DB;
+import play.db.*;
+
 import play.mvc.*;
+import play.twirl.api.Content;
 import views.html.*;
 import java.io.*;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 
+import db.MySQLCon;
 import ij.IJ;
 import ij.ImageJ;
-import ij.plugin.MacroInstaller;
 import ij.ImagePlus;
-import ij.macro.Interpreter;
-
-
-import ij.process.ImageConverter;
 import ij.io.Opener;
-import ij.io.FileSaver;
-import ij.process.ImageProcessor;
-import ij.gui.Toolbar;
-
+import models.DBUser;
 import services.DolphinAnalyzer;
-import services.GenericDialog_Test;
 import services.*;
-import java.util.*;
 import java.awt.*;
-import ij.gui.GenericDialog;
+
 
 public class Application extends Controller {
 
@@ -71,7 +73,7 @@ public Result upload() {
 	// Must open and show an image before any operations on it can be executed.
 	// The upload button has been pressed.
 
-	System.out.println("1 of X: OPEN FILE FROM REMOTE get source image Application.upload() version="+IJ.getFullVersion());
+	//System.out.println("1 of X: OPEN FILE FROM REMOTE get source image Application.upload() version="+IJ.getFullVersion());
 	//
 	Http.MultipartFormData<Object> formData = request().body().asMultipartFormData();
 	Http.MultipartFormData.FilePart<Object> filePart = formData.getFile("fileupload");
@@ -88,7 +90,7 @@ public Result upload() {
 		StandardCopyOption.REPLACE_EXISTING
 	);
 
-	System.out.println("3 of X: OPEN LOCAL FILE AS IMAGE open the newly created file as an image");
+	//System.out.println("3 of X: OPEN LOCAL FILE AS IMAGE open the newly created file as an image");
 	//
 	ImageJ imageJApplication = new ImageJ(2);
 	Opener opener = new Opener();
@@ -99,26 +101,26 @@ public Result upload() {
         		return badRequest();
 	}
 
-	System.out.println("4 of X: DISPLAY IMAGE");
+	//System.out.println("4 of X: DISPLAY IMAGE");
     imp.show();
 
-	System.out.println("5 of X: DISPLAY TOOLBAR");
+	//System.out.println("5 of X: DISPLAY TOOLBAR");
 	// secret way of displaying the Toolbar as this is not documented anywhere
 
-	System.out.println("5.1 of X: get the frame that the toolbar belongs to:");
+	//System.out.println("5.1 of X: get the frame that the toolbar belongs to:");
 	ImageJ ij = IJ.getInstance(); // ij is actually a frame
 	if (null == ij) {
 		System.out.println("Dolphin: no image file is open");
 		return ok(index.render("Dolphin: no image file is open"));
 	}
 
-	System.out.println("5.2 of X: the frame is too small so make its size a little bigger");
+	//System.out.println("5.2 of X: the frame is too small so make its size a little bigger");
 	ij.setSize(600,100);
 
-	System.out.println("5.3 of X: make it visible");
+	//System.out.println("5.3 of X: make it visible");
 	ij.setVisible(true);
 	
-	System.out.println("6 of X: Thresholding: DolphinAnalyzer Creates Image Mask");
+	//System.out.println("6 of X: Thresholding: DolphinAnalyzer Creates Image Mask");
 	
 	//set current test color threshold to find blood
 	//turns out this is a background threshold
@@ -130,23 +132,26 @@ public Result upload() {
 	ImagePlus maskImage = da.mask(imp, thresh);
 	maskImage.show();
 	
-	System.out.println("7.1 of X: Segmentation: ImageSegmenter calculates Image Segments");
+	//System.out.println("7.1 of X: Segmentation: ImageSegmenter calculates Image Segments");
 	
 	ImageSegmenter is = new ImageSegmenter(maskImage, imp);
 	int[][] labels = is.calculateSegments();
 	int curlab = is.getCurrentLabel();
 	
-	System.out.println("Current Label = " + curlab);
+	//System.out.println("Current Label = " + curlab);
 	
 	
-	System.out.println("7.2 of X: Segmentation: ImageSegmenter produces SegmentTable");
+	//System.out.println("7.2 of X: Segmentation: ImageSegmenter produces SegmentTable");
 	SegmentTable st = is.getSegmentTable();
 	
-	System.out.println("8.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
+	//System.out.println("8.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
 	SegmentAttributor sa = new SegmentAttributor(st);
 	SegAttributesTable sat = sa.getSegAttributesTable();
 
-	sat.printTable();
+	//sat.printTable();
+	
+	MySQLCon msc = new MySQLCon();
+	//msc.test();
     /*
 	System.out.println("Install Macro");
 	// can skip and run the macro without installing
@@ -202,8 +207,9 @@ public Result upload() {
    	boolean ret = fs.saveAsJpeg("public/dolphinImages/imageEdited.jpg");
   
 END COMMENT OUT DOLPHIN ANALYZER NO NEED FOR IT NOW */
-
-	return ok(index.render("File Uploaded"));
+	Content html = users.render("Dolphin Image Processor", msc.getUsers());
+	return ok(html);
+	//return ok(index.render("File Uploaded"));
     } catch (Exception e) {
 	e.printStackTrace(System.out);
     }

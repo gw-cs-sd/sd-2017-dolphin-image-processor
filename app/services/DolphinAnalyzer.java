@@ -6,13 +6,9 @@ package services;
  */
 
 import ij.*;
-import java.util.*;
 import java.awt.*;
-import java.io.File;
-import java.nio.file.StandardCopyOption;
 
 import ij.ImagePlus;
-import ij.process.ImageConverter;
 import ij.io.Opener;
 import ij.io.FileSaver;
 import ij.process.ImageProcessor;

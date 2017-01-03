@@ -14,24 +14,24 @@ import ij.process.ImageProcessor;
 
 public class Segment
 {
-	ArrayList<Pixel> arr;
+	ArrayList<Pixel> pixels;
 	
 	public Segment()
 	{
-		arr = new ArrayList<Pixel>();
+		pixels = new ArrayList<Pixel>();
 	}
 	
-	public Segment(ArrayList<Pixel> pixels)
+	public Segment(ArrayList<Pixel> arr)
 	{
-		arr = pixels;
+		pixels = arr;
 	}
 	
 	public void add(Pixel p){
-		arr.add(p);
+		pixels.add(p);
 	}
 	
 	public ArrayList<Pixel> getSegmentAsList(){
-		return arr;
+		return pixels;
 	}
 	
 	public int getArea(){
@@ -149,6 +149,53 @@ public class Segment
 			return false;
 		}
 		return true;
+	}
+	
+	public Segment getConvexHull()
+	{
+		ArrayList<PixelPolar> polarPixels = new ArrayList<PixelPolar>();
+		//1. convert pixels to polar
+		for(Pixel p : pixels){
+			polarPixels.add(p.translateToPolar());
+		}
+		
+		//2.0 calculate convex points from polar
+		//2.1 get leftmost pixel
+		Pixel leftmostPixelXY = pixels.get(0);
+		for(Pixel p : pixels){
+			if(p.getX() < leftmostPixelXY.getX()){
+				leftmostPixelXY = p;
+			}
+		}
+		//PixelPolar leftmostPixel = leftmostPixelXY.translateToPolar();
+		//polarPixels.remove(leftmostPixel);
+		
+		//2.2 algorithm
+		//3. convert polar results to XY
+		//4. fill holes
+		return null;
+	}
+	
+	public int getMeanX()
+	{
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		int meanX = 0;
+		for(Pixel p : arr){
+			meanX += p.getX();
+		}
+		meanX = meanX / arr.size();
+		return meanX;
+	}
+	
+	public int getMeanY()
+	{
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		int meanY = 0;
+		for(Pixel p : arr){
+			meanY += p.getY();
+		}
+		meanY = meanY / arr.size();
+		return meanY;
 	}
 	
 	public void print()

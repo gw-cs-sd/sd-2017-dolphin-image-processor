@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Tue Nov 01 13:11:53 EDT 2016
+// @DATE:Mon Jan 02 23:08:45 EST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -35,6 +35,36 @@ package controllers.javascript {
   
   }
 
+  // @LINE:21
+  class ReverseSamplesController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:21
+    def backToUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.backToUsers",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "backToUsers"})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def addSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.addSample",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addSample"})
+        }
+      """
+    )
+  
+  }
+
   // @LINE:8
   class ReverseCountController(_prefix: => String) {
 
@@ -49,6 +79,66 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:20
+  class ReverseConfirmUserDeleteController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:20
+    def confirm: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ConfirmUserDeleteController.confirm",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "confirm"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:17
+  class ReverseUsersController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:19
+    def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsersController.loginUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "loginUser"})
+        }
+      """
+    )
+  
+    // @LINE:18
+    def requestDeleteUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsersController.requestDeleteUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "requestDeleteUser"})
+        }
+      """
+    )
+  
+    // @LINE:17
+    def addNewUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsersController.addNewUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addNewUser"})
         }
       """
     )
