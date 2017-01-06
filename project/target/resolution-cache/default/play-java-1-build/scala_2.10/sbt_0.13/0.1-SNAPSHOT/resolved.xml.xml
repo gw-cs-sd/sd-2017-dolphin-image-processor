@@ -4,7 +4,7 @@
 		module="play-java-1-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170102230816"
+		publication="20170105144748"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

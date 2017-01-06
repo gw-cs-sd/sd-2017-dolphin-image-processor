@@ -1,13 +1,13 @@
-New log file opened at Mon Jan 02 23:08:03 EST 2017 by 8128@akzysk-W370ST
-Taking next connection to: 50357
-New client attempting to connect on port: 50358-50357
-  Address = /192.168.56.1:50357
-This client on port 50358 has uuid 57b1d9e9-24e6-42cd-a7e8-5db6b75b9561 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-57b1d9e9-24e6-42cd-a7e8-5db6b75b9561
-Taking next connection to: 50357
-New client attempting to connect on port: 50359-50357
-  Address = /192.168.56.1:50357
-Handshake exception on socket: 50359
+New log file opened at Thu Jan 05 14:47:36 EST 2017 by 5936@akzysk-W370ST
+Taking next connection to: 50628
+New client attempting to connect on port: 50629-50628
+  Address = /192.168.56.1:50628
+This client on port 50629 has uuid 7850bdd4-8bd4-4166-a30a-f280d8fb5141 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7850bdd4-8bd4-4166-a30a-f280d8fb5141
+Taking next connection to: 50628
+New client attempting to connect on port: 50630-50628
+  Address = /192.168.56.1:50628
+Handshake exception on socket: 50630
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,15 +23,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 50357
-New client attempting to connect on port: 50360-50357
-  Address = /192.168.56.1:50357
-This client on port 50360 has uuid 9b5588c4-2bea-40bd-994a-df83ad2475f2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-57b1d9e9-24e6-42cd-a7e8-5db6b75b9561, activator-9b5588c4-2bea-40bd-994a-df83ad2475f2
-Taking next connection to: 50357
-New client attempting to connect on port: 50370-50357
-  Address = /192.168.56.1:50357
-Handshake exception on socket: 50370
+Taking next connection to: 50628
+New client attempting to connect on port: 50631-50628
+  Address = /192.168.56.1:50628
+This client on port 50631 has uuid be546ea9-cf30-463f-bc4a-8e6762959d90 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7850bdd4-8bd4-4166-a30a-f280d8fb5141, activator-be546ea9-cf30-463f-bc4a-8e6762959d90
+Taking next connection to: 50628
+New client attempting to connect on port: 50634-50628
+  Address = /192.168.56.1:50628
+Handshake exception on socket: 50634
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -47,46 +47,28 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 50357
-New client attempting to connect on port: 50371-50357
-  Address = /192.168.56.1:50357
-This client on port 50371 has uuid 1539d6e1-5455-45e2-94cb-956951142599 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-9b5588c4-2bea-40bd-994a-df83ad2475f2, play-fork-run-1539d6e1-5455-45e2-94cb-956951142599
-Taking next connection to: 50357
+Taking next connection to: 50628
+New client attempting to connect on port: 50635-50628
+  Address = /192.168.56.1:50628
+This client on port 50635 has uuid 69361109-7106-46dc-bb16-9b0debb1db79 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-be546ea9-cf30-463f-bc4a-8e6762959d90, play-fork-run-69361109-7106-46dc-bb16-9b0debb1db79
+Taking next connection to: 50628
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
+Taking next connection to: 50628
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
+Taking next connection to: 50628
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
+Taking next connection to: 50628
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50357
+Taking next connection to: 50628
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
 1 daemon clients are connected.
 Server socket thread exiting.
 1 clients open, will close them...
 All client sockets have been closed.
-Closing the 8128@akzysk-W370ST logs at Mon Jan 02 23:42:43 EST 2017, goodbye.
+Closing the 5936@akzysk-W370ST logs at Thu Jan 05 15:04:19 EST 2017, goodbye.

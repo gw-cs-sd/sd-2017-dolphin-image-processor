@@ -20,3 +20,7 @@ POST	/loginUser					controllers.UsersController.loginUser
 POST	/confirm					controllers.ConfirmUserDeleteController.confirm
 POST	/backToUsers				controllers.SamplesController.backToUsers
 POST	/addSample					controllers.SamplesController.addSample
+POST	/requestDeleteSample		controllers.SamplesController.requestDeleteSample
+POST	/confirmSampleDelete		controllers.ConfirmSampleDeleteController.confirmSampleDelete
+POST	/viewSample					controllers.SamplesController.viewSample
+POST	/backToSample				controllers.SegmentsController.backToSamples

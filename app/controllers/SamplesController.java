@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 
 import javax.inject.Inject;
 
@@ -13,6 +14,7 @@ import ij.ImageJ;
 import ij.ImagePlus;
 import ij.io.Opener;
 import models.DBSample;
+import models.DBSegment;
 import play.data.*;
 import play.mvc.*;
 import play.twirl.api.Content;
@@ -105,6 +107,7 @@ public class SamplesController extends Controller
 		sample.setNumBytes(length.toString());
 		
 		//COMMENT THIS OUT---------------------------------------
+		/*
 		System.out.println("7 of X: DISPLAY IMAGE");
 		imp.show();
 
@@ -122,6 +125,7 @@ public class SamplesController extends Controller
 
 		System.out.println("8.3 of X: Make it Visible");
 		ij.setVisible(true);
+		*/
 		//END COMMENT---------------------------------------
 		
 		System.out.println("9 of X: Thresholding: DolphinAnalyzer Creates Image Mask");
@@ -165,12 +169,79 @@ public class SamplesController extends Controller
 		System.out.println("13.0 of X: DB SAVE SEGMENTS: Add all the segments of this sample to the database");
 		sat.saveSegmentsToDB(sampleId);
 		
-		//to be changed
-		Content html = users.render("Dolphin Image Processor", db.getUsers());
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
 	}
 	
-	//next step: Delete sample
-	//re-route to delete confirmation screen first
-	//then delete from there
+	public Result requestDeleteSample()
+	{
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+		String sampleId = requestData.get("sampleId");
+		MySQLCon db = new MySQLCon();
+		
+		String userId = db.getSample(sampleId).getUserId();
+		String userName = db.getUserName(userId);
+		
+		//go to confirmUserDelete view
+		Content html = confirmSampleDelete.render(sampleId, userId, userName);
+		return ok(html);
+	}
+	
+	public Result viewSample()
+	{
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+		String sampleId = requestData.get("sampleId");//works
+		MySQLCon db = new MySQLCon();
+		
+		System.out.println("1 OF X: GET USERID");
+		
+		String userId = db.getSample(sampleId).getUserId();
+		
+		System.out.println("2 OF X: GET USERNAME");
+		
+		String userName = db.getUserName(userId);
+		
+		System.out.println("3 OF X: GET SAMPLE");
+		
+		DBSample sample = db.getSample(sampleId);
+		
+		System.out.println("4 OF X: GET IMAGE PATH");
+		String directory = "dolphinImages/users/"+userName;
+		String filename = db.getSample(sampleId).getName();
+		String imagePath = directory + "/" + filename;
+		
+		System.out.println("5 OF X: GET DISPLAY WIDTH AND HEIGHT");
+		
+		String displayWidth = db.getSample(sampleId).getWidth();
+		String displayHeight = db.getSample(sampleId).getHeight();
+		
+		Integer width = Integer.parseInt(displayWidth);
+		Integer height = Integer.parseInt(displayHeight);
+		
+		//fit image to scale --> longest side becomes 300 pixels long
+		Integer scaler;
+		if(width >= height)
+		{
+			scaler = width / 300;
+		}
+		else
+		{
+			scaler = height / 300;
+		}
+		if(scaler <= 0)
+		{
+			scaler = 1;
+		}
+		width = width / scaler;
+		height = height / scaler;
+		displayWidth = width.toString();
+		displayHeight = height.toString();
+		
+		System.out.println("6 OF X: GET LIST[DBSEGMENT]");
+		ArrayList<DBSegment> segmentList = db.getSegments(sampleId);
+		
+		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList);
+		return ok(html);
+	}
+	
 }

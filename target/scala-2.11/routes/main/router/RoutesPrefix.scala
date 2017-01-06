@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Mon Jan 02 23:08:45 EST 2017
+// @DATE:Thu Jan 05 14:52:49 EST 2017
 
 
 package router {

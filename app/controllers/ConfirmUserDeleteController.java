@@ -22,7 +22,6 @@ public class ConfirmUserDeleteController extends Controller
         System.out.println("userId:"+userId);
 		
 		MySQLCon db = new MySQLCon();
-		db.test();
 		
 		if(deleteUserId == null || deleteUserId.equals(""))
 		{

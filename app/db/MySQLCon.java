@@ -188,7 +188,7 @@ public class MySQLCon
 		try
 		{
 			conn = DB.getConnection();
-			st = conn.prepareStatement("select * from sample where userId = ?");
+			st = conn.prepareStatement("SELECT * from sample where userId = ?");
 			st.setString(1, userId);
 			ResultSet rs = st.executeQuery();
 			while (rs.next()) {
@@ -290,6 +290,72 @@ public class MySQLCon
 		{
 			System.out.println(e);
 		}
+	}
+	
+	public void deleteSample(String sampleId)
+	{
+		deleteSegments(sampleId);
+		try
+		{
+			conn = DB.getConnection();
+			st = conn.prepareStatement("DELETE from sample where sampleId = ?");
+			Integer sampleIdInteger = Integer.parseInt(sampleId);
+			st.setInt(1, sampleIdInteger);
+			st.execute();
+			conn.close();
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	//delete all the segments belonging to the sample with this sampleId
+	//secondary method to be called by deleteSample
+	public void deleteSegments(String sampleId)
+	{
+		try
+		{
+			conn = DB.getConnection();
+			st = conn.prepareStatement("DELETE from segment where sampleId = ?");
+			Integer sampleIdInteger = Integer.parseInt(sampleId);
+			st.setInt(1, sampleIdInteger);
+			st.execute();
+			conn.close();
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	public ArrayList<DBSegment> getSegments(String sampleId)
+	{
+		ArrayList<DBSegment> segments = new ArrayList<DBSegment>();
+		try
+		{
+			conn = DB.getConnection();
+			st = conn.prepareStatement("SELECT * from segment where sampleId = ?");
+			st.setString(1, sampleId);
+			ResultSet rs = st.executeQuery();
+			while (rs.next()) {
+				DBSegment segment = new DBSegment();
+				segment.setSegmentId(((Integer)rs.getInt(1)).toString());
+				segment.setSampleId(sampleId);
+				segment.setLabel(((Integer)rs.getInt(2)).toString());
+				segment.setArea(((Integer)rs.getInt(3)).toString());
+				segment.setWidth(((Integer)rs.getInt(4)).toString());
+				segment.setHeight(((Integer)rs.getInt(5)).toString());
+				segment.setPerimeter(((Integer)rs.getInt(6)).toString());
+				segments.add(segment);
+			}
+			conn.close();		
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+		return segments;
 	}
 	
 }

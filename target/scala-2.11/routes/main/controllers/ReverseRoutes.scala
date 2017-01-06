@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Mon Jan 02 23:08:45 EST 2017
+// @DATE:Thu Jan 05 14:52:49 EST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -35,10 +35,22 @@ package controllers {
     }
 
   
+    // @LINE:25
+    def viewSample(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "viewSample")
+    }
+  
     // @LINE:21
     def backToUsers(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToUsers")
+    }
+  
+    // @LINE:23
+    def requestDeleteSample(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "requestDeleteSample")
     }
   
     // @LINE:22
@@ -60,6 +72,21 @@ package controllers {
     def count(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "count")
+    }
+  
+  }
+
+  // @LINE:26
+  class ReverseSegmentsController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:26
+    def backToSamples(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "backToSample")
     }
   
   }
@@ -102,6 +129,21 @@ package controllers {
     def addNewUser(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addNewUser")
+    }
+  
+  }
+
+  // @LINE:24
+  class ReverseConfirmSampleDeleteController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:24
+    def confirmSampleDelete(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "confirmSampleDelete")
     }
   
   }

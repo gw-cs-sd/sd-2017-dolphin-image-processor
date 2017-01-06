@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Mon Jan 02 23:08:45 EST 2017
+// @DATE:Thu Jan 05 14:52:49 EST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -43,12 +43,32 @@ package controllers.javascript {
     }
 
   
+    // @LINE:25
+    def viewSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.viewSample",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "viewSample"})
+        }
+      """
+    )
+  
     // @LINE:21
     def backToUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SamplesController.backToUsers",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "backToUsers"})
+        }
+      """
+    )
+  
+    // @LINE:23
+    def requestDeleteSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.requestDeleteSample",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "requestDeleteSample"})
         }
       """
     )
@@ -79,6 +99,26 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:26
+  class ReverseSegmentsController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:26
+    def backToSamples: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SegmentsController.backToSamples",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "backToSample"})
         }
       """
     )
@@ -139,6 +179,26 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addNewUser"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:24
+  class ReverseConfirmSampleDeleteController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:24
+    def confirmSampleDelete: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ConfirmSampleDeleteController.confirmSampleDelete",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "confirmSampleDelete"})
         }
       """
     )

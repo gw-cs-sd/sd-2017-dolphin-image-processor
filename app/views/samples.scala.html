@@ -60,11 +60,11 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     <td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>
         <input type="hidden" name="userId" value="@sample.getUserId()">
         <form action='viewSample' method='POST' enctype="multipart/form-data" id="viewSampleForm">
-    	<button type="submit" form="viewSampleForm" value="@sample.getSampleId()"  name="viewSampleId" >View</button>
+    	<button type="submit" form="viewSampleForm" value="@sample.getSampleId()"  name="sampleId" >View</button>
     	</form>
     	&nbsp
-    	<form action='deleteSample' method='POST' enctype="multipart/form-data" id="deleteSampleForm">
-    	<button type="submit" form="deleteSampleForm" value="@sample.getSampleId()"  name="deleteSampleId" >Delete</button>
+    	<form action='requestDeleteSample' method='POST' enctype="multipart/form-data" id="deleteSampleForm">
+    	<button type="submit" form="deleteSampleForm" value="@sample.getSampleId()"  name="sampleId" >Delete</button>
     	</form>
     </td>
   </tr>
