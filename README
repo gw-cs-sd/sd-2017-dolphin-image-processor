@@ -1,16 +1,87 @@
 Dolphin Image Processor
-README Updated 12/20/2016
+README Updated 1/9/2016
 =================================
 
 Play Application.
 
-CONTROLLER:
-Application.java:
--Opens browser for image upload
--Uploads image chosen by user.
--Currently drives operations of the application. Creates objects that perform the image analysis steps on the image.
+------------------------------------------
+CONTROLLERS:
+------------------------------------------
+Controllers control the actions of their respective Views. When the user passes an action via an HTML Form, the routes page
+calls a method that belongs to a Controller. That method gathers data from the Form, and performs actions.
 
+Application.java:
+-Controller that is currently just used for testing.
+
+UsersController.java:
+-Controls the actions for the Users view page.
+
+ConfirmUserDeleteController.java:
+-Controls the actions (OK or Cancel) for the ConfirmUserDelete view page.
+
+SamplesController.java:
+-Controls the actions for the Samples view page.
+
+ConfirmSampleDeleteController.java:
+-Controls the actions (OK or Cancel) for the ConfirmSampleDelete view page.
+
+SegmentsController.java:
+-Controls the actions for the Segments view page.
+
+------------------------------------------
+MODELS:
+------------------------------------------
+Java classes that contain fields, getters and setters for the front-end and the database schema.
+Each model represents the schema for each table in the database.
+
+DBUser.java
+-Represents a User in the database (the unit for a set of Samples)
+
+DBSample.java
+-Represents a Sample in the database (the unit for an uploaded image with its associated data)
+
+DBSegment.java
+-Represents a Segment in the database (the unit for a segment of an image with its associated attributes)
+
+------------------------------------------
+DB:
+------------------------------------------
+MySQLCon.java
+-Opens connection pools with MySQL database.
+-Follows a convention of Connection, PreparedStatement (SQL query), and ResultSet
+-Gets data from database, or inserts, based on what is required by each View.
+------------------------------------------
+VIEWS:
+------------------------------------------
+Views show the user data presented from the application via the Model classes.
+They can also take various inputs through HTML Forms.
+
+index.scala.html
+-Calls the initial page
+
+main.scala.html
+-Used by Application.java Controller for testing.
+
+users.scala.html
+-Shows all the Users in the database. Allows for adding users, deleting, or viewing the samples owned by a user.
+
+confirmUserDelete.scala.html
+-The view to confirm (or cancel) deleting a specified User.
+
+samples.scala.html
+-The view of all the Samples (uploaded images with other associated data) owned by a specified user.
+
+confirmSampleDelete.scala.html
+-The view to confirm (or cancel) deleting a specified Sample.
+
+segments.scala.html
+-The view of all the Segments (all the Segments of a Sample, and their associated attributes) of a specified Sample.
+
+------------------------------------------
 SERVICES:
+------------------------------------------
+Services are responsible for the actual image processing application, and most of the computational "heavy-lifting".
+
 Threshold.java:
 -Contains minimum Color and maximum Color, to define the threshold range
 
@@ -26,6 +97,9 @@ Pixel.java
 -Contains x, y location of a pixel, and its RGB color values.
 -Given a threshold, the Pixel can determine if it is within the threshold.
 
+PixelPolar.java
+-Currently not used. Original idea was to use this class to convert Pixels to polar coordinates. Convex Hull calculation does this.
+
 ImageSegmenter.java
 -Uses a 2D array of labels and a binary mask image to label each contiguous segment in the image.
 -To do this, calls a depth-first search on every pixel within the threshold.
@@ -36,4 +110,27 @@ SegmentTable.java
 -Each sublist contains all the pixels in a given segment.
 -The integer index of each list refers to each segment in the image.
 
-This project is excellent.
+SegmentAttribute.java
+-Contains the name and result of a Segment attribute calculation (perimeter, area, convexity),
+so they can all be organized as the same type.
+
+SegAttributesMultiple
+-An aggregated list of all the different Segment Attributes (as SegmentAttribute objects) of a single Segment.
+
+SegmentAttributor.java
+-Takes a SegmentTable as input to its constructor
+-Wraps each Segment attribute of a Segment, as a SegmentAttribute object.
+-Aggregates all the SegmentAttributes of a Segment as a SegAttributesMultiple.
+-Produces SegAttributeTable from the input SegmentTable.
+
+SegAttributesTable.java
+-The monster Segment Attribute data structure, this contains all the attributes of each Segment in a SegmentTable.
+-This is a list of SegAttributesMultiple.
+-Each integer index is respective to the integer index of the corresponding Segment in the SegmentTable.
+
+ConvexHullCalculator.java
+-Calculates the Convex Hull of a Segment, and returns it as a Segment object.
+-Used to calculate convexity, which is defined as (convex hull perimeter / original segment perimeter)
+-Uses the gift wrapping algorithm to calculate the Convex Hull
+
+
