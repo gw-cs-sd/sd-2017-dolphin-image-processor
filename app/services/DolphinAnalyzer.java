@@ -7,6 +7,7 @@ package services;
 
 import ij.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 import ij.ImagePlus;
 import ij.io.Opener;

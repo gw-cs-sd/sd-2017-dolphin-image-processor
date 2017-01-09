@@ -1,11 +1,10 @@
-package controllers;
 /*Application.java
-
- * This is the main controller of the application.
- * When the user uploads an image, Application.java 
- * creates the objects that will carry out the primary operations.
+ * Now that other Controllers exist to control the User Interface,
+ * Application.java is used to test various image analysis processes.
  * 
  */
+
+package controllers;
 import play.*;
 import play.data.DynamicForm;
 import play.data.DynamicForm.Dynamic;
@@ -25,7 +24,12 @@ import db.MySQLCon;
 import ij.IJ;
 import ij.ImageJ;
 import ij.ImagePlus;
+import ij.gui.Line;
+import ij.gui.Overlay;
+import ij.gui.PolygonRoi;
+import ij.gui.Roi;
 import ij.io.Opener;
+import ij.process.ImageProcessor;
 import models.DBUser;
 import services.DolphinAnalyzer;
 import services.*;
@@ -73,7 +77,7 @@ public Result upload() {
 	// Must open and show an image before any operations on it can be executed.
 	// The upload button has been pressed.
 
-	//System.out.println("1 of X: OPEN FILE FROM REMOTE get source image Application.upload() version="+IJ.getFullVersion());
+	System.out.println("1 of X: OPEN FILE FROM REMOTE get source image Application.upload() version="+IJ.getFullVersion());
 	//
 	Http.MultipartFormData<Object> formData = request().body().asMultipartFormData();
 	Http.MultipartFormData.FilePart<Object> filePart = formData.getFile("fileupload");
@@ -82,7 +86,6 @@ public Result upload() {
 
 
 	System.out.println("2 of X: COPY FILE TO LOCAL given source image, copy it to destination ");
-	//	   public/dolphinImages/image1.jpg, replace existing
 	File dstFile = new File("public/dolphinImages/image1.jpg");
 	java.nio.file.Files.copy(
 		srcFile.toPath(), 
@@ -145,13 +148,51 @@ public Result upload() {
 	SegmentTable st = is.getSegmentTable();
 	
 	//System.out.println("8.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
-	SegmentAttributor sa = new SegmentAttributor(st);
+	SegmentAttributor sa = new SegmentAttributor(st, imp);
 	SegAttributesTable sat = sa.getSegAttributesTable();
 
-	//sat.printTable();
+	sat.printTable();
 	
 	MySQLCon msc = new MySQLCon();
 	//msc.test();
+	
+	/*
+	ArrayList<Segment> list = st.getSegmentTableAsList();
+	int maxArea = 0;
+	int area = 0;
+	Segment biggestSegment = list.get(0);
+	for(Segment s : list)
+	{
+		area = s.getArea();
+		if(area > maxArea)
+		{
+			maxArea = area;
+			biggestSegment = s;
+		}
+	}
+	ConvexHullCalculator chc = new ConvexHullCalculator();
+	
+	Polygon polygon = new Polygon();
+	polygon.addPoint(10, 10);
+	polygon.addPoint(100, 100);
+	polygon.addPoint(50, 20);
+	PolygonRoi roi = new PolygonRoi(polygon, Roi.POLYGON);
+	Roi roi2 = new Roi(100, 100, 50, 50);
+	roi2.contains(3, 5);
+	
+	System.out.println("Segment.getPerimeter() = " + biggestSegment.getPerimeter());
+	chc.drawConvexHulls(list, imp);
+	System.out.println("=======Set ROI=======");
+	*/
+	
+	
+	/*
+	Segment convertedSeg = chc.convertRoiToSegment(roi, imp);
+	System.out.println("=======CONVERTED SEGMENT=======");
+	convertedSeg.print();
+	*/
+	
+	//chc.drawPolygon(maskImage, biggestSegment);
     /*
 	System.out.println("Install Macro");
 	// can skip and run the macro without installing

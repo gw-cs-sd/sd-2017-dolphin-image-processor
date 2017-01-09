@@ -1,5 +1,9 @@
 package services;
-
+/*
+ * 
+ * NOT USED
+ * 
+ */
 import java.lang.Math;
 /*PolarPixel.java
  * 
@@ -37,7 +41,7 @@ public class PixelPolar {
 		double y = p.getY();
 		
 		distance = Math.hypot(x, y);
-		angle = Math.atan(x / y);
+		angle = Math.atan(y / x);
 		rgb = p.getRGB();
 	}
 	

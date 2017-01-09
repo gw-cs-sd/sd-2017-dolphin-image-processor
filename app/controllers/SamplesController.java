@@ -138,7 +138,7 @@ public class SamplesController extends Controller
 		Color maxColor = new Color(255, 88, 88);
 		Threshold thresh = new Threshold(minColor, maxColor);
 		ImagePlus maskImage = da.mask(imp, thresh);
-		maskImage.show();
+		//maskImage.show();
 				
 		//add in max RGB values of threshold
         sample.setR(((Integer)thresh.getMinRed()).toString());
@@ -159,7 +159,7 @@ public class SamplesController extends Controller
         sample.setSegmentCount(((Integer)segmentCount).toString());
 
 		System.out.println("11.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
-		SegmentAttributor sa = new SegmentAttributor(st);
+		SegmentAttributor sa = new SegmentAttributor(st, imp);
 		SegAttributesTable sat = sa.getSegAttributesTable();
 		//sat.printTable();
 		
