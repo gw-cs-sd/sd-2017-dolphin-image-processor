@@ -7,6 +7,8 @@ import java.io.File;
 import java.nio.file.StandardCopyOption;
 
 import ij.ImagePlus;
+import ij.gui.PolygonRoi;
+import ij.gui.Roi;
 import ij.process.ImageConverter;
 import ij.io.Opener;
 import ij.io.FileSaver;
@@ -123,59 +125,6 @@ public class Segment
 		return perimeter;
 	}
 	
-	public boolean pixelIsOuterBorder(int[][] boundingBox, int w, int h, int x, int y)
-	{
-		if(coordsInBounds(w, h, x, y) && boundingBox[x][y] == 0)
-		{
-			if(coordsInBounds(w, h, x + 1, y) && boundingBox[x + 1][y] == 1){
-				return true;
-			}
-			if(coordsInBounds(w, h, x - 1, y) && boundingBox[x - 1][y] == 1){
-				return true;
-			}
-			if(coordsInBounds(w, h, x, y + 1) && boundingBox[x][y + 1] == 1){
-				return true;
-			}
-			if(coordsInBounds(w, h, x, y - 1) && boundingBox[x][y - 1] == 1){
-				return true;
-			}
-		}
-		return false;
-	}
-	
-	public boolean coordsInBounds(int width, int height, int x, int y)
-	{
-		if(x >= width || y >= height || x < 0 || y < 0){
-			return false;
-		}
-		return true;
-	}
-	
-	public Segment getConvexHull()
-	{
-		ArrayList<PixelPolar> polarPixels = new ArrayList<PixelPolar>();
-		//1. convert pixels to polar
-		for(Pixel p : pixels){
-			polarPixels.add(p.translateToPolar());
-		}
-		
-		//2.0 calculate convex points from polar
-		//2.1 get leftmost pixel
-		Pixel leftmostPixelXY = pixels.get(0);
-		for(Pixel p : pixels){
-			if(p.getX() < leftmostPixelXY.getX()){
-				leftmostPixelXY = p;
-			}
-		}
-		//PixelPolar leftmostPixel = leftmostPixelXY.translateToPolar();
-		//polarPixels.remove(leftmostPixel);
-		
-		//2.2 algorithm
-		//3. convert polar results to XY
-		//4. fill holes
-		return null;
-	}
-	
 	public int getMeanX()
 	{
 		ArrayList<Pixel> arr = this.getSegmentAsList();
@@ -198,6 +147,74 @@ public class Segment
 		return meanY;
 	}
 	
+	public double getCircularity()
+	{
+		int area = this.getArea();
+		int perimeter = this.getPerimeter();
+		double circularity = (double)(4 * Math.PI * area) / (double)(perimeter * perimeter);
+		return circularity;
+	}
+	
+	public double getConvexity(ImagePlus orig)
+	{
+		Segment convexHull = this.getConvexHull(orig);
+		double convexity = (double)convexHull.getPerimeter() / (double)this.getPerimeter();
+		return convexity;
+	}
+	
+	/*============================================================================
+	 * CONVEX HULL HELPER METHODS
+	 *============================================================================
+	 */
+	
+	public Polygon getSegmentAsPolygon()
+	{
+		Polygon polygon = new Polygon();
+		int minX = getMinX();
+		int minY = getMinY();
+		int width = getWidth() + 2;
+		int height = getHeight() + 2;
+		int[][] boundingBox = new int[width][height];
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		for(Pixel p : arr)
+		{
+			boundingBox[p.getX() - minX + 1][p.getY() - minY + 1] = 1;
+		}
+		for(int i = 0; i < width; i++)
+		{
+			for(int j = 0; j < height; j++)
+			{
+				if(pixelIsOuterBorder(boundingBox, width, height, i, j))
+				{
+					polygon.addPoint(i, j);
+				}
+			}
+		}
+		return polygon;
+	}
+	
+	public Pixel getMinYPixel()
+	{
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		Pixel minYPixel = arr.get(0);
+		for(Pixel p : arr){
+			if(p.getY() < minYPixel.getY()){
+				minYPixel = p;
+			}
+		}
+		for(Pixel p : arr){
+			if(p.getY() <= minYPixel.getY() && p.getX() < minYPixel.getX()){
+				minYPixel = p;
+			}
+		}
+		return minYPixel;
+	}
+	
+	/*=================================================================================
+	 * DEMONSTRATION/TESTING METHODS
+	 * ================================================================================
+	 */
+	
 	public void print()
 	{
 		ArrayList<Pixel> arr = this.getSegmentAsList();
@@ -208,6 +225,46 @@ public class Segment
 		}
 		System.out.print("]");
 		System.out.println();
+	}
+	
+	/* ================================================================================
+	 * SECONDARY METHODS
+	 * ================================================================================
+	 */
+	
+	public Segment getConvexHull(ImagePlus orig)
+	{
+		ConvexHullCalculator chc = new ConvexHullCalculator();
+		Segment convexHull = chc.convexHullSegment(this, orig);
+		return convexHull;
+	}
+	
+	private boolean pixelIsOuterBorder(int[][] boundingBox, int w, int h, int x, int y)
+	{
+		if(coordsInBounds(w, h, x, y) && boundingBox[x][y] == 0)
+		{
+			if(coordsInBounds(w, h, x + 1, y) && boundingBox[x + 1][y] == 1){
+				return true;
+			}
+			if(coordsInBounds(w, h, x - 1, y) && boundingBox[x - 1][y] == 1){
+				return true;
+			}
+			if(coordsInBounds(w, h, x, y + 1) && boundingBox[x][y + 1] == 1){
+				return true;
+			}
+			if(coordsInBounds(w, h, x, y - 1) && boundingBox[x][y - 1] == 1){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private boolean coordsInBounds(int width, int height, int x, int y)
+	{
+		if(x >= width || y >= height || x < 0 || y < 0){
+			return false;
+		}
+		return true;
 	}
 	
 	

@@ -73,7 +73,6 @@ public class MySQLCon
 		while (rs.next())
 		{
 			result = rs.getInt(1);
-			//System.out.println(result + "  " + rs.getString(2));
 		}
 		conn.close();
 		return result;
@@ -131,6 +130,15 @@ public class MySQLCon
 	
 	public void deleteUser(String userId)
 	{
+		//first, delete all the samples belonging to this user
+		//(this automatically deletes the segments within each sample)
+		ArrayList<DBSample> samples = getSamples(userId);
+		for(DBSample s : samples)
+		{
+			String sampleId = s.getSampleId();
+			deleteSample(sampleId);
+		}
+		//then delete the user
 		try
 		{
 			int userIdInteger = Integer.parseInt(userId);

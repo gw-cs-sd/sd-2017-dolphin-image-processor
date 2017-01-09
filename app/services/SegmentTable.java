@@ -101,6 +101,11 @@ public class SegmentTable
         return p;
     }
 	
+	public ArrayList<Segment> getSegmentTableAsList()
+	{
+		return segmentTable;
+	}
+	
 	public void printTable()
 	{
 		for(int i = 0; i < numSegments; i++)

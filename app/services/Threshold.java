@@ -33,6 +33,15 @@ public class Threshold
         max = maximum;
     }
     
+    public int setAutoThreshold(ImagePlus imp)
+    {
+    	ImageProcessor ip = imp.getProcessor();
+    	int threshold = ip.getAutoThreshold();
+    	min = new Color(threshold, threshold, threshold);
+    	max = new Color(255, 255, 255);
+    	return threshold;
+    }
+    
     public int getMinRed()
     {
         return min.getRed();

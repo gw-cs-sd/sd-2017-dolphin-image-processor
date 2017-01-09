@@ -15,15 +15,22 @@ import ij.process.ImageProcessor;
 public class SegmentAttributor {
 	
 	SegmentTable segmentTable;
+	ImagePlus imp;
 	
-	public SegmentAttributor(SegmentTable st)
+	public SegmentAttributor(SegmentTable st, ImagePlus image)
 	{
 		segmentTable = st;
+		imp = image;
 	}
 	
 	public SegAttributesTable getSegAttributesTable()
 	{
 		return new SegAttributesTable(segmentTable, this);
+	}
+	
+	public ImagePlus getImage()
+	{
+		return imp;
 	}
 	
 	//calculate each attribute and add it to the list of attributes for this segment
@@ -34,6 +41,10 @@ public class SegmentAttributor {
 		attributes.add(this.getWidth(seg));
 		attributes.add(this.getHeight(seg));
 		attributes.add(this.getPerimeter(seg));
+		
+		attributes.add(this.getCircularity(seg));
+		attributes.add(this.getConvexity(seg, imp));
+		
 		return attributes;
 	}
 	
@@ -57,5 +68,15 @@ public class SegmentAttributor {
 	//3
 	public SegmentAttribute getPerimeter(Segment seg){
 		return new SegmentAttribute("Perimeter", seg.getPerimeter());
+	}
+	
+	//4
+	public SegmentAttribute getCircularity(Segment seg){
+		return new SegmentAttribute("Circularity", seg.getCircularity());
+	}
+	
+	//5
+	public SegmentAttribute getConvexity(Segment seg, ImagePlus orig){
+		return new SegmentAttribute("Convexity", seg.getConvexity(orig));
 	}
 }
