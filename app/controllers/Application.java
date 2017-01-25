@@ -20,6 +20,8 @@ import java.io.*;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 
+import javax.imageio.ImageIO;
+
 import db.MySQLCon;
 import ij.IJ;
 import ij.ImageJ;
@@ -28,12 +30,15 @@ import ij.gui.Line;
 import ij.gui.Overlay;
 import ij.gui.PolygonRoi;
 import ij.gui.Roi;
+import ij.io.FileSaver;
 import ij.io.Opener;
+import ij.plugin.ScreenGrabber;
 import ij.process.ImageProcessor;
 import models.DBUser;
 import services.DolphinAnalyzer;
 import services.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 
 public class Application extends Controller {
@@ -156,7 +161,6 @@ public Result upload() {
 	MySQLCon msc = new MySQLCon();
 	//msc.test();
 	
-	/*
 	ArrayList<Segment> list = st.getSegmentTableAsList();
 	int maxArea = 0;
 	int area = 0;
@@ -170,13 +174,45 @@ public Result upload() {
 			biggestSegment = s;
 		}
 	}
+	cropAndResize(imp, 100, 100);
+	/*
+	int meanX = biggestSegment.getMeanX();
+	int meanY = biggestSegment.getMeanY();
+	*/
+	/*
+	System.out.println("1 OF X: GET ROI FROM BIGGEST SEGMENT");
+	ConvexHullCalculator chc = new ConvexHullCalculator();
+	PolygonRoi roi = chc.convexHullRoi(biggestSegment, imp);
+	
+	System.out.println("2 OF X: SET ROI");
+	imp.setRoi(roi);
+	System.out.println("1 of X: ZOOM IMAGE WITH zoom=200 x=" + meanX + " y=" + meanY);
+	IJ.run("Set... ", "zoom=200 x=" + meanX + " y=" + meanY);
+	System.out.println("3 OF X: ZOOM TO SELECTION");
+	IJ.run("To Selection");
+	
+	System.out.println("4 OF X: DISPLAY IMAGE");
+	imp.show();
+	
+	System.out.println("5 OF X: GET ZOOMED IMAGE AS IMAGEPLUS");
+	ScreenGrabber screenGrabber = new ScreenGrabber();
+	ImagePlus zoomed = screenGrabber.captureImage();
+	
+	System.out.println("6 OF X: SAVE ZOOMED IMAGE AS JPEG");
+	FileSaver fs = new FileSaver(zoomed);
+	fs.saveAsJpeg("public/dolphinImages/zoomed.jpg");
+	*/
+	
+	
+	
+	
+	/*
 	ConvexHullCalculator chc = new ConvexHullCalculator();
 	
 	Polygon polygon = new Polygon();
 	polygon.addPoint(10, 10);
 	polygon.addPoint(100, 100);
 	polygon.addPoint(50, 20);
-	PolygonRoi roi = new PolygonRoi(polygon, Roi.POLYGON);
 	Roi roi2 = new Roi(100, 100, 50, 50);
 	roi2.contains(3, 5);
 	
@@ -256,6 +292,29 @@ END COMMENT OUT DOLPHIN ANALYZER NO NEED FOR IT NOW */
     }
     return ok("Should not reach this line, there must have been an error..");
 }
+
+//SOURCE: https://gist.github.com/tc/1217766/8e330b03c6200b770461952ab07d91b5dcbdc41b
+//altered by Andrew Zysk
+public static void cropAndResize(ImagePlus imp, int targetWidth, int targetHeight) throws Exception{
+    ImageProcessor ip = imp.getProcessor();
+    ip.setInterpolationMethod(ImageProcessor.BILINEAR);
+    ip = ip.resize(targetWidth * 2, targetHeight * 2);
+
+    int cropX = ip.getWidth() / 2;
+    int cropY = ip.getHeight() / 2;
+    ip.setRoi(cropX, cropY, targetWidth, targetHeight);
+    ImageProcessor cropped = ip.crop();
+    BufferedImage croppedImage = ip.getBufferedImage();
+
+    ImagePlus croppedImp = new ImagePlus("croppedImage", croppedImage);
+    croppedImp.show();
+    
+    FileSaver fs = new FileSaver(imp);
+    fs.saveAsJpeg("public/dolphinImages/zoomed.jpg");
+
+    //ImageIO.write(croppedImage, "jpg", new File("cropped.jpg"));
+    
+  }
 
 } // end Application class
 

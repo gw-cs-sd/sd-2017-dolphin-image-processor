@@ -163,6 +163,49 @@ public class Segment
 	}
 	
 	/*============================================================================
+	 * METHODS WITH RESPECT TO AN IMAGEPLUS
+	 *============================================================================
+	 */
+	
+	//paint the perimeter of this segment with respect to the target image imp
+	public void paintPerimeter(ImagePlus imp)
+	{
+		int minX = getMinX();
+		int minY = getMinY();
+		int width = getWidth() + 2;
+		int height = getHeight() + 2;
+		int[][] boundingBox = new int[width][height];
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		for(Pixel p : arr)
+		{
+			boundingBox[p.getX() - minX + 1][p.getY() - minY + 1] = 1;
+		}
+		ImageProcessor ip = imp.getProcessor();
+		int[] yellowPixel = {255, 255, 0};
+		for(int i = 0; i < width; i++)
+		{
+			for(int j = 0; j < height; j++)
+			{
+				if(pixelIsOuterBorder(boundingBox, width, height, i, j))
+				{
+					ip.putPixel(i + minX, j + minY, yellowPixel);
+				}
+			}
+		}
+	}
+	
+	public Roi setBoundingBoxRoi(ImagePlus imp)
+	{
+		int minX = getMinX();
+		int minY = getMinY();
+		int width = getWidth() + 2;
+		int height = getHeight() + 2;
+		Roi roi = new Roi(minX, minY, width, height);
+		imp.setRoi(roi);
+		return roi;
+	}
+	
+	/*============================================================================
 	 * CONVEX HULL HELPER METHODS
 	 *============================================================================
 	 */

@@ -1,31 +1,6 @@
-2017-01-09 14:01:24,787 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-01-09 14:01:26,216 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-01-09 14:01:27,238 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-01-09T19:01:27.236Z
-2017-01-09 14:01:29,079 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-01-09 14:32:32,386 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-01-09T19:32:32.386Z after 1865s.
-2017-01-09 14:32:32,412 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2017-01-09 14:32:32,939 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2017-01-09 14:32:33,066 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-01-09 14:32:33,086 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-01-09T19:32:33.085Z
-2017-01-09 14:32:33,513 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2017-01-09 14:32:49,992 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-01-09 14:40:28,141 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Stopping application at 2017-01-09T19:40:28.141Z after 475s.
-2017-01-09 14:40:28,142 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2017-01-09 14:40:28,552 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2017-01-09 14:40:28,584 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-01-09 14:40:28,602 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Starting application at 2017-01-09T19:40:28.601Z
-2017-01-09 14:40:28,911 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
-2017-01-09 14:45:15,780 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-01-09T19:45:15.780Z after 287s.
-2017-01-09 14:45:15,781 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2017-01-09 14:45:16,202 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2017-01-09 14:45:16,236 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-01-09 14:45:16,240 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-01-09T19:45:16.240Z
-2017-01-09 14:45:16,559 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2017-01-09 14:49:20,652 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2017-01-09T19:49:20.652Z after 244s.
-2017-01-09 14:49:20,653 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2017-01-09 14:49:20,995 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
-2017-01-09 14:49:21,021 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-01-09 14:49:21,025 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-01-09T19:49:21.025Z
-2017-01-09 14:49:21,247 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
-2017-01-09 15:00:34,727 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-87 - ApplicationTimer demo: Stopping application at 2017-01-09T20:00:34.727Z after 673s.
-2017-01-09 15:00:34,727 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-87 - Shutting down connection pool.
+2017-01-25 15:57:47,345 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-01-25 15:57:47,999 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-01-25 15:57:48,588 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-01-25T20:57:48.586Z
+2017-01-25 15:57:49,824 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-01-25 16:00:28,632 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Stopping application at 2017-01-25T21:00:28.632Z after 160s.
+2017-01-25 16:00:28,648 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-7 - Shutting down connection pool.

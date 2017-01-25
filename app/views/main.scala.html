@@ -11,6 +11,17 @@
     <head>
         @* Here's where we render the page title `String`. *@
         <title>@title</title>
+        <style>
+        .photo {
+            padding: 64px 0 0 0;
+            border: 3px solid #fff;
+            outline: 1px solid #000;
+            margin: 1px;
+            width: 64px;
+            height: 0px;
+            display: block;
+        }
+        </style>
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
         <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
@@ -21,6 +32,11 @@
         <input type='file' name='fileupload'><br>
         <input type='submit' value='run SetThresholdRGB macro on the selected image'>
     </form>
+    
+    <img src="assets/public/dolphinImages/zoomed.jpg">
+    <img class="photo" src=@routes.Assets.versioned("dolphinImages/image1.jpg") />
+    <img class="photo" src=@routes.Assets.versioned("dolphinImages/image1.jpg") style="background-image: url(@routes.Assets.versioned("dolphinImages/image1.jpg"))" />
+    
 <!-- COMMENT OUT FOR NOW
     <p>
         Original (1 of 4):

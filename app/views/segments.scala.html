@@ -25,6 +25,10 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     <form action="backToSample" method='POST' enctype="multipart/form-data" id="backToSampleForm">
     <button type="submit" form="backToSampleForm" value="@sample.getUserId()"  name="backUserId" >Back</button>
     </form>
+    <form action="viewExamination" method='POST' enctype="multipart/form-data" id="viewExaminationForm">
+    <button type="submit" form="viewExaminationForm" value="@sampleId"  name="sampleId" >Examine</button>
+    <input type="hidden" value="@imagePath" name="imagePath">
+    </form>
     </td>
     </tr>
 </table>

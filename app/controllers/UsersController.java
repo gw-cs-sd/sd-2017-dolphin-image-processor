@@ -12,6 +12,13 @@ public class UsersController extends Controller
 {
 	@Inject FormFactory formFactory; //this literally took years
 	
+	public Result initialRender()
+	{
+		MySQLCon db = new MySQLCon();
+		Content html = users.render("Dolphin Image Processor", db.getUsers());
+		return ok(html);
+	}
+	
 	public Result addNewUser()
 	{
 		//needs to handle case where Add New User button is clicked with empty text field
