@@ -179,6 +179,7 @@ public class MySQLCon
 				sample.setHeight(rs.getString(13));
 				sample.setNumBytes(rs.getString(14));
 				sample.setComment(rs.getString(15));
+				sample.setBloodStatus(rs.getString(16));
 			}
 			conn.close();		
 		}
@@ -213,6 +214,7 @@ public class MySQLCon
 				sample.setHeight(rs.getString(13));
 				sample.setNumBytes(rs.getString(14));
 				sample.setComment(rs.getString(15));
+				sample.setBloodStatus(rs.getString(16));
 				samples.add(sample);
 			}
 			conn.close();		
@@ -243,8 +245,8 @@ public class MySQLCon
 		{
 			//insert a new sample into the database
 			conn = DB.getConnection();
-			st = conn.prepareStatement("INSERT into sample (userId, name, x, y, z, segmentCount, width, height, bytes, comment)"
-					+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+			st = conn.prepareStatement("INSERT into sample (userId, name, x, y, z, segmentCount, width, height, bytes, comment, bloodStatus)"
+					+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			st.setString(1, userId);
 			st.setString(2, sample.getName());
 			st.setString(3, sample.getR());
@@ -255,6 +257,7 @@ public class MySQLCon
 			st.setString(8, sample.getHeight());
 			st.setString(9, sample.getNumBytes());
 			st.setString(10, sample.getComment());
+			st.setString(11, sample.getBloodStatus());
 			st.execute();
 			conn.close();
 		}

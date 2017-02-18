@@ -16,6 +16,7 @@ public class DBSample
 	String height;
 	String numBytes;
 	String comment;
+	String bloodStatus;
 	//automatically made getters and setters with eclipse
 	//so that's kinda cool
 	public String getSampleId() {
@@ -89,6 +90,12 @@ public class DBSample
 	}
 	public void setComment(String comment) {
 		this.comment = comment;
+	}
+	public String getBloodStatus() {
+		return bloodStatus;
+	}
+	public void setBloodStatus(String bloodStatus) {
+		this.bloodStatus = bloodStatus;
 	}
 	
 }

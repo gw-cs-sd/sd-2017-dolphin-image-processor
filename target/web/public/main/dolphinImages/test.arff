@@ -1,6 +1,5 @@
 @relation MyRelation
 
-@attribute att1 numeric
 @attribute Area numeric
 @attribute Width numeric
 @attribute Height numeric
@@ -9,7 +8,7 @@
 @attribute Convexity numeric
 
 @data
-1,0,0,0,0,0,0
-1,0,0,0,0,0,0
-1,0,0,0,0,0,0
-1,0,0,0,0,0,0
+15,15,1,32,0.184078,1
+15,15,1,32,0.184078,1
+30,15,2,34,0.326117,1
+30,15,2,34,0.326117,1

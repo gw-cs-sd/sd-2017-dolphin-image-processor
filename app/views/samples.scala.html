@@ -20,6 +20,11 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	<form action='addSample' method='POST' enctype="multipart/form-data" id="addSampleForm">
     	<input type='file' name='fileupload'>
     	<button type="submit" form="addSampleForm" value="@userId"  name="userId" >Add</button>
+    	<br>
+    	This image is best described as:
+    	<br>
+		<input type="radio" name="bloodStatusRadio" value="notBlood"> Not Blood<br>
+		<input type="radio" name="bloodStatusRadio" value="blood" checked> Blood<br>
     	</form>
     	</td>
     	<td class="tg-j0tj" style="text-align: center;">
@@ -42,6 +47,7 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     <th class="tg-amwm">G</th>
     <th class="tg-amwm">B</th>
     <th class="tg-amwm">Date</th>
+    <th class="tg-amwm">bloodStatus</th>
     <th class="tg-amwm">Action</th>
 </tr>
 @for((sample,i) <- samples.zipWithIndex) {
@@ -57,6 +63,7 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     <td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@sample.getG()</td>
     <td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@sample.getB()</td>
     <td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@sample.getDateCreated()</td>
+    <td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@sample.getBloodStatus()</td>
     <td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>
         <input type="hidden" name="userId" value="@sample.getUserId()">
         <form action='viewSample' method='POST' enctype="multipart/form-data" id="viewSampleForm">

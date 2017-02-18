@@ -79,4 +79,5 @@ public class SegmentAttributor {
 	public SegmentAttribute getConvexity(Segment seg, ImagePlus orig){
 		return new SegmentAttribute("Convexity", seg.getConvexity(orig));
 	}
+	
 }

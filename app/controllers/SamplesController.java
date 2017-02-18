@@ -8,6 +8,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 
 import javax.inject.Inject;
+import javax.swing.JOptionPane;
 
 import db.MySQLCon;
 import ij.IJ;
@@ -42,7 +43,8 @@ public class SamplesController extends Controller
 		System.out.println("requestData.get().toString():"+requestData.get().toString());
         String userId = requestData.get("userId");//works
         System.out.println("userId:"+userId);
-        
+        String bloodStatus = requestData.get("bloodStatusRadio");
+        System.out.println("bloodStatus:"+bloodStatus);
         
 		MySQLCon db = new MySQLCon();
 		DBSample sample = new DBSample();
@@ -107,6 +109,8 @@ public class SamplesController extends Controller
 		
 		Long length = dstFile.length();
 		sample.setNumBytes(length.toString());
+		
+		sample.setBloodStatus(bloodStatus);
 		
 		//COMMENT THIS OUT---------------------------------------
 		/*
@@ -174,6 +178,12 @@ public class SamplesController extends Controller
 		System.out.println("14.0 of X: WEKA: Convert SAT to .ARFF and save file");
 		WekaFileWriter wfw = new WekaFileWriter();
 		wfw.convertSATtoARFF(sat);
+		
+		System.out.println("15.0 of X: SUPERVISED LEARNING CLASSIFICATION: Save bloodStatus into the DB");
+		
+		
+		
+		
 		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);

@@ -1,13 +1,13 @@
-New log file opened at Fri Feb 17 23:22:58 EST 2017 by 16484@akzysk-W370ST
-Taking next connection to: 63159
-New client attempting to connect on port: 63160-63159
-  Address = /192.168.56.1:63159
-This client on port 63160 has uuid 2172050a-4761-4c2c-8895-c83a8badba49 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2172050a-4761-4c2c-8895-c83a8badba49
-Taking next connection to: 63159
-New client attempting to connect on port: 63161-63159
-  Address = /192.168.56.1:63159
-Handshake exception on socket: 63161
+New log file opened at Sat Feb 18 12:27:41 EST 2017 by 7420@akzysk-W370ST
+Taking next connection to: 51230
+New client attempting to connect on port: 51231-51230
+  Address = /192.168.56.1:51230
+This client on port 51231 has uuid 1f0ae710-fe09-4dde-ade7-ee32dfa7d20f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-1f0ae710-fe09-4dde-ade7-ee32dfa7d20f
+Taking next connection to: 51230
+New client attempting to connect on port: 51232-51230
+  Address = /192.168.56.1:51230
+Handshake exception on socket: 51232
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,24 +23,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63159
-New client attempting to connect on port: 63162-63159
-  Address = /192.168.56.1:63159
-This client on port 63162 has uuid 4defcd82-398f-4472-be2f-edbd3b4ac328 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2172050a-4761-4c2c-8895-c83a8badba49, activator-4defcd82-398f-4472-be2f-edbd3b4ac328
-Taking next connection to: 63159
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
-New client attempting to connect on port: 63335-63159
-  Address = /192.168.56.1:63159
-Handshake exception on socket: 63335
+Taking next connection to: 51230
+New client attempting to connect on port: 51233-51230
+  Address = /192.168.56.1:51230
+This client on port 51233 has uuid d845161e-4d15-472a-9000-baad344c05ec configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-1f0ae710-fe09-4dde-ade7-ee32dfa7d20f, activator-d845161e-4d15-472a-9000-baad344c05ec
+Taking next connection to: 51230
+New client attempting to connect on port: 51236-51230
+  Address = /192.168.56.1:51230
+Handshake exception on socket: 51236
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -56,52 +47,136 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63159
-New client attempting to connect on port: 63336-63159
-  Address = /192.168.56.1:63159
-This client on port 63336 has uuid 01cc8766-0f6b-489a-9663-f8c10f93ba23 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-4defcd82-398f-4472-be2f-edbd3b4ac328, play-fork-run-01cc8766-0f6b-489a-9663-f8c10f93ba23
-Taking next connection to: 63159
+Taking next connection to: 51230
+New client attempting to connect on port: 51237-51230
+  Address = /192.168.56.1:51230
+This client on port 51237 has uuid 16b8ec00-fc6e-45b1-b71b-e74137b48615 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-d845161e-4d15-472a-9000-baad344c05ec, play-fork-run-16b8ec00-fc6e-45b1-b71b-e74137b48615
+Taking next connection to: 51230
+New client attempting to connect on port: 51291-51230
+  Address = /192.168.56.1:51230
+Handshake exception on socket: 51291
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51230
+New client attempting to connect on port: 51292-51230
+  Address = /192.168.56.1:51230
+This client on port 51292 has uuid 88308484-67cb-4b7e-a2c4-243b83bfdc17 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-d845161e-4d15-472a-9000-baad344c05ec, play-fork-run-88308484-67cb-4b7e-a2c4-243b83bfdc17
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63159
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51230
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
 1 daemon clients are connected.
 Server socket thread exiting.
 1 clients open, will close them...
 All client sockets have been closed.
-Closing the 16484@akzysk-W370ST logs at Sat Feb 18 00:11:34 EST 2017, goodbye.
+Closing the 7420@akzysk-W370ST logs at Sat Feb 18 14:09:54 EST 2017, goodbye.
