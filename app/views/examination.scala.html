@@ -31,6 +31,14 @@
     <input type="hidden" value="@examImagePath" name="examImagePath">
     </form>
     
+    <a href="javascript:showhide('uniquename')">
+    		Is this an image of a bloodstain?
+    </a>
+    
+    <div id="uniquename" style="display:none;">
+    	<p>Content goes here.</p>
+    </div>
+    
 <!-- COMMENT OUT FOR NOW
     <p>
         Original (1 of 4):
@@ -56,6 +64,7 @@ END COMMENT OUT -->
 
     </body>
     <script type="text/javascript">
+    var sampId = "@sampleId";
     function buttonClick(subEvent)
     {
         var mainEvent = subEvent ? subEvent : window.event;
@@ -93,5 +102,24 @@ END COMMENT OUT -->
         document.getElementById('clickImageForm').submit();
         
     }
+    
+    //MOCK-UP DEMO
+    function showhide(id) {
+       	var e = document.getElementById(id);
+       	
+       	var inner;
+       	if(sampId === '54')
+       	{
+       		inner = '<p>YES</p>';
+       	}
+       	else
+       	{
+       		inner = '<p>NO</p>';
+       	}
+       	
+       	document.getElementById(id).innerHTML = inner;
+       	
+       	e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+     }
 	</script>
 </html>

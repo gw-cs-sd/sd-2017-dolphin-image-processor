@@ -1,0 +1,15 @@
+@relation MyRelation
+
+@attribute att1 numeric
+@attribute Area numeric
+@attribute Width numeric
+@attribute Height numeric
+@attribute Perimeter numeric
+@attribute Circularity numeric
+@attribute Convexity numeric
+
+@data
+15,15,1,32,0.184078,1,0
+15,15,1,32,0.184078,1,0
+30,15,2,34,0.326117,1,0
+30,15,2,34,0.326117,1,0

@@ -1,6 +1,7 @@
 package controllers;
 
 import java.awt.Color;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.StandardCopyOption;
@@ -20,6 +21,7 @@ import play.mvc.*;
 import play.twirl.api.Content;
 import services.*;
 import views.html.*;
+import wekapack.*;
 
 public class SamplesController extends Controller
 {
@@ -168,6 +170,10 @@ public class SamplesController extends Controller
 		
 		System.out.println("13.0 of X: DB SAVE SEGMENTS: Add all the segments of this sample to the database");
 		sat.saveSegmentsToDB(sampleId);
+		
+		System.out.println("14.0 of X: WEKA: Convert SAT to .ARFF and save file");
+		WekaFileWriter wfw = new WekaFileWriter();
+		wfw.convertSATtoARFF(sat);
 		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);

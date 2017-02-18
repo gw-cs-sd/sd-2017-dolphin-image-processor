@@ -37,6 +37,11 @@ public class SegAttributesTable {
 		return attributesTable.get(segmentLabel);
 	}
 	
+	public int getNumSegments()
+	{
+		return numSegments;
+	}
+	
 	public void populate()
 	{
 		for(int i = 0; i < numSegments; i++)

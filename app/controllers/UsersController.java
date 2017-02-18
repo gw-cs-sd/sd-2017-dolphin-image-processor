@@ -7,6 +7,7 @@ import play.data.*;
 import play.mvc.*;
 import play.twirl.api.Content;
 import views.html.*;
+import wekapack.WekaFileWriterOld;
 
 public class UsersController extends Controller
 {
@@ -14,6 +15,8 @@ public class UsersController extends Controller
 	
 	public Result initialRender()
 	{
+		//testWekaWriter();
+		
 		MySQLCon db = new MySQLCon();
 		Content html = users.render("Dolphin Image Processor", db.getUsers());
 		return ok(html);
@@ -77,5 +80,11 @@ public class UsersController extends Controller
 		//go to samples view for this user
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
+	}
+	
+	public void testWekaWriter()
+	{
+		WekaFileWriterOld writer = new WekaFileWriterOld();
+		writer.test();
 	}
 }
