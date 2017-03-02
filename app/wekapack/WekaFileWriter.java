@@ -25,7 +25,28 @@ public class WekaFileWriter
 		
 	}
 	
-	public void convertSATtoARFF(SegAttributesTable sat)
+	public Instances saveSATListasARFF(ArrayList<SegAttributesTable> list)
+	{
+		Instances result = new Instances("MyRelation", atts, 0);
+		for(SegAttributesTable sat : list)
+		{
+			if(sat.getNumSegments() > 0)
+			{
+				saveSATasARFF(sat);
+				//append the segment data of each SAT to the result
+				result = Instances.mergeInstances(result, data);
+			}
+			else
+			{
+				System.out.println("ERROR: SAT is empty");
+			}
+		}
+		data = result;
+		writeDataToFile("public/dolphinImages/test.arff");
+		return result;
+	}
+	
+	public void saveSATasARFF(SegAttributesTable sat)
 	{
 		if(sat.getNumSegments() > 0)
 		{
@@ -111,6 +132,7 @@ public class WekaFileWriter
 			vals[i] = Double.parseDouble(strVal);
 			i++;
 	    }
+		
 		data.add(new DenseInstance(1.0, vals));
 	}
 	

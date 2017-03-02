@@ -57,7 +57,7 @@ Seq[Any](format.raw/*1.45*/("""
 object test extends test_Scope0.test
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 17 23:23:48 EST 2017
+                  DATE: Fri Feb 24 15:06:44 EST 2017
                   SOURCE: C:/Users/Andrew/play-java-1/app/views/test.scala.html
                   HASH: f586183dbf219564c8c037b669f769526d9ce20a
                   MATRIX: 756->1|894->44|924->48|963->61|995->73|1037->90|1070->108|1109->110|1139->114|1169->119|1181->123|1211->133|1248->141|1276->143

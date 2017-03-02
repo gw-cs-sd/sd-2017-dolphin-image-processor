@@ -98,7 +98,7 @@ public class SamplesController extends Controller
 	        		//return badRequest();
 		}
 		
-		System.out.println("6 of X: BUILD DBSAMPLE: width, height, bytes");
+		System.out.println("6 of X: BUILD DBSAMPLE: width, height, bytes, bloodStatus");
 		//
 		
 		Integer width = imp.getWidth();
@@ -110,6 +110,7 @@ public class SamplesController extends Controller
 		Long length = dstFile.length();
 		sample.setNumBytes(length.toString());
 		
+		System.out.println("6.1 of X: BUILD DBSAMPLE: set bloodStatus of SAMPLE");
 		sample.setBloodStatus(bloodStatus);
 		
 		//COMMENT THIS OUT---------------------------------------
@@ -175,15 +176,18 @@ public class SamplesController extends Controller
 		System.out.println("13.0 of X: DB SAVE SEGMENTS: Add all the segments of this sample to the database");
 		sat.saveSegmentsToDB(sampleId);
 		
+		//System.out.println("13.1 of X: DB SAVE SEGMENTS: Add bloodStatus to all the segments of this sample in DB");
+		//db.populateSegmentBloodStatus(sample);
+		
 		System.out.println("14.0 of X: WEKA: Convert SAT to .ARFF and save file");
 		WekaFileWriter wfw = new WekaFileWriter();
-		wfw.convertSATtoARFF(sat);
+		wfw.saveSATasARFF(sat);
+		wfw.writeDataToFile("public/dolphinImages/test.arff");
 		
-		System.out.println("15.0 of X: SUPERVISED LEARNING CLASSIFICATION: Save bloodStatus into the DB");
-		
-		
-		
-		
+		System.out.println("14.1 of X: WEKA: Convert DBSegment to .ARFF and save file");
+		ArrayList<DBSegment> wekaSegments = db.getSegments(sampleId);
+		WekaFileWriterDB wfwdb = new WekaFileWriterDB();
+		wfwdb.saveDBSegmentsasARFF(wekaSegments);
 		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);

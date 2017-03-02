@@ -14,6 +14,7 @@ import ij.process.ImageConverter;
 import ij.io.Opener;
 import ij.io.FileSaver;
 import ij.process.ImageProcessor;
+import models.DBSample;
 import models.DBSegment;
 
 public class SegAttributesTable {
@@ -70,6 +71,7 @@ public class SegAttributesTable {
 	public void saveSegmentsToDB(String sampleId)
 	{
 		MySQLCon db = new MySQLCon();
+		DBSample sample = db.getSample(sampleId);
 		
 		for(int i = 0; i < numSegments; i++)
 		{
@@ -79,6 +81,9 @@ public class SegAttributesTable {
 			DBSegment segment = new DBSegment();
 			segment.setSampleId(sampleId);
 			segment.setLabel(((Integer)i).toString());
+			
+			segment.setBloodStatus(sample.getBloodStatus());
+			//System.out.println("segment blood status = " + segment.getBloodStatus());
 			
 			//pass the segment attribute derived data to the DBSegment
 			for(SegmentAttribute s : arr)

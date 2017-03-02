@@ -1,5 +1,7 @@
 package models;
 
+import java.util.ArrayList;
+
 public class DBSegment
 {
 	private String segmentId;
@@ -9,6 +11,31 @@ public class DBSegment
 	private String width;
 	private String height;
 	private String perimeter;
+	private String bloodStatus;
+	
+	public ArrayList<String> getAttributeNamesAsList()
+	{
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("area");
+		list.add("width");
+		list.add("height");
+		list.add("perimeter");
+		list.add("bloodStatus");
+		
+		return list;
+	}
+	
+	public ArrayList<String> getAttributeValuesAsList()
+	{
+		ArrayList<String> list = new ArrayList<String>();
+		list.add(area);
+		list.add(width);
+		list.add(height);
+		list.add(perimeter);
+		list.add(bloodStatus);
+		
+		return list;
+	}
 	
 	public String getSegmentId() {
 		return segmentId;
@@ -51,5 +78,11 @@ public class DBSegment
 	}
 	public void setPerimeter(String perimeter) {
 		this.perimeter = perimeter;
+	}
+	public String getBloodStatus() {
+		return bloodStatus;
+	}
+	public void setBloodStatus(String bloodStatus) {
+		this.bloodStatus = bloodStatus;
 	}
 }

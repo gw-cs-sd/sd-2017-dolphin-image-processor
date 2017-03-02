@@ -27,6 +27,7 @@ public class MySQLCon
 			{
 				System.out.println(rs.getInt(1) + " " + rs.getString(2));
 			}
+			st.close();
 			conn.close();
 		}
 		catch(Exception e)
@@ -52,6 +53,7 @@ public class MySQLCon
 				user.setName(rs.getString(2));
 				list.add(user);
 			}
+			st.close();
 			conn.close();
 		}
 		catch(Exception e)
@@ -74,6 +76,7 @@ public class MySQLCon
 		{
 			result = rs.getInt(1);
 		}
+		st.close();
 		conn.close();
 		return result;
 	}
@@ -90,6 +93,7 @@ public class MySQLCon
 			{
 				result = rs.getString(2);
 			}
+			st.close();
 			conn.close();
 		} catch (Exception e) {
 			System.out.println(e);
@@ -112,6 +116,7 @@ public class MySQLCon
 				st = conn.prepareStatement("INSERT into USER (name) values (?)");
 				st.setString (1, userName);
 				st.execute(); //use execute instead of executeQuery (???!!) Because it is an insert, I guess
+				st.close();
 				conn.close();
 				result = getUserId(userName);
 				System.out.println("user " + userName + " added");
@@ -147,6 +152,7 @@ public class MySQLCon
 			st = conn.prepareStatement("DELETE from USER where iduser = ?");
 			st.setInt(1, userIdInteger);
 			st.execute();
+			st.close();
 			conn.close();
 		}
 		catch (Exception e)
@@ -181,6 +187,7 @@ public class MySQLCon
 				sample.setComment(rs.getString(15));
 				sample.setBloodStatus(rs.getString(16));
 			}
+			st.close();
 			conn.close();		
 		}
 		catch (Exception e)
@@ -217,6 +224,7 @@ public class MySQLCon
 				sample.setBloodStatus(rs.getString(16));
 				samples.add(sample);
 			}
+			st.close();
 			conn.close();		
 		}
 		catch (Exception e)
@@ -259,6 +267,7 @@ public class MySQLCon
 			st.setString(10, sample.getComment());
 			st.setString(11, sample.getBloodStatus());
 			st.execute();
+			st.close();
 			conn.close();
 		}
 		catch (Exception e)
@@ -282,18 +291,42 @@ public class MySQLCon
 	
 	public void addSegment(DBSegment segment)
 	{
+		//DBSample sample = getSample(segment.getSampleId());
+		//segment.setBloodStatus(sample.getBloodStatus());
 		try
 		{
 			//insert a new sample into the database
 			conn = DB.getConnection();
-			st = conn.prepareStatement("INSERT into segment (sampleId, label, area, width, height, perimeter)"
-					+ " values (?, ?, ?, ?, ?, ?)");
+			st = conn.prepareStatement("INSERT into segment (sampleId, label, area, width, height, perimeter, bloodStatus)"
+					+ " values (?, ?, ?, ?, ?, ?, ?)");
 			st.setString(1, segment.getSampleId());
 			st.setString(2, segment.getLabel());
 			st.setString(3, segment.getArea());
 			st.setString(4, segment.getWidth());
 			st.setString(5, segment.getHeight());
 			st.setString(6, segment.getPerimeter());
+			st.setString(7, segment.getBloodStatus());
+			//System.out.println("segment blood status = " + segment.getBloodStatus());
+			st.execute();
+			st.close();
+			conn.close();
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	/*
+	public void populateSegmentBloodStatus(DBSample sample)
+	{
+		try
+		{
+			//populate all segments for this sample with its bloodStatus
+			conn = DB.getConnection();
+			st = conn.prepareStatement("UPDATE segment SET bloodStatus = ? WHERE sampleId = ?");
+			st.setString(1, sample.getBloodStatus());
+			st.setString(2, sample.getSampleId());
 			st.execute();
 			conn.close();
 		}
@@ -302,6 +335,7 @@ public class MySQLCon
 			System.out.println(e);
 		}
 	}
+	*/
 	
 	public void deleteSample(String sampleId)
 	{
@@ -313,6 +347,7 @@ public class MySQLCon
 			Integer sampleIdInteger = Integer.parseInt(sampleId);
 			st.setInt(1, sampleIdInteger);
 			st.execute();
+			st.close();
 			conn.close();
 		}
 		catch (Exception e)
@@ -332,6 +367,7 @@ public class MySQLCon
 			Integer sampleIdInteger = Integer.parseInt(sampleId);
 			st.setInt(1, sampleIdInteger);
 			st.execute();
+			st.close();
 			conn.close();
 		}
 		catch (Exception e)
@@ -353,13 +389,15 @@ public class MySQLCon
 				DBSegment segment = new DBSegment();
 				segment.setSegmentId(((Integer)rs.getInt(1)).toString());
 				segment.setSampleId(sampleId);
-				segment.setLabel(((Integer)rs.getInt(2)).toString());
-				segment.setArea(((Integer)rs.getInt(3)).toString());
-				segment.setWidth(((Integer)rs.getInt(4)).toString());
-				segment.setHeight(((Integer)rs.getInt(5)).toString());
-				segment.setPerimeter(((Integer)rs.getInt(6)).toString());
+				segment.setLabel(((Integer)rs.getInt(3)).toString());
+				segment.setArea(((Integer)rs.getInt(4)).toString());
+				segment.setWidth(((Integer)rs.getInt(5)).toString());
+				segment.setHeight(((Integer)rs.getInt(6)).toString());
+				segment.setPerimeter(((Integer)rs.getInt(7)).toString());
+				segment.setBloodStatus(rs.getString(8));
 				segments.add(segment);
 			}
+			st.close();
 			conn.close();		
 		}
 		catch (Exception e)
