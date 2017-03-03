@@ -22,6 +22,7 @@ import play.mvc.*;
 import play.twirl.api.Content;
 import services.*;
 import views.html.*;
+import weka.core.Instances;
 import wekapack.*;
 
 public class SamplesController extends Controller
@@ -184,11 +185,51 @@ public class SamplesController extends Controller
 		wfw.saveSATasARFF(sat);
 		wfw.writeDataToFile("public/dolphinImages/test.arff");
 		
-		System.out.println("14.1 of X: WEKA: Convert DBSegment to .ARFF and save file");
+		System.out.println("14.1 of X: WEKA: Convert DBSegment to Instances object");
 		ArrayList<DBSegment> wekaSegments = db.getSegments(sampleId);
 		WekaFileWriterDB wfwdb = new WekaFileWriterDB();
-		wfwdb.saveDBSegmentsasARFF(wekaSegments);
+		wfwdb.saveDBSegmentsasInstances(wekaSegments);
 		
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		return ok(html);
+	}
+	
+	public Result addToTraining()
+	{
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+		String sampleId = requestData.get("sampleId");
+		MySQLCon db = new MySQLCon();
+		
+		DBSample sample = db.getSample(sampleId);
+		
+		WekaFileWriterDB wfw = new WekaFileWriterDB();
+		ArrayList<DBSegment> list = db.getSegments(sampleId);
+		wfw.saveDBSegmentsasInstances(list);
+		
+		String filepath = "public/wekafiles/training.arff";
+		
+		//check if file "public/wekafiles/training.arff" exists
+		File trainingFile = new File(filepath);
+		Instances data;
+		if(trainingFile.exists())
+		{
+			Instances existingData = wfw.readDataFromFile(filepath);
+			data = wfw.saveDBSegmentsasInstances(list);
+			//data = Instances.mergeInstances(existingData, data);
+			data.addAll(existingData);
+			wfw.writeDataToFile(data, filepath);
+			System.out.println("Adding to existing training.arff file");
+		}
+		else
+		{
+			data = wfw.saveDBSegmentsasInstances(list);
+			wfw.writeDataToFile(data, filepath);
+			System.out.println("Creating new training.arff");
+		}
+		System.out.println("Added Segments from Sample " + sampleId + " to training set");
+		
+		
+		String userId = sample.getUserId();
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
 	}

@@ -12,6 +12,7 @@ import services.*;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instances;
+import weka.core.converters.ConverterUtils.DataSource;
 
 public class WekaFileWriterDB
 {
@@ -26,42 +27,26 @@ public class WekaFileWriterDB
 		
 	}
 	
-	/*
-	public Instances saveSATListasARFF(ArrayList<SegAttributesTable> list)
+	public Instances getInstances()
 	{
-		Instances result = new Instances("MyRelation", atts, 0);
-		for(SegAttributesTable sat : list)
-		{
-			if(sat.getNumSegments() > 0)
-			{
-				saveSATasARFF(sat);
-				//append the segment data of each SAT to the result
-				result = Instances.mergeInstances(result, data);
-			}
-			else
-			{
-				System.out.println("ERROR: SAT is empty");
-			}
-		}
-		data = result;
-		writeDataToFile("public/dolphinImages/test.arff");
-		return result;
+		return data;
 	}
-	*/
 	
-	public void saveDBSegmentsasARFF(ArrayList<DBSegment> segList)
+	public Instances saveDBSegmentsasInstances(ArrayList<DBSegment> segList)
 	{
+		Instances result = null;
 		if(segList.size() > 0)
 		{
 			initAttributes(segList.get(0));
 			initInstanceObject();
-			populateData(segList);
-			writeDataToFile("public/dolphinImages/test.arff");
+			result = populateData(segList);
+			//writeDataToFile("public/dolphinImages/test.arff");
 		}
 		else
 		{
 			System.out.println("ERROR: list is empty");
 		}
+		return result;
 	}
 	
 	public void writeDataToFile(String filepath)
@@ -77,6 +62,35 @@ public class WekaFileWriterDB
 		}
 	}
 	
+	public void writeDataToFile(Instances data, String filepath)
+	{
+		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+	            new FileOutputStream(filepath), "utf-8")))
+		{
+			writer.write(data.toString());
+		}
+		catch(IOException e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	public Instances readDataFromFile(String filepath)
+	{
+		Instances readData = null;
+		try
+		{
+			DataSource source = new DataSource(filepath);
+			readData = source.getDataSet();
+			// setting class attribute if the data format does not provide this information
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return readData;
+	}
+	
 	//takes input of type SegAttributesMultiple. Alternatively can be taken from a SAT at index 0.
 	public void initAttributes(DBSegment seg)
 	{
@@ -90,7 +104,11 @@ public class WekaFileWriterDB
 	    {
 	    	if(name.equals("bloodStatus"))
 	    	{
-	    		atts.add(new Attribute(name, (ArrayList<String>) null));
+	    		// - nominal
+	    	    attVals = new ArrayList<String>();
+	    	    attVals.add("blood");
+	    	    attVals.add("notBlood");
+	    	    atts.add(new Attribute(name, attVals));
 	    	}
 	    	else
 	    	{
@@ -105,8 +123,9 @@ public class WekaFileWriterDB
 	    data = new Instances("MyRelation", atts, 0);
 	}
 	
-	//populate all instances in the SAT
-	public void populateData(ArrayList<DBSegment> list)
+	//populate all instances in the list of segments
+	//return data instances
+	public Instances populateData(ArrayList<DBSegment> list)
 	{
 		int numSegments = list.size();
 		for(int i = 0; i < numSegments; i++)
@@ -114,6 +133,8 @@ public class WekaFileWriterDB
 			DBSegment seg = list.get(i);
 			populateDataSingle(seg); //call method to populate a single instance
 		}
+		
+		return data;
 	}
 	
 	//populate a single instance
@@ -125,10 +146,10 @@ public class WekaFileWriterDB
 		int i = 0;
 		for(String strVal : attrList)
 		{
-			System.out.println(i + " : " + strVal);
+			//System.out.println(i + " : " + strVal);
 			if(attrNameList.get(i).equals("bloodStatus"))
 			{
-				vals[i] = data.attribute(i).addStringValue(strVal);
+				vals[i] = attVals.indexOf(strVal);
 			}
 			else
 			{

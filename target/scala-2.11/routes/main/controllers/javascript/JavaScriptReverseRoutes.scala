@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Fri Feb 24 15:06:43 EST 2017
+// @DATE:Fri Mar 03 14:45:44 EST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -43,12 +43,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
-    def viewSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SamplesController.viewSample",
+    // @LINE:23
+    def addSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.addSample",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "viewSample"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addSample"})
         }
       """
     )
@@ -63,22 +63,32 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:27
+    def addToTraining: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.addToTraining",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addToTraining"})
+        }
+      """
+    )
+  
+    // @LINE:26
+    def viewSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.viewSample",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "viewSample"})
+        }
+      """
+    )
+  
     // @LINE:24
     def requestDeleteSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SamplesController.requestDeleteSample",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "requestDeleteSample"})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def addSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SamplesController.addSample",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addSample"})
         }
       """
     )
@@ -105,7 +115,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:29
+  // @LINE:30
   class ReverseExaminationController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -113,7 +123,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:31
+    // @LINE:32
     def revertToOriginal: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.revertToOriginal",
       """
@@ -123,7 +133,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:30
+    // @LINE:31
     def clickImage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.clickImage",
       """
@@ -133,7 +143,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:29
+    // @LINE:30
     def backToSegments: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.backToSegments",
       """
@@ -145,7 +155,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:27
+  // @LINE:28
   class ReverseSegmentsController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -153,7 +163,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:28
+    // @LINE:29
     def viewExamination: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SegmentsController.viewExamination",
       """
@@ -163,7 +173,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:28
     def backToSamples: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SegmentsController.backToSamples",
       """

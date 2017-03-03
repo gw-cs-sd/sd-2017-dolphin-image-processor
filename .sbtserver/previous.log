@@ -1,5 +1,5 @@
-New log file opened at Thu Mar 02 16:10:20 EST 2017 by 13540@akzysk-W370ST
-jvm 13540@akzysk-W370ST
+New log file opened at Fri Mar 03 14:29:28 EST 2017 by 14036@akzysk-W370ST
+jvm 14036@akzysk-W370ST
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.121-b13
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Andrew\play-java-1\project, returning: (play-java-1-build)
 Loading project definition from C:\Users\Andrew\play-java-1\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@59546a43, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@423b6cc0, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,10 +67,1920 @@ Set current project to play-java (in build file:/C:/Users/Andrew/play-java-1/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@736e2ae0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 3 s, completed Mar 3, 2017 2:29:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@498730b6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Mar 3, 2017 2:30:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@9b8f17b, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 2:30:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ce8f46d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Mar 3, 2017 2:30:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@7233e212, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 2:30:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@28d83133, check cycles: false
+Total time: 1 s, completed Mar 3, 2017 2:30:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c570f70, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 2:30:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@58a2c148, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
+Total time: 5 s, completed Mar 3, 2017 2:36:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@53bbe533, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 5dd6b89d, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes;C:\activator\activator-dist-1.3.10\repository\org.scala-lang\scala-library\2.11.7\jars\scala-library.jar
+	-classpath
+	C:\Users\Andrew\play-java-1\target\scala-2.11\classes;C:\Users\Andrew\play-java-1\lib\ij.jar;C:\Users\Andrew\play-java-1\lib\mysql-connector-java-5.1.40-bin.jar;C:\Users\Andrew\play-java-1\lib\weka.jar;C:\activator\activator-dist-1.3.10\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;C:\Users\Andrew\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Andrew\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-enhancer\jars\play-enhancer-1.1.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.4.jar;C:\activator\activator-dist-1.3.10\repository\org.joda\joda-convert\1.8.1\jars\joda-convert.jar;C:\activator\activator-dist-1.3.10\repository\org.scala-lang\scala-reflect\2.11.7\jars\scala-reflect.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.slf4j\slf4j-api\1.7.21\jars\slf4j-api.jar;C:\Users\Andrew\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.21.jar;C:\Users\Andrew\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.21.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-streams_2.11\jars\play-streams_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.reactivestreams\reactive-streams\1.0.0\jars\reactive-streams.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-stream_2.11\jars\akka-stream_2.11-2.4.10.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.4.10.jar;C:\activator\activator-dist-1.3.10\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.7.0\bundles\scala-java8-compat_2.11.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\ssl-config-akka_2.11\bundles\ssl-config-akka_2.11-0.2.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\ssl-config-core_2.11\bundles\ssl-config-core_2.11-0.2.1.jar;C:\Users\Andrew\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.10.jar;C:\Users\Andrew\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Andrew\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Andrew\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Andrew\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Andrew\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Andrew\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Andrew\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Andrew\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.yaml\snakeyaml\1.16\bundles\snakeyaml.jar;C:\activator\activator-dist-1.3.10\repository\org.hibernate\hibernate-validator\5.2.4.Final\jars\hibernate-validator.jar;C:\Users\Andrew\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\Andrew\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.1.Final.jar;C:\activator\activator-dist-1.3.10\repository\com.fasterxml\classmate\1.1.0\bundles\classmate.jar;C:\activator\activator-dist-1.3.10\repository\javax.el\javax.el-api\3.0.0\jars\javax.el-api.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.2.7.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.2.7.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.2.7.RELEASE.jar;C:\activator\activator-dist-1.3.10\repository\org.reflections\reflections\0.9.10\jars\reflections.jar;C:\activator\activator-dist-1.3.10\repository\com.google.guava\guava\19.0\bundles\guava.jar;C:\activator\activator-dist-1.3.10\repository\net.jodah\typetools\0.4.4\bundles\typetools.jar;C:\activator\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\3.0.1\jars\jsr305.jar;C:\Users\Andrew\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.33.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.netty\netty-reactive-streams-http\jars\netty-reactive-streams-http-1.0.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.netty\netty-reactive-streams\jars\netty-reactive-streams-1.0.8.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-buffer\jars\netty-buffer-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-common\jars\netty-common-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-transport\jars\netty-transport-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.7.jar;C:\Users\Andrew\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.7.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.5.0.jar;C:\activator\activator-dist-1.3.10\repository\com.googlecode.usc\jdbcdslog\1.0.6.2\jars\jdbcdslog.jar;C:\Users\Andrew\.ivy2\cache\com.h2database\h2\jars\h2-1.4.192.jar;C:\Users\Andrew\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\async-http-client\jars\async-http-client-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-resolver-dns\jars\netty-resolver-dns-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-resolver\jars\netty-resolver-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-codec-dns\jars\netty-codec-dns-2.0.11.jar;C:\activator\activator-dist-1.3.10\repository\org.javassist\javassist\3.20.0-GA\bundles\javassist.jar;C:\Users\Andrew\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Andrew\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\activator\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;C:\activator\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Andrew\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 14.14681374 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 21 s, completed Mar 3, 2017 2:40:06 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@901fcf4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+
+Read from stdout: Compiling 5 Scala sources and 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 5 Scala sources and 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 1df4ac7a, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes;C:\activator\activator-dist-1.3.10\repository\org.scala-lang\scala-library\2.11.7\jars\scala-library.jar
+	-classpath
+	C:\Users\Andrew\play-java-1\target\scala-2.11\classes;C:\Users\Andrew\play-java-1\lib\ij.jar;C:\Users\Andrew\play-java-1\lib\mysql-connector-java-5.1.40-bin.jar;C:\Users\Andrew\play-java-1\lib\weka.jar;C:\activator\activator-dist-1.3.10\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;C:\Users\Andrew\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Andrew\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-enhancer\jars\play-enhancer-1.1.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.4.jar;C:\activator\activator-dist-1.3.10\repository\org.joda\joda-convert\1.8.1\jars\joda-convert.jar;C:\activator\activator-dist-1.3.10\repository\org.scala-lang\scala-reflect\2.11.7\jars\scala-reflect.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.slf4j\slf4j-api\1.7.21\jars\slf4j-api.jar;C:\Users\Andrew\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.21.jar;C:\Users\Andrew\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.21.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-streams_2.11\jars\play-streams_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.reactivestreams\reactive-streams\1.0.0\jars\reactive-streams.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-stream_2.11\jars\akka-stream_2.11-2.4.10.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.4.10.jar;C:\activator\activator-dist-1.3.10\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.7.0\bundles\scala-java8-compat_2.11.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\ssl-config-akka_2.11\bundles\ssl-config-akka_2.11-0.2.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\ssl-config-core_2.11\bundles\ssl-config-core_2.11-0.2.1.jar;C:\Users\Andrew\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.10.jar;C:\Users\Andrew\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Andrew\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Andrew\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Andrew\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Andrew\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Andrew\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Andrew\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Andrew\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.yaml\snakeyaml\1.16\bundles\snakeyaml.jar;C:\activator\activator-dist-1.3.10\repository\org.hibernate\hibernate-validator\5.2.4.Final\jars\hibernate-validator.jar;C:\Users\Andrew\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\Andrew\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.1.Final.jar;C:\activator\activator-dist-1.3.10\repository\com.fasterxml\classmate\1.1.0\bundles\classmate.jar;C:\activator\activator-dist-1.3.10\repository\javax.el\javax.el-api\3.0.0\jars\javax.el-api.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.2.7.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.2.7.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.2.7.RELEASE.jar;C:\activator\activator-dist-1.3.10\repository\org.reflections\reflections\0.9.10\jars\reflections.jar;C:\activator\activator-dist-1.3.10\repository\com.google.guava\guava\19.0\bundles\guava.jar;C:\activator\activator-dist-1.3.10\repository\net.jodah\typetools\0.4.4\bundles\typetools.jar;C:\activator\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\3.0.1\jars\jsr305.jar;C:\Users\Andrew\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.33.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.netty\netty-reactive-streams-http\jars\netty-reactive-streams-http-1.0.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.netty\netty-reactive-streams\jars\netty-reactive-streams-1.0.8.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-buffer\jars\netty-buffer-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-common\jars\netty-common-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-transport\jars\netty-transport-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.7.jar;C:\Users\Andrew\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.7.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.5.0.jar;C:\activator\activator-dist-1.3.10\repository\com.googlecode.usc\jdbcdslog\1.0.6.2\jars\jdbcdslog.jar;C:\Users\Andrew\.ivy2\cache\com.h2database\h2\jars\h2-1.4.192.jar;C:\Users\Andrew\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\async-http-client\jars\async-http-client-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-resolver-dns\jars\netty-resolver-dns-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-resolver\jars\netty-resolver-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-codec-dns\jars\netty-codec-dns-2.0.11.jar;C:\activator\activator-dist-1.3.10\repository\org.javassist\javassist\3.20.0-GA\bundles\javassist.jar;C:\Users\Andrew\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Andrew\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\activator\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;C:\activator\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Andrew\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 8.954229865 s
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:204:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:204:  error: cannot find symbol
+Read from stdout: 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+Read from stdout: 		                              ^
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		                              ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 17 s, completed Mar 3, 2017 2:46:00 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c50b819, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\samples.template.scala, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+
+Read from stdout: Compiling 5 Scala sources and 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 5 Scala sources and 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler b75ab4a, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes;C:\activator\activator-dist-1.3.10\repository\org.scala-lang\scala-library\2.11.7\jars\scala-library.jar
+	-classpath
+	C:\Users\Andrew\play-java-1\target\scala-2.11\classes;C:\Users\Andrew\play-java-1\lib\ij.jar;C:\Users\Andrew\play-java-1\lib\mysql-connector-java-5.1.40-bin.jar;C:\Users\Andrew\play-java-1\lib\weka.jar;C:\activator\activator-dist-1.3.10\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;C:\Users\Andrew\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Andrew\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-enhancer\jars\play-enhancer-1.1.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.4.jar;C:\activator\activator-dist-1.3.10\repository\org.joda\joda-convert\1.8.1\jars\joda-convert.jar;C:\activator\activator-dist-1.3.10\repository\org.scala-lang\scala-reflect\2.11.7\jars\scala-reflect.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.7.6.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.slf4j\slf4j-api\1.7.21\jars\slf4j-api.jar;C:\Users\Andrew\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.21.jar;C:\Users\Andrew\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.21.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-streams_2.11\jars\play-streams_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.reactivestreams\reactive-streams\1.0.0\jars\reactive-streams.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-stream_2.11\jars\akka-stream_2.11-2.4.10.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.4.10.jar;C:\activator\activator-dist-1.3.10\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.7.0\bundles\scala-java8-compat_2.11.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\ssl-config-akka_2.11\bundles\ssl-config-akka_2.11-0.2.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe\ssl-config-core_2.11\bundles\ssl-config-core_2.11-0.2.1.jar;C:\Users\Andrew\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.10.jar;C:\Users\Andrew\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Andrew\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Andrew\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Andrew\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Andrew\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Andrew\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Andrew\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Andrew\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\org.yaml\snakeyaml\1.16\bundles\snakeyaml.jar;C:\activator\activator-dist-1.3.10\repository\org.hibernate\hibernate-validator\5.2.4.Final\jars\hibernate-validator.jar;C:\Users\Andrew\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\Andrew\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.1.Final.jar;C:\activator\activator-dist-1.3.10\repository\com.fasterxml\classmate\1.1.0\bundles\classmate.jar;C:\activator\activator-dist-1.3.10\repository\javax.el\javax.el-api\3.0.0\jars\javax.el-api.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.2.7.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.2.7.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.2.7.RELEASE.jar;C:\activator\activator-dist-1.3.10\repository\org.reflections\reflections\0.9.10\jars\reflections.jar;C:\activator\activator-dist-1.3.10\repository\com.google.guava\guava\19.0\bundles\guava.jar;C:\activator\activator-dist-1.3.10\repository\net.jodah\typetools\0.4.4\bundles\typetools.jar;C:\activator\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\3.0.1\jars\jsr305.jar;C:\Users\Andrew\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.33.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.netty\netty-reactive-streams-http\jars\netty-reactive-streams-http-1.0.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.netty\netty-reactive-streams\jars\netty-reactive-streams-1.0.8.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-buffer\jars\netty-buffer-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-common\jars\netty-common-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-transport\jars\netty-transport-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.0.41.Final.jar;C:\Users\Andrew\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.7.jar;C:\Users\Andrew\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.7.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Andrew\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.5.0.jar;C:\activator\activator-dist-1.3.10\repository\com.googlecode.usc\jdbcdslog\1.0.6.2\jars\jdbcdslog.jar;C:\Users\Andrew\.ivy2\cache\com.h2database\h2\jars\h2-1.4.192.jar;C:\Users\Andrew\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.8.jar;C:\activator\activator-dist-1.3.10\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.5.8.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\async-http-client\jars\async-http-client-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-resolver-dns\jars\netty-resolver-dns-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-resolver\jars\netty-resolver-2.0.11.jar;C:\Users\Andrew\.ivy2\cache\org.asynchttpclient\netty-codec-dns\jars\netty-codec-dns-2.0.11.jar;C:\activator\activator-dist-1.3.10\repository\org.javassist\javassist\3.20.0-GA\bundles\javassist.jar;C:\Users\Andrew\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Andrew\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\activator\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;C:\activator\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Andrew\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 9.906130297 s
+Java compilation took 1.710698244 s
+Java analysis took 0.225277195 s
+Java compile + analysis took 1.958313964 s
+Invalidating C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+The C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala source file has the following regular definitions changed:
+	addToTraining.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java
+None of the modified names appears in C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\examination.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\main.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+The C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java source file has the following regular definitions changed:
+	addToTraining.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala: Set(addToTraining)
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Invalidating C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+The C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	addToTraining.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\examination.template.scala by C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java by C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\examination.template.scala
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Including C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java by C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\examination.template.scala
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\controllers\routes.java
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\Andrew\play-java-1\app\controllers\Application.java by C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\index.template.scala
+Including C:\Users\Andrew\play-java-1\app\controllers\HomeController.java by C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\index.template.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 17 s, completed Mar 3, 2017 2:47:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7781a5e0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.093453168 s
+Java analysis took 0.063536607 s
+Java compile + analysis took 2.209241439 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	getInstances.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.837800967 s
+Java analysis took 0.224854673 s
+Java compile + analysis took 3.116238592 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed Mar 3, 2017 2:50:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ee6c28f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.340488561 s
+Java analysis took 0.076317913 s
+Java compile + analysis took 2.481200101 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 2:50:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@23e0651, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 1.979236098 s
+Java analysis took 0.040344056 s
+Java compile + analysis took 2.124121545 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	populateData.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.30336688 s
+Java analysis took 0.239920508 s
+Java compile + analysis took 3.573454553 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed Mar 3, 2017 2:51:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@68557f16, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.756401665 s
+Java analysis took 0.077229672 s
+Java compile + analysis took 2.884905383 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 2:51:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@dbf60ca, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 3, 2017 2:53:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2aae4a74, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.928973026 s
+Java analysis took 0.219185258 s
+Java compile + analysis took 3.182315893 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 2:55:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a0e3ba4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.900398018 s
+Java analysis took 0.18452986 s
+Java compile + analysis took 3.125184693 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 2:56:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@68a0dede, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.182087099 s
+Java analysis took 0.124048843 s
+Java compile + analysis took 2.371111607 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 2:56:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e01b9e1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.009617092 s
+Java analysis took 0.228679185 s
+Java compile + analysis took 3.286145667 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 2:56:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@427d06c0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.614656057 s
+Java analysis took 0.088026234 s
+Java compile + analysis took 2.732778466 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	readDataFromFile.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.038815193 s
+Java analysis took 0.154563264 s
+Java compile + analysis took 3.237903689 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed Mar 3, 2017 3:01:10 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@76527783, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.303683771 s
+Java analysis took 0.071278434 s
+Java compile + analysis took 2.404296301 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 3, 2017 3:01:16 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e2eab39, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 1.709975508 s
+Java analysis took 0.050800206 s
+Java compile + analysis took 1.80892104 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 3, 2017 3:01:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f492ec0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:209:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:209:  error: cannot find symbol
+Read from stdout: 		wfw.writeDataToFile(filepath);
+Read from stdout: 		                    ^
+		wfw.writeDataToFile(filepath);
+		                    ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 4 s, completed Mar 3, 2017 3:02:04 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@576f2da2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:218:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:218:  error: cannot find symbol
+Read from stdout: 		wfw.writeDataToFile(filepath);
+Read from stdout: 		                    ^
+		wfw.writeDataToFile(filepath);
+		                    ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 3 s, completed Mar 3, 2017 3:05:13 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d2f0170, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:213:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:213:  error: cannot find symbol
+Read from stdout: 		Instances existingData = new Instances("MyRelation", atts, 0);
+Read from stdout: 		                                                     ^
+		Instances existingData = new Instances("MyRelation", atts, 0);
+		                                                     ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 4 s, completed Mar 3, 2017 3:07:38 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@70af06da, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:213:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:213:  error: cannot find symbol
+Read from stdout: 		Instances existingData = new Instances("MyRelation", atts, 0);
+Read from stdout: 		                                                     ^
+		Instances existingData = new Instances("MyRelation", atts, 0);
+		                                                     ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 4 s, completed Mar 3, 2017 3:11:02 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@32793a45, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:213:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:213:  error: cannot find symbol
+Read from stdout: 		Instances existingData = new Instances("MyRelation", atts, 0);
+Read from stdout: 		                                                     ^
+		Instances existingData = new Instances("MyRelation", atts, 0);
+		                                                     ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 3 s, completed Mar 3, 2017 3:11:13 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c4bc697, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.713589615 s
+Java analysis took 0.167813279 s
+Java compile + analysis took 2.920845883 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	saveDBSegmentsasARFF.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:11:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7d01935d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.908694085 s
+Java analysis took 0.190666273 s
+Java compile + analysis took 3.133447831 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:12:24 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@63335c68, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:217:  error: variable newData is already defined in method addToTraining()
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:217:  error: variable newData is already defined in method addToTraining()
+Read from stdout: 			Instances newData = Instances.mergeInstances(existingData, newData);
+Read from stdout: 			          ^
+			Instances newData = Instances.mergeInstances(existingData, newData);
+			          ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 4 s, completed Mar 3, 2017 3:12:53 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@13938939, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.656969889 s
+Java analysis took 0.229138914 s
+Java compile + analysis took 2.914342543 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:13:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6da48f66, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.460557225 s
+Java analysis took 0.054090578 s
+Java compile + analysis took 2.542744694 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	writeDataToFile.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 1.933628044 s
+Java analysis took 0.125046988 s
+Java compile + analysis took 2.085669431 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 5 s, completed Mar 3, 2017 3:13:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2e5ebfc7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.099793999 s
+Java analysis took 0.130860094 s
+Java compile + analysis took 3.267209559 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:14:08 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@336ddfd8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.751800104 s
+Java analysis took 0.148911812 s
+Java compile + analysis took 2.937338373 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:15:10 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@46d63ee8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.280734556 s
+Java analysis took 0.049689587 s
+Java compile + analysis took 2.374591002 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	saveDBSegmentsasARFF, saveDBSegmentsasInstances.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:191:  error: cannot find symbol
+C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:191:  error: cannot find symbol
+Read from stdout: 		wfwdb.saveDBSegmentsasARFF(wekaSegments);
+Read from stdout: 		     ^
+		wfwdb.saveDBSegmentsasARFF(wekaSegments);
+		     ^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 6 s, completed Mar 3, 2017 3:15:48 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7c7946de, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.020768178 s
+Java analysis took 0.181385318 s
+Java compile + analysis took 3.241195345 s
+Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
+	saveDBSegmentsasARFF, saveDBSegmentsasInstances.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:16:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6bbf3bc4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.161937736 s
+Java analysis took 0.108370607 s
+Java compile + analysis took 2.327185089 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 3, 2017 3:16:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@337920af, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Mar 3, 2017 3:17:17 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@42a8f085, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.808971077 s
+Java analysis took 0.190917733 s
+Java compile + analysis took 3.050446535 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:18:42 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7428230, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.844581 s
+Java analysis took 0.256669163 s
+Java compile + analysis took 3.145381953 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:22:10 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@342e55a6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.363493371 s
+Java analysis took 0.164883847 s
+Java compile + analysis took 2.589269639 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:22:16 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@328cc310, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.080088114 s
+Java analysis took 0.138584387 s
+Java compile + analysis took 3.257802019 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:22:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f7bd574, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 3, 2017 3:23:11 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@19ab5764, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.732030926 s
+Java analysis took 0.080837791 s
+Java compile + analysis took 2.862736637 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:24:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@69280ef7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.597011893 s
+Java analysis took 0.272471419 s
+Java compile + analysis took 2.916558649 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:25:21 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@32f5e562, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:25:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c10f65a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.562387286 s
+Java analysis took 0.065749719 s
+Java compile + analysis took 2.677102145 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 3, 2017 3:26:49 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@240aaa29, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:27:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2a9c9e16, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:28:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@55e7648a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 3.084865013 s
+Java analysis took 0.218738788 s
+Java compile + analysis took 3.340276017 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 3, 2017 3:34:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@79541cd4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:34:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@670cb2ae, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:37:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@38906e14, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:37:42 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1fc111cf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:38:24 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@750978eb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:38:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2698fe1c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:39:06 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@97711a2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:39:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2b12d8e9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 3, 2017 3:40:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
 Closing listening server socket
 Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 13540@akzysk-W370ST logs at Thu Mar 02 16:10:50 EST 2017, goodbye.
+Closing the 14036@akzysk-W370ST logs at Fri Mar 03 15:42:24 EST 2017, goodbye.

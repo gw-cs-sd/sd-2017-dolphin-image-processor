@@ -1,5 +1,5 @@
-New log file opened at Thu Mar 02 16:11:01 EST 2017 by 13420@akzysk-W370ST
-jvm 13420@akzysk-W370ST
+New log file opened at Fri Mar 03 15:47:48 EST 2017 by 5416@akzysk-W370ST
+jvm 5416@akzysk-W370ST
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.121-b13
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Andrew\play-java-1\project, returning: (play-java-1-build)
 Loading project definition from C:\Users\Andrew\play-java-1\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@8aeb990, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@15622bb1, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,15 +67,42 @@ Set current project to play-java (in build file:/C:/Users/Andrew/play-java-1/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@2bdd83a7, check cycles: false
-Total time: 0 s, completed Mar 2, 2017 4:11:13 PM
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@29890b0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.720456889 s
+Java analysis took 0.233802912 s
+Java compile + analysis took 2.982895108 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 6 s, completed Mar 3, 2017 3:48:06 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@5ec8b266, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4c292013, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -92,18 +119,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 5 s, completed Mar 2, 2017 4:11:19 PM
+Total time: 2 s, completed Mar 3, 2017 3:48:08 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@6e2953fd, check cycles: false
-Total time: 0 s, completed Mar 2, 2017 4:11:19 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@38c83750, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:48:08 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3b3f2d51, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@21c0b414, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -120,30 +147,30 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Mar 2, 2017 4:11:20 PM
+Total time: 1 s, completed Mar 3, 2017 3:48:09 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@4b703e26, check cycles: false
-Total time: 1 s, completed Mar 2, 2017 4:11:23 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@23fb5fea, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:48:15 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@22c2bd81, check cycles: false
-Total time: 1 s, completed Mar 2, 2017 4:11:32 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@622cd60c, check cycles: false
+Total time: 1 s, completed Mar 3, 2017 3:48:23 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@17ddd7e0, check cycles: false
-Total time: 0 s, completed Mar 2, 2017 4:11:38 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@74aeb91d, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:48:27 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@4885652, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@580d44c1, check cycles: false
 SLF4J: The following set of substitute loggers may have been accessed
 SLF4J: during the initialization phase. Logging calls during this
 SLF4J: phase were not honored. However, subsequent logging calls to these
@@ -171,662 +198,12 @@ Copy resource mappings:
 	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
 	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 3 s, completed Mar 2, 2017 4:11:51 PM
+Total time: 3 s, completed Mar 3, 2017 3:48:54 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7ed8261f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.666203802 s
-Java analysis took 0.235208184 s
-Java compile + analysis took 2.950448545 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	convertSATtoARFF, saveSATasARFF.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: cannot find symbol
-Read from stdout: 		wfw.convertSATtoARFF(sat);
-Read from stdout: 		   ^
-		wfw.convertSATtoARFF(sat);
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 8 s, completed Mar 2, 2017 4:22:47 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@338d3817, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.40003216 s
-Java analysis took 0.175705213 s
-Java compile + analysis took 2.647667124 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	convertSATtoARFF, saveSATasARFF.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 4:23:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5d29267b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.157129191 s
-Java analysis took 0.049594648 s
-Java compile + analysis took 2.240932338 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	saveSATListasARFF.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.993495805 s
-Java analysis took 0.281453016 s
-Java compile + analysis took 3.34764835 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 7 s, completed Mar 2, 2017 4:26:28 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@d5e0440, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.228700996 s
-Java analysis took 0.075359112 s
-Java compile + analysis took 2.360653319 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 4:29:33 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@205b27a6, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 1.955333213 s
-Java analysis took 0.112931113 s
-Java compile + analysis took 2.116133389 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 4:31:51 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@59c50d03, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: cannot find symbol
-Read from stdout: 		wfw.saveSAT(sat);
-Read from stdout: 		   ^
-		wfw.saveSAT(sat);
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 4 s, completed Mar 2, 2017 4:33:06 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2a92e927, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.82035267 s
-Java analysis took 0.808844491 s
-Java compile + analysis took 3.666838014 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	saveSATasARFF, saveSAT.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed Mar 2, 2017 4:33:24 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2caca86d, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.3863237 s
-Java analysis took 0.045511404 s
-Java compile + analysis took 2.479140517 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 4:34:21 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e87c02a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.681230293 s
-Java analysis took 0.049666493 s
-Java compile + analysis took 2.758184556 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 4:34:42 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1cbe38a1, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.826628498 s
-Java analysis took 0.059969542 s
-Java compile + analysis took 2.922208817 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 4:35:00 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6c83188e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.892927752 s
-Java analysis took 0.056702691 s
-Java compile + analysis took 2.989643922 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	saveSATListasARFF, saveSATList.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.947213768 s
-Java analysis took 0.159897825 s
-Java compile + analysis took 3.141319236 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 7 s, completed Mar 2, 2017 4:36:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@45327e48, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.69921102 s
-Java analysis took 0.05238381 s
-Java compile + analysis took 2.789308812 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	saveSATListasARFF, saveSATasARFF, saveSATList, saveSAT.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: cannot find symbol
-Read from stdout: 		wfw.saveSAT(sat);
-Read from stdout: 		   ^
-		wfw.saveSAT(sat);
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 6 s, completed Mar 2, 2017 4:36:42 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7fd3f406, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.359857027 s
-Java analysis took 0.072315924 s
-Java compile + analysis took 2.557919581 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java source file has the following regular definitions changed:
-	saveSATListasARFF, saveSATasARFF, saveSATList, saveSAT.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed Mar 2, 2017 4:36:48 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@220b0921, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.073110078 s
-Java analysis took 0.074246356 s
-Java compile + analysis took 2.190633343 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 4:38:01 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@63194fd0, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 3.431798326 s
-Java analysis took 0.053753159 s
-Java compile + analysis took 3.56078957 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed Mar 2, 2017 4:47:33 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5c932eda, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.793741022 s
-Java analysis took 0.164694396 s
-Java compile + analysis took 2.990828524 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
-	notify, WekaFileWriterDB, wait, equals, notifyAll, <init>, toString, getClass, hashCode.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed Mar 2, 2017 5:12:37 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6c85a7bd, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1977cdfa, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -845,740 +222,21 @@ All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\
 
 Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:78:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:78:  error: cannot find symbol
-Read from stdout: 	public void initAttributes(DBSegment segAttsMultiple)
-Read from stdout: 	                           ^
-	public void initAttributes(DBSegment segAttsMultiple)
-	                           ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 4 s, completed Mar 2, 2017 5:13:29 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@242d3957, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\models\DBSegment.java:16:  error: not a statement
-C:\Users\Andrew\play-java-1\app\models\DBSegment.java:16:  error: not a statement
-Read from stdout: 		ArrayList<String> 
-Read from stdout: 		         ^
-		ArrayList<String> 
-		         ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\models\DBSegment.java:16:  error: ';' expected
-C:\Users\Andrew\play-java-1\app\models\DBSegment.java:16:  error: ';' expected
-Read from stdout: 		ArrayList<String> 
-Read from stdout: 		                 ^
-		ArrayList<String> 
-		                 ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 2 s, completed Mar 2, 2017 5:16:29 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@30ecaa09, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\models\DBSegment.java:14:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\models\DBSegment.java:14:  error: cannot find symbol
-Read from stdout: 	public ArrayList<String> getAttributeNamesAsList()
-Read from stdout: 	       ^
-	public ArrayList<String> getAttributeNamesAsList()
-	       ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:16:40 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2701be86, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:78:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:78:  error: cannot find symbol
-Read from stdout: 	public void initAttributes(DBSegment segAttsMultiple)
-Read from stdout: 	                           ^
-	public void initAttributes(DBSegment segAttsMultiple)
-	                           ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:17:23 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@74bddd39, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:54:  error: incompatible types: SegAttributesMultiple cannot be converted to DBSegment
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:54:  error: incompatible types: SegAttributesMultiple cannot be converted to DBSegment
-Read from stdout: 			initAttributes(sat.getAttributes(0));
-Read from stdout: 			                                ^
-			initAttributes(sat.getAttributes(0));
-			                                ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:81:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:81:  error: cannot find symbol
-Read from stdout: 		ArrayList<String> segAtts = segAttsMultiple.getAttributesAsList();
-Read from stdout: 		                                           ^
-		ArrayList<String> segAtts = segAttsMultiple.getAttributesAsList();
-		                                           ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:18:37 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5d75708d, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:54:  error: incompatible types: SegAttributesMultiple cannot be converted to DBSegment
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:54:  error: incompatible types: SegAttributesMultiple cannot be converted to DBSegment
-Read from stdout: 			initAttributes(sat.getAttributes(0));
-Read from stdout: 			                                ^
-			initAttributes(sat.getAttributes(0));
-			                                ^
-Read from stdout: Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:19:19 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2fe66e41, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:20:18 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@572abb46, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 5 s, completed Mar 2, 2017 5:21:45 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@74c2cd7c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 4 s, completed Mar 2, 2017 5:24:07 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@492f76f7, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:29:02 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@44cef8f9, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:29:36 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@24ca63b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:29:48 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@77a6504b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:52:  error: cannot find symbol
-Read from stdout: 		if(sat.getNumSegments() > 0)
-Read from stdout: 		   ^
-		if(sat.getNumSegments() > 0)
-		   ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:30:00 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@113ac01a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:56:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:56:  error: cannot find symbol
-Read from stdout: 			populateData(sat);
-Read from stdout: 			             ^
-			populateData(sat);
-			             ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:30:39 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6a8a2a3d, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:36:  error: incompatible types: SegAttributesTable cannot be converted to ArrayList<DBSegment>
-Read from stdout: 				saveSATasARFF(sat);
-Read from stdout: 				              ^
-				saveSATasARFF(sat);
-				              ^
-Read from stdout: Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:30:57 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@328ce3f3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java, C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 3.048060652 s
-Java analysis took 0.093662719 s
-Java compile + analysis took 3.179148685 s
-Invalidating C:\Users\Andrew\play-java-1\app\models\DBSegment.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\models\DBSegment.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-The C:\Users\Andrew\play-java-1\app\models\DBSegment.java source file has the following regular definitions changed:
-	getAttributeNamesAsList, getAttributeValuesAsList.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in C:\Users\Andrew\play-java-1\target\scala-2.11\twirl\main\views\html\segments.template.scala. This dependency is not being considered for invalidation.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\models\DBSegment.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\db\MySQLCon.java
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
-	populateData, vals, data, initAttributes, populateDataSingle, initInstanceObject, saveSATasARFF, attVals, writeDataToFile, atts.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
-New invalidations:
-	Set(C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java, C:\Users\Andrew\play-java-1\app\db\MySQLCon.java)
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java, C:\Users\Andrew\play-java-1\app\db\MySQLCon.java)
-Including C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
-Including C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java by C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java
-Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
-Including C:\Users\Andrew\play-java-1\app\controllers\Application.java by C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java
-Including C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
-Including C:\Users\Andrew\play-java-1\app\controllers\ConfirmUserDeleteController.java by C:\Users\Andrew\play-java-1\app\db\MySQLCon.java
-Including C:\Users\Andrew\play-java-1\app\controllers\UsersController.java by C:\Users\Andrew\play-java-1\app\db\MySQLCon.java
-Including C:\Users\Andrew\play-java-1\app\controllers\ConfirmSampleDeleteController.java by C:\Users\Andrew\play-java-1\app\db\MySQLCon.java
-Including C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java by C:\Users\Andrew\play-java-1\app\db\MySQLCon.java
-Including C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java by C:\Users\Andrew\play-java-1\app\db\MySQLCon.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java, C:\Users\Andrew\play-java-1\app\db\MySQLCon.java)
-Read from stdout: Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: Note: C:\Users\Andrew\play-java-1\app\db\MySQLCon.java uses or overrides a deprecated API.
-Note: C:\Users\Andrew\play-java-1\app\db\MySQLCon.java uses or overrides a deprecated API.
-Read from stdout: Note: Recompile with -Xlint:deprecation for details.
-Note: Recompile with -Xlint:deprecation for details.
-Java compilation took 3.405159308 s
-Java analysis took 0.193317302 s
-Java compile + analysis took 3.630670002 s
+Java compilation took 2.560807959 s
+Java analysis took 0.174789177 s
+Java compile + analysis took 2.844510009 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 8 s, completed Mar 2, 2017 5:31:47 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@21d92da3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.718819828 s
-Java analysis took 0.064187925 s
-Java compile + analysis took 2.821911898 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
-	saveSATasARFF, saveSegmentsasARFF.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 5:31:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@12151a5e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.339527622 s
-Java analysis took 0.049472766 s
-Java compile + analysis took 2.441397882 s
-Invalidating C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java...
-Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-The C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java source file has the following regular definitions changed:
-	saveDBSegmentsasARFF, saveSegmentsasARFF.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 5:32:03 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1f98d37f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 3.065921635 s
-Java analysis took 0.189628783 s
-Java compile + analysis took 3.289755069 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 5:34:22 PM
+Total time: 4 s, completed Mar 3, 2017 3:50:11 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@37348384, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@12830e8e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -1599,12 +257,12 @@ Copy resource mappings:
 	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
 	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
 	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 4 s, completed Mar 2, 2017 5:34:29 PM
+Total time: 2 s, completed Mar 3, 2017 3:50:13 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7ec57ea8, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@62db631c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -1623,54 +281,21 @@ All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\
 
 Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.7772434 s
-Java analysis took 0.071112932 s
-Java compile + analysis took 2.885456631 s
+Java compilation took 2.45123992 s
+Java analysis took 0.068339166 s
+Java compile + analysis took 2.568360335 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 5:40:13 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1f8d5cec, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.236340612 s
-Java analysis took 0.049336345 s
-Java compile + analysis took 2.336936036 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 5:40:19 PM
+Total time: 3 s, completed Mar 3, 2017 3:53:09 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@498f8dd3, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@9fb2a16, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -1691,45 +316,30 @@ Copy resource mappings:
 	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
 	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
 	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Mar 2, 2017 5:42:07 PM
+Total time: 2 s, completed Mar 3, 2017 3:53:12 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6443ebe1, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.621105512 s
-Java analysis took 0.060520789 s
-Java compile + analysis took 2.734598136 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 5:43:51 PM
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a62b150, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:55:07 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e146b91, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:55:16 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@51f80933, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:55:19 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7d7e1a34, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@37ca0df8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -1750,12 +360,12 @@ Copy resource mappings:
 	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
 	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
 	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Mar 2, 2017 5:43:57 PM
+Total time: 2 s, completed Mar 3, 2017 3:55:25 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6f801265, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b38ecb3, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -1776,370 +386,19 @@ Copy resource mappings:
 	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
 	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
 	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Mar 2, 2017 5:44:20 PM
+Total time: 3 s, completed Mar 3, 2017 3:56:03 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@66379e33, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Read from stdout: C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:117:  error: cannot find symbol
-C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java:117:  error: cannot find symbol
-Read from stdout: 		for(String strVal : attrList)
-Read from stdout: 		                    ^
-		for(String strVal : attrList)
-		                    ^
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 3 s, completed Mar 2, 2017 5:48:06 PM
-> server-post-command-error-handler
+> jobStop 2
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@423c7789, check cycles: false
+Total time: 0 s, completed Mar 3, 2017 3:57:12 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@55c006a4, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.477420919 s
-Java analysis took 0.05710041 s
-Java compile + analysis took 2.586475773 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 5:49:25 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@67585bed, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Mar 2, 2017 5:49:40 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2a26fac7, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.77889329 s
-Java analysis took 0.059115944 s
-Java compile + analysis took 2.883942306 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Mar 2, 2017 5:52:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@31383de6, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Mar 2, 2017 5:52:23 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@56051168, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.575235734 s
-Java analysis took 0.066967679 s
-Java compile + analysis took 2.685744612 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 5:54:03 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4274023b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed Mar 2, 2017 5:54:21 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4d13025b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.457801421 s
-Java analysis took 0.088339278 s
-Java compile + analysis took 2.587863084 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 5:59:01 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@61102326, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.141639122 s
-Java analysis took 0.044842553 s
-Java compile + analysis took 2.222566294 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 6:00:09 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@61999505, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriterDB.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 2.379237039 s
-Java analysis took 0.107293773 s
-Java compile + analysis took 2.53665789 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 6:01:22 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6238d850, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\models\DBSegment.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
-Java compilation took 1.989011422 s
-Java analysis took 0.027143222 s
-Java compile + analysis took 2.06714045 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Mar 2, 2017 6:01:33 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@c1e7a8d, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
-	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
-Total time: 2 s, completed Mar 2, 2017 6:01:36 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 5416@akzysk-W370ST logs at Fri Mar 03 15:58:15 EST 2017, goodbye.

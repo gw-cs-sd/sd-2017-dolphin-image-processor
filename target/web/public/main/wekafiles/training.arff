@@ -1,0 +1,13 @@
+@relation MyRelation
+
+@attribute area numeric
+@attribute width numeric
+@attribute height numeric
+@attribute perimeter numeric
+@attribute bloodStatus {blood,notBlood}
+
+@data
+15,15,1,32,blood
+15,15,1,32,blood
+30,15,2,34,blood
+30,15,2,34,blood

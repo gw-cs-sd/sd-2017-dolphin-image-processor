@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Fri Feb 24 15:06:43 EST 2017
+// @DATE:Fri Mar 03 14:45:44 EST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -35,10 +35,10 @@ package controllers {
     }
 
   
-    // @LINE:26
-    def viewSample(): Call = {
+    // @LINE:23
+    def addSample(): Call = {
       import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "viewSample")
+      Call("POST", _prefix + { _defaultPrefix } + "addSample")
     }
   
     // @LINE:22
@@ -47,16 +47,22 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "backToUsers")
     }
   
+    // @LINE:27
+    def addToTraining(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "addToTraining")
+    }
+  
+    // @LINE:26
+    def viewSample(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "viewSample")
+    }
+  
     // @LINE:24
     def requestDeleteSample(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "requestDeleteSample")
-    }
-  
-    // @LINE:23
-    def addSample(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "addSample")
     }
   
   }
@@ -76,26 +82,26 @@ package controllers {
   
   }
 
-  // @LINE:29
+  // @LINE:30
   class ReverseExaminationController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:31
+    // @LINE:32
     def revertToOriginal(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "revertToOriginal")
     }
   
-    // @LINE:30
+    // @LINE:31
     def clickImage(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "clickImage")
     }
   
-    // @LINE:29
+    // @LINE:30
     def backToSegments(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToSegments")
@@ -103,20 +109,20 @@ package controllers {
   
   }
 
-  // @LINE:27
+  // @LINE:28
   class ReverseSegmentsController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:28
+    // @LINE:29
     def viewExamination(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "viewExamination")
     }
   
-    // @LINE:27
+    // @LINE:28
     def backToSamples(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToSample")
