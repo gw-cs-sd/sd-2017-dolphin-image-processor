@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import javax.inject.Inject;
 import javax.swing.JOptionPane;
 
+import com.google.common.base.Strings;
+
 import db.MySQLCon;
 import ij.IJ;
 import ij.ImageJ;
@@ -194,20 +196,41 @@ public class SamplesController extends Controller
 		return ok(html);
 	}
 	
-	public Result addToTraining()
+	public Result addToDataset()
 	{
 		DynamicForm requestData = formFactory.form().bindFromRequest();
-		String sampleId = requestData.get("sampleId");
-		MySQLCon db = new MySQLCon();
+		String sampleId = requestData.get("trainingSampleId");
+		String filepath;
+		if(Strings.isNullOrEmpty(sampleId))
+		{
+			//user pushed button to add to TEST
+			sampleId = requestData.get("testSampleId");
+			filepath = "public/wekafiles/test.arff";
+		}
+		else
+		{
+			//user pushed button to add to TRAINING
+			filepath = "public/wekafiles/training.arff";
+		}
 		
+		MySQLCon db = new MySQLCon();
 		DBSample sample = db.getSample(sampleId);
 		
-		WekaFileWriterDB wfw = new WekaFileWriterDB();
+		//WekaFileWriterDB wfw = new WekaFileWriterDB();
 		ArrayList<DBSegment> list = db.getSegments(sampleId);
-		wfw.saveDBSegmentsasInstances(list);
+		//wfw.saveDBSegmentsasInstances(list);
 		
-		String filepath = "public/wekafiles/training.arff";
+		appendSegmentsToFile(list, filepath);
+		System.out.println("Added Segments from Sample " + sampleId + " to set " + filepath);
 		
+		String userId = sample.getUserId();
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		return ok(html);
+	}
+	
+	public void appendSegmentsToFile(ArrayList<DBSegment> list, String filepath)
+	{
+		WekaFileWriterDB wfw = new WekaFileWriterDB();
 		//check if file "public/wekafiles/training.arff" exists
 		File trainingFile = new File(filepath);
 		Instances data;
@@ -218,20 +241,14 @@ public class SamplesController extends Controller
 			//data = Instances.mergeInstances(existingData, data);
 			data.addAll(existingData);
 			wfw.writeDataToFile(data, filepath);
-			System.out.println("Adding to existing training.arff file");
+			System.out.println("Adding to existing " + filepath + " file");
 		}
 		else
 		{
 			data = wfw.saveDBSegmentsasInstances(list);
 			wfw.writeDataToFile(data, filepath);
-			System.out.println("Creating new training.arff");
+			System.out.println("Creating new " + filepath);
 		}
-		System.out.println("Added Segments from Sample " + sampleId + " to training set");
-		
-		
-		String userId = sample.getUserId();
-		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
-		return ok(html);
 	}
 	
 	public Result requestDeleteSample()

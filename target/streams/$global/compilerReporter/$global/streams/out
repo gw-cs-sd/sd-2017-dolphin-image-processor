@@ -1,3 +1,3 @@
-[error] C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:191:  error: cannot find symbol
-[error] 		wfwdb.saveDBSegmentsasARFF(wekaSegments);
-[error] 		     ^
+[error] C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java:44:  error: cannot find symbol
+[error] 		attributes.add(this.getMeanR(seg));
+[error] 		                   ^

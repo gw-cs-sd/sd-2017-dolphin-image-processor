@@ -104,6 +104,18 @@ public class SegAttributesTable {
 				{
 					segment.setPerimeter(s.getValue().toString());
 				}
+				if(s.getName().equals("MeanR"))
+				{
+					segment.setMeanR(s.getValue().toString());
+				}
+				if(s.getName().equals("MeanG"))
+				{
+					segment.setMeanG(s.getValue().toString());
+				}
+				if(s.getName().equals("MeanB"))
+				{
+					segment.setMeanB(s.getValue().toString());
+				}
 			}
 			db.addSegment(segment);
 		}

@@ -297,15 +297,18 @@ public class MySQLCon
 		{
 			//insert a new sample into the database
 			conn = DB.getConnection();
-			st = conn.prepareStatement("INSERT into segment (sampleId, label, area, width, height, perimeter, bloodStatus)"
-					+ " values (?, ?, ?, ?, ?, ?, ?)");
+			st = conn.prepareStatement("INSERT into segment (sampleId, label, area, width, height, perimeter, meanR, meanG, meanB, bloodStatus)"
+					+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			st.setString(1, segment.getSampleId());
 			st.setString(2, segment.getLabel());
 			st.setString(3, segment.getArea());
 			st.setString(4, segment.getWidth());
 			st.setString(5, segment.getHeight());
 			st.setString(6, segment.getPerimeter());
-			st.setString(7, segment.getBloodStatus());
+			st.setString(7, segment.getMeanR());
+			st.setString(8, segment.getMeanG());
+			st.setString(9, segment.getMeanB());
+			st.setString(10, segment.getBloodStatus());
 			//System.out.println("segment blood status = " + segment.getBloodStatus());
 			st.execute();
 			st.close();
@@ -394,7 +397,10 @@ public class MySQLCon
 				segment.setWidth(((Integer)rs.getInt(5)).toString());
 				segment.setHeight(((Integer)rs.getInt(6)).toString());
 				segment.setPerimeter(((Integer)rs.getInt(7)).toString());
-				segment.setBloodStatus(rs.getString(8));
+				segment.setMeanR(((Integer)rs.getInt(8)).toString());
+				segment.setMeanG(((Integer)rs.getInt(9)).toString());
+				segment.setMeanB(((Integer)rs.getInt(10)).toString());
+				segment.setBloodStatus(rs.getString(11));
 				segments.add(segment);
 			}
 			st.close();

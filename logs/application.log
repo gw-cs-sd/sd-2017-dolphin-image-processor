@@ -1,6 +1,6 @@
-2017-03-03 15:55:27,195 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-03-03 15:55:28,220 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-03 15:55:28,791 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-03-03T20:55:28.788Z
-2017-03-03 15:55:30,299 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-03-03 15:57:12,446 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-03-03T20:57:12.446Z after 104s.
-2017-03-03 15:57:12,449 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2017-03-04 16:20:08,426 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-03-04 16:20:09,661 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-03-04 16:20:10,714 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-03-04T21:20:10.711Z
+2017-03-04 16:20:12,718 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-03-04 16:41:44,368 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-14 - ApplicationTimer demo: Stopping application at 2017-03-04T21:41:44.368Z after 1294s.
+2017-03-04 16:41:44,380 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-14 - Shutting down connection pool.

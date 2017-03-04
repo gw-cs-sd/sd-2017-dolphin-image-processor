@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Fri Mar 03 14:45:44 EST 2017
+// @DATE:Sat Mar 04 15:21:18 EST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -64,11 +64,11 @@ package controllers.javascript {
     )
   
     // @LINE:27
-    def addToTraining: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SamplesController.addToTraining",
+    def addToDataset: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.addToDataset",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addToTraining"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addToDataset"})
         }
       """
     )

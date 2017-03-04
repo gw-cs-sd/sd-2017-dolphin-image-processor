@@ -41,9 +41,13 @@ public class SegmentAttributor {
 		attributes.add(this.getWidth(seg));
 		attributes.add(this.getHeight(seg));
 		attributes.add(this.getPerimeter(seg));
+		attributes.add(this.getMeanR(seg));
+		attributes.add(this.getMeanG(seg));
+		attributes.add(this.getMeanB(seg));
 		
 		attributes.add(this.getCircularity(seg));
 		attributes.add(this.getConvexity(seg, imp));
+		
 		
 		return attributes;
 	}
@@ -68,6 +72,18 @@ public class SegmentAttributor {
 	//3
 	public SegmentAttribute getPerimeter(Segment seg){
 		return new SegmentAttribute("Perimeter", seg.getPerimeter());
+	}
+	
+	public SegmentAttribute getMeanR(Segment seg){
+		return new SegmentAttribute("MeanR", seg.getMeanR());
+	}
+	
+	public SegmentAttribute getMeanG(Segment seg){
+		return new SegmentAttribute("MeanG", seg.getMeanG());
+	}
+	
+	public SegmentAttribute getMeanB(Segment seg){
+		return new SegmentAttribute("MeanB", seg.getMeanB());
 	}
 	
 	//4

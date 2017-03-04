@@ -162,6 +162,42 @@ public class Segment
 		return convexity;
 	}
 	
+	public double getMeanR()
+	{
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		double meanR = 0;
+		for(Pixel p : arr)
+		{
+			meanR += p.getR();
+		}
+		meanR = meanR / arr.size();
+		return meanR;
+	}
+	
+	public double getMeanG()
+	{
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		double meanG = 0;
+		for(Pixel p : arr)
+		{
+			meanG += p.getG();
+		}
+		meanG = meanG / arr.size();
+		return meanG;
+	}
+	
+	public double getMeanB()
+	{
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		double meanB = 0;
+		for(Pixel p : arr)
+		{
+			meanB += p.getB();
+		}
+		meanB = meanB / arr.size();
+		return meanB;
+	}
+	
 	/*============================================================================
 	 * METHODS WITH RESPECT TO AN IMAGEPLUS
 	 *============================================================================

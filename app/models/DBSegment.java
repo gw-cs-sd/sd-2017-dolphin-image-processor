@@ -11,6 +11,9 @@ public class DBSegment
 	private String width;
 	private String height;
 	private String perimeter;
+	private String meanR;
+	private String meanG;
+	private String meanB;
 	private String bloodStatus;
 	
 	public ArrayList<String> getAttributeNamesAsList()
@@ -78,6 +81,24 @@ public class DBSegment
 	}
 	public void setPerimeter(String perimeter) {
 		this.perimeter = perimeter;
+	}
+	public String getMeanR() {
+		return meanR;
+	}
+	public void setMeanR(String meanR) {
+		this.meanR = meanR;
+	}
+	public String getMeanG() {
+		return meanG;
+	}
+	public void setMeanG(String meanG) {
+		this.meanG = meanG;
+	}
+	public String getMeanB() {
+		return meanB;
+	}
+	public void setMeanB(String meanB) {
+		this.meanB = meanB;
 	}
 	public String getBloodStatus() {
 		return bloodStatus;

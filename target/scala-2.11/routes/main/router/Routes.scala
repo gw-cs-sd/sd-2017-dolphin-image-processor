@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Fri Mar 03 14:45:44 EST 2017
+// @DATE:Sat Mar 04 15:21:18 EST 2017
 
 package router
 
@@ -85,7 +85,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """requestDeleteSample""", """controllers.SamplesController.requestDeleteSample"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """confirmSampleDelete""", """controllers.ConfirmSampleDeleteController.confirmSampleDelete"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewSample""", """controllers.SamplesController.viewSample"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addToTraining""", """controllers.SamplesController.addToTraining"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addToDataset""", """controllers.SamplesController.addToDataset"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backToSample""", """controllers.SegmentsController.backToSamples"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewExamination""", """controllers.SegmentsController.viewExamination"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backToSegments""", """controllers.ExaminationController.backToSegments"""),
@@ -338,19 +338,19 @@ class Routes(
   )
 
   // @LINE:27
-  private[this] lazy val controllers_SamplesController_addToTraining14_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addToTraining")))
+  private[this] lazy val controllers_SamplesController_addToDataset14_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addToDataset")))
   )
-  private[this] lazy val controllers_SamplesController_addToTraining14_invoker = createInvoker(
-    SamplesController_6.addToTraining,
+  private[this] lazy val controllers_SamplesController_addToDataset14_invoker = createInvoker(
+    SamplesController_6.addToDataset,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SamplesController",
-      "addToTraining",
+      "addToDataset",
       Nil,
       "POST",
       """""",
-      this.prefix + """addToTraining"""
+      this.prefix + """addToDataset"""
     )
   )
 
@@ -527,9 +527,9 @@ class Routes(
       }
   
     // @LINE:27
-    case controllers_SamplesController_addToTraining14_route(params) =>
+    case controllers_SamplesController_addToDataset14_route(params) =>
       call { 
-        controllers_SamplesController_addToTraining14_invoker.call(SamplesController_6.addToTraining)
+        controllers_SamplesController_addToDataset14_invoker.call(SamplesController_6.addToDataset)
       }
   
     // @LINE:28

@@ -40,6 +40,9 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	<th class="tg-amwm">Height</th>
     	<th class="tg-amwm">Width</th>
     	<th class="tg-amwm">Perimeter</th>
+    	<th class="tg-amwm">MeanR</th>
+    	<th class="tg-amwm">MeanG</th>
+    	<th class="tg-amwm">MeanB</th>
     	<th class="tg-amwm">Blood Status</th>
     </tr>
 
@@ -51,6 +54,9 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getHeight()</td>
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getWidth()</td>
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getPerimeter()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getMeanR()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getMeanG()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getMeanB()</td>
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getBloodStatus()</td>
     	</tr>
 	}
