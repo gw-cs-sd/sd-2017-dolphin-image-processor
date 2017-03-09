@@ -77,3 +77,9 @@ Taking next connection to: 62435
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 62435
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 10268@akzysk-W370ST logs at Thu Mar 09 12:43:23 EST 2017, goodbye.
