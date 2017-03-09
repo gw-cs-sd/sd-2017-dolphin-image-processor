@@ -1,3 +1,2 @@
-[error] C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java:44:  error: cannot find symbol
-[error] 		attributes.add(this.getMeanR(seg));
-[error] 		                   ^
+[info] Note: C:\Users\Andrew\play-java-1\app\db\MySQLCon.java uses or overrides a deprecated API.
+[info] Note: Recompile with -Xlint:deprecation for details.

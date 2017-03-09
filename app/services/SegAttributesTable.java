@@ -116,6 +116,15 @@ public class SegAttributesTable {
 				{
 					segment.setMeanB(s.getValue().toString());
 				}
+				if(s.getName().equals("Convexity"))
+				{
+					segment.setConvexity(s.getValue().toString());
+				}
+				if(s.getName().equals("Circularity"))
+				{
+					segment.setCircularity(s.getValue().toString());
+				}
+				
 			}
 			db.addSegment(segment);
 		}
