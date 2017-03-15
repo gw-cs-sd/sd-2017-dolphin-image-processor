@@ -198,6 +198,24 @@ public class Segment
 		return meanB;
 	}
 	
+	public double getStandardDevR()
+	{
+		SegmentHistogram hist = new SegmentHistogram(this);
+		return hist.getStandardDevR();
+	}
+	
+	public double getStandardDevG()
+	{
+		SegmentHistogram hist = new SegmentHistogram(this);
+		return hist.getStandardDevG();
+	}
+	
+	public double getStandardDevB()
+	{
+		SegmentHistogram hist = new SegmentHistogram(this);
+		return hist.getStandardDevB();
+	}
+	
 	/*============================================================================
 	 * METHODS WITH RESPECT TO AN IMAGEPLUS
 	 *============================================================================

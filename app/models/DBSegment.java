@@ -16,8 +16,9 @@ public class DBSegment
 	private String meanB;
 	private String convexity;
 	private String circularity;
+	private String stdDevR;
 	private String bloodStatus;
-	
+
 	public ArrayList<String> getAttributeNamesAsList()
 	{
 		ArrayList<String> list = new ArrayList<String>();
@@ -117,6 +118,14 @@ public class DBSegment
 
 	public void setCircularity(String circularity) {
 		this.circularity = circularity;
+	}
+	
+	public String getStdDevR() {
+		return stdDevR;
+	}
+
+	public void setStdDevR(String stdDevR) {
+		this.stdDevR = stdDevR;
 	}
 
 	public String getBloodStatus() {

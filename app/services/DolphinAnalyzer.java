@@ -61,6 +61,47 @@ public class DolphinAnalyzer
         return maskImage;
     }
     
+    /*======================================================================================
+     * 	MASK
+     * =====================================================================================
+     * Creates image mask based on the input original image, and the "isolateRed" modification for each pixel.
+     * An image mask is an image of just white (255,255,255) and back (0,0,0) pixels.
+     * White pixels will be ignored later by ImageSegmenter.
+     */
+    public ImagePlus maskAuto(ImagePlus imp)
+    {
+        ImagePlus maskImage = imp.duplicate();
+        int height = maskImage.getHeight();
+		int width = maskImage.getWidth();
+        ImageProcessor ip = maskImage.getProcessor();
+        
+        int[] rgb = new int[3];
+        for(int i = 0; i < width; i++)
+        {
+            for(int j = 0; j < height; j++)
+            {
+                ip.getPixel(i, j, rgb);
+                Pixel p = new Pixel(i, j, rgb);
+                if((p.getR() >= p.getB() * 2.5) && (p.getR() >= p.getG() * 2.5))
+                {
+                    //black
+                    rgb[0] = 0;
+                    rgb[1] = 0;
+                    rgb[2] = 0;
+                }
+                else
+                {
+                    //white
+                    rgb[0] = 255;
+                    rgb[1] = 255;
+                    rgb[2] = 255;
+                }
+                ip.putPixel(i, j, rgb);
+            }
+        }
+        return maskImage;
+    }
+    
     public Pixel getPixel(ImagePlus imp, int x, int y)
     {
         ImageProcessor ip = imp.getProcessor();
@@ -75,6 +116,12 @@ public class DolphinAnalyzer
      * ===============================================================================================================
      * Methods to perform specified operations on images, and upload them as a saved image.
      */
+    public void saveImpAsImage1(ImagePlus imp)
+    {
+    	FileSaver fs = new FileSaver(imp);
+   		boolean ret = fs.saveAsJpeg("public/dolphinImages/image1.jpg");
+    }
+    
     public void redifyUpload()
     {
         Opener opener = new Opener();
@@ -91,7 +138,7 @@ public class DolphinAnalyzer
         Opener opener = new Opener();
 		ImagePlus imp = opener.openImage("public/dolphinImages/image1.jpg");
 		
-		isolateRed(imp);
+		isolateRed(imp, 2.5);
 		
 		FileSaver fs = new FileSaver(imp);
    		boolean ret = fs.saveAsJpeg("public/dolphinImages/redIsolated.jpg");
@@ -114,7 +161,7 @@ public class DolphinAnalyzer
      * Methods to perform specified operations on images on the pixel level.
      */
     
-    public void isolateRed(ImagePlus imp)
+    public void isolateRed(ImagePlus imp, double factor)
     {
         int height = imp.getHeight();
 		int width = imp.getWidth();
@@ -127,12 +174,17 @@ public class DolphinAnalyzer
             for(int j = 0; j < height; j++)
             {
                 ip.getPixel(i, j, rgb);
-                if(rgb[0] < rgb[1] * 1.5 || rgb[0] < rgb[2] * 1.5)
+                if(rgb[0] < rgb[1] * factor || rgb[0] < rgb[2] * factor)
                 {
                     int grayscale = (int)((rgb[0] * 0.21) + (rgb[1] * 0.72) + (rgb[2] * 0.07));
+                    /*
                     rgb[0] = grayscale;
                     rgb[1] = grayscale;
                     rgb[2] = grayscale;
+                    */
+                    rgb[0] = 0;
+                    rgb[1] = 0;
+                    rgb[2] = 0;
                     ip.putPixel(i, j, rgb);
                 }
             }

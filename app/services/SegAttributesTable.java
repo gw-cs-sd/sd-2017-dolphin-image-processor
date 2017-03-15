@@ -124,6 +124,10 @@ public class SegAttributesTable {
 				{
 					segment.setCircularity(s.getValue().toString());
 				}
+				if(s.getName().equals("StandardDevR"))
+				{
+					segment.setStdDevR(s.getValue().toString());
+				}
 				
 			}
 			db.addSegment(segment);

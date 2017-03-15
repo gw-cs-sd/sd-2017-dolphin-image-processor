@@ -62,7 +62,10 @@ public class SegmentsController extends Controller
 		Color minColor = new Color(0, 0, 0);
 		Color maxColor = new Color(255, 88, 88);
 		Threshold thresh = new Threshold(minColor, maxColor);
-		ImagePlus maskImage = da.mask(examImp, thresh);
+		//ImagePlus maskImage = da.mask(examImp, thresh);
+		ImagePlus maskImage = da.maskAuto(examImp);
+		da.saveImpAsImage1(examImp);
+		da.isolateRedUpload();
         
 		System.out.println("3.2 of X: Segmentation: ImageSegmenter calculates Image Segments");
 		

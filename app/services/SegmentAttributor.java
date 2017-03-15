@@ -47,6 +47,7 @@ public class SegmentAttributor {
 		
 		attributes.add(this.getCircularity(seg));
 		attributes.add(this.getConvexity(seg, imp));
+		attributes.add(this.getStandardDevR(seg));
 		
 		
 		return attributes;
@@ -94,6 +95,10 @@ public class SegmentAttributor {
 	//5
 	public SegmentAttribute getConvexity(Segment seg, ImagePlus orig){
 		return new SegmentAttribute("Convexity", seg.getConvexity(orig));
+	}
+	
+	public SegmentAttribute getStandardDevR(Segment seg){
+		return new SegmentAttribute("StandardDevR", seg.getStandardDevR());
 	}
 	
 }

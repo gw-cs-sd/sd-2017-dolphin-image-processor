@@ -147,7 +147,8 @@ public class SamplesController extends Controller
 		Color minColor = new Color(0, 0, 0);
 		Color maxColor = new Color(255, 88, 88);
 		Threshold thresh = new Threshold(minColor, maxColor);
-		ImagePlus maskImage = da.mask(imp, thresh);
+		//ImagePlus maskImage = da.mask(imp, thresh);
+		ImagePlus maskImage = da.maskAuto(imp);
 		//maskImage.show();
 				
 		//add in max RGB values of threshold

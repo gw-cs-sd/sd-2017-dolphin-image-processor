@@ -1,5 +1,5 @@
-New log file opened at Thu Mar 09 12:12:45 EST 2017 by 10608@akzysk-W370ST
-jvm 10608@akzysk-W370ST
+New log file opened at Tue Mar 14 18:19:46 EDT 2017 by 14860@akzysk-W370ST
+jvm 14860@akzysk-W370ST
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.121-b13
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Andrew\play-java-1\project, returning: (play-java-1-build)
 Loading project definition from C:\Users\Andrew\play-java-1\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@52dfe422, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@38bc8163, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,3 +67,2038 @@ Set current project to play-java (in build file:/C:/Users/Andrew/play-java-1/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c13970b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 20 s, completed Mar 14, 2017 6:22:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@e1b02ad, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 3 s, completed Mar 14, 2017 6:22:07 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@7efd00af, check cycles: false
+Total time: 0 s, completed Mar 14, 2017 6:22:07 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6363b785, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Mar 14, 2017 6:22:08 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ff97821, check cycles: false
+Total time: 1 s, completed Mar 14, 2017 6:23:13 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@137e9c20, check cycles: false
+Total time: 1 s, completed Mar 14, 2017 6:23:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@333e7fd8, check cycles: false
+Total time: 0 s, completed Mar 14, 2017 6:23:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@16646c79, check cycles: false
+SLF4J: The following set of substitute loggers may have been accessed
+SLF4J: during the initialization phase. Logging calls during this
+SLF4J: phase were not honored. However, subsequent logging calls to these
+SLF4J: loggers will work as normally expected.
+SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+SLF4J: org.webjars.CloseQuietly
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
+Total time: 6 s, completed Mar 14, 2017 6:24:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3edc0524, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.70976553 s
+Java analysis took 2.681395368 s
+Java compile + analysis took 5.445023535 s
+Invalidating C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+The C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java source file has the following regular definitions changed:
+	maskAuto.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\app\services\Segment.java by C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java
+Including C:\Users\Andrew\play-java-1\app\services\SegmentTable.java by C:\Users\Andrew\play-java-1\app\services\Segment.java
+Including C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java by C:\Users\Andrew\play-java-1\app\services\SegmentTable.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Including C:\Users\Andrew\play-java-1\app\controllers\Application.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java by C:\Users\Andrew\play-java-1\app\services\SegmentTable.java
+Including C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
+Including C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 5 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 5 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 6.585129946 s
+Java analysis took 0.624265878 s
+Java compile + analysis took 7.357602006 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 16 s, completed Mar 14, 2017 6:27:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@75a97d60, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.478443869 s
+Java analysis took 0.103284513 s
+Java compile + analysis took 2.61207217 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 14, 2017 6:27:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@71190ee0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 4.366180324 s
+Java analysis took 0.301416349 s
+Java compile + analysis took 4.719423249 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed Mar 14, 2017 6:28:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@48cae9a5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 1.777771981 s
+Java analysis took 0.033732948 s
+Java compile + analysis took 1.837166756 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 14, 2017 6:29:12 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@678b4a2a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:29:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@736d5e79, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 6:30:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@18a583d0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:31:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5747f2f4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:31:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@50880ae8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:31:32 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3d010c42, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:32:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@61b0297d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:32:51 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5fe6b1b2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 6:35:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4049692d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:35:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3aef57c4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 5 s, completed Mar 14, 2017 6:36:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@15034d48, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 6:36:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7d0e600d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 15.670491892 s
+Java analysis took 0.743309455 s
+Java compile + analysis took 16.518344875 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 20 s, completed Mar 14, 2017 6:38:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@374f49cd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 6:39:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@c118f82, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 6:39:24 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@a8b4a7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.772335211 s
+Java analysis took 0.19978087 s
+Java compile + analysis took 2.999890948 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 14, 2017 6:43:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@21e399b5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:43:12 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ec961c1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:43:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@51dd5631, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.23220605 s
+Java analysis took 0.047652242 s
+Java compile + analysis took 2.352251194 s
+Invalidating C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+The C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java source file has the following regular definitions changed:
+	saveImpAsImage1.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\app\services\Segment.java by C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java
+Including C:\Users\Andrew\play-java-1\app\services\SegmentTable.java by C:\Users\Andrew\play-java-1\app\services\Segment.java
+Including C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java by C:\Users\Andrew\play-java-1\app\services\SegmentTable.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Including C:\Users\Andrew\play-java-1\app\controllers\Application.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java by C:\Users\Andrew\play-java-1\app\services\SegmentTable.java
+Including C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
+Including C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 5 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 5 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.795204455 s
+Java analysis took 0.361833645 s
+Java compile + analysis took 3.181764647 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed Mar 14, 2017 6:45:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c577520, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.466981449 s
+Java analysis took 0.091895651 s
+Java compile + analysis took 2.60148131 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 14, 2017 6:45:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@49b0d6c5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:45:21 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5339c530, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:45:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@a2b0e8f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.136970847 s
+Java analysis took 0.030429319 s
+Java compile + analysis took 2.194234192 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Mar 14, 2017 6:50:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@f915faf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:50:37 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ddbdbf5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:50:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@9912727, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:51:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c6165fd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:53:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a58014d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:53:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@40170771, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:55:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@40f85a8a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:55:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@48f41625, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:56:04 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5506feb6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:56:24 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f423de0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:56:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7ba3f1c3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:57:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4c097f7c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:58:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@70a44a6c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:59:09 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3d1ce8c5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 6:59:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@423e422f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Read from stdout: C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java:141:  error: method isolateRed in class DolphinAnalyzer cannot be applied to given types;
+C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java:141:  error: method isolateRed in class DolphinAnalyzer cannot be applied to given types;
+Read from stdout: 		isolateRed(imp);
+Read from stdout: 		^
+		isolateRed(imp);
+		^
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 4 s, completed Mar 14, 2017 7:02:00 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@43fca947, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.374076106 s
+Java analysis took 0.034464237 s
+Java compile + analysis took 2.468980733 s
+Invalidating C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java...
+Invalidating (transitively) by inheritance from C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java...
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+The C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java source file has the following regular definitions changed:
+	isolateRed.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java
+New invalidations:
+	Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Initial set of included nodes: Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Including C:\Users\Andrew\play-java-1\app\services\Segment.java by C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java
+Including C:\Users\Andrew\play-java-1\app\services\SegmentTable.java by C:\Users\Andrew\play-java-1\app\services\Segment.java
+Including C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java by C:\Users\Andrew\play-java-1\app\services\SegmentTable.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java
+Including C:\Users\Andrew\play-java-1\app\controllers\Application.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java by C:\Users\Andrew\play-java-1\app\services\ImageSegmenter.java
+Including C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java by C:\Users\Andrew\play-java-1\app\services\SegmentTable.java
+Including C:\Users\Andrew\play-java-1\app\services\SegmentAttributor.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
+Including C:\Users\Andrew\play-java-1\app\wekapack\WekaFileWriter.java by C:\Users\Andrew\play-java-1\app\services\SegAttributesTable.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\Andrew\play-java-1\app\services\ConvexHullCalculator.java, C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java, C:\Users\Andrew\play-java-1\app\controllers\Application.java, C:\Users\Andrew\play-java-1\app\controllers\ExaminationController.java, C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java)
+Read from stdout: Compiling 5 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 5 Java sources to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 4.049354306 s
+Java analysis took 0.436150564 s
+Java compile + analysis took 4.506990652 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 8 s, completed Mar 14, 2017 7:02:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4a6e0836, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:02:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@48133a90, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:02:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@605c6a87, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:05:56 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6777fbd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 7:07:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@46497499, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:11:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@22e7e95b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:12:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2c736cb1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:13:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4244a44, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:15:06 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@52399ceb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:15:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@e1d3496, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Andrew\play-java-1\app\services\DolphinAnalyzer.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\Andrew\play-java-1\target\scala-2.11\classes...
+Java compilation took 2.644134271 s
+Java analysis took 0.047983673 s
+Java compile + analysis took 2.740902616 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed Mar 14, 2017 7:25:43 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3d4b0e91, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:26:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e2ded11, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:26:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c4c17bb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:30:10 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5583b74e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:34:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@42649c4d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:35:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3cb17726, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 7:36:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b1f09ea, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:37:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@26939f8c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:40:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@175b86e0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:41:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@e42171c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 3 s, completed Mar 14, 2017 7:42:06 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f859e27, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:42:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5caa6b47, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:50:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6692ea, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:50:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Andrew/play-java-1/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5659c148, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Andrew\play-java-1\conf\application.conf,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\application.conf)
+	(C:\Users\Andrew\play-java-1\conf\logback.xml,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Andrew\play-java-1\conf\routes,C:\Users\Andrew\play-java-1\target\scala-2.11\classes\routes)
+Total time: 2 s, completed Mar 14, 2017 7:54:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 14860@akzysk-W370ST logs at Tue Mar 14 20:05:31 EDT 2017, goodbye.
