@@ -168,6 +168,10 @@ public class SamplesController extends Controller
         
         int segmentCount = st.size();
         sample.setSegmentCount(((Integer)segmentCount).toString());
+        
+        System.out.println("10.3 of X: FILTERING: Filter out segments with Area <= 4");
+        SegmentTableFilterer stf = new SegmentTableFilterer();
+        stf.removeSegmentsOfLessArea(st, 4);
 
 		System.out.println("11.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
 		SegmentAttributor sa = new SegmentAttributor(st, imp);
@@ -192,6 +196,22 @@ public class SamplesController extends Controller
 		ArrayList<DBSegment> wekaSegments = db.getSegments(sampleId);
 		WekaFileWriterDB wfwdb = new WekaFileWriterDB();
 		wfwdb.saveDBSegmentsasInstances(wekaSegments);
+		
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		return ok(html);
+	}
+	
+	public Result populateTrainingSet()
+	{
+		System.out.println("1 of X: GATHER DATA FROM HTML");
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+        String userId = requestData.get("userId");
+        System.out.println("userId:"+userId);
+        
+        TrainingSetBuilder tsb = new TrainingSetBuilder();
+        tsb.populateTrainingSet(requestData);
+        
+        MySQLCon db = new MySQLCon();
 		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);

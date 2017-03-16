@@ -48,6 +48,8 @@ public class SegmentAttributor {
 		attributes.add(this.getCircularity(seg));
 		attributes.add(this.getConvexity(seg, imp));
 		attributes.add(this.getStandardDevR(seg));
+		attributes.add(this.getSampleStdDevArea(seg));
+		attributes.add(this.getSampleStdDevPerimeter(seg));
 		
 		
 		return attributes;
@@ -99,6 +101,14 @@ public class SegmentAttributor {
 	
 	public SegmentAttribute getStandardDevR(Segment seg){
 		return new SegmentAttribute("StandardDevR", seg.getStandardDevR());
+	}
+	
+	public SegmentAttribute getSampleStdDevArea(Segment seg){
+		return new SegmentAttribute("SAMPLEstdDevArea", segmentTable.getSampleStdDevArea());
+	}
+	
+	public SegmentAttribute getSampleStdDevPerimeter(Segment seg){
+		return new SegmentAttribute("SAMPLEstdDevPerimeter", segmentTable.getSampleStdDevPerimeter());
 	}
 	
 }

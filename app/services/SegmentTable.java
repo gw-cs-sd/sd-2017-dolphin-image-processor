@@ -81,6 +81,11 @@ public class SegmentTable
 		return segmentTable.get(segmentLabel);
 	}
 	
+	public Segment removeSegment(int segmentLabel)
+	{
+		return segmentTable.remove(segmentLabel);
+	}
+	
 	public int size()
 	{
 		return segmentTable.size();
@@ -115,5 +120,98 @@ public class SegmentTable
 			seg.print();
 			System.out.println();
 		}
+	}
+	
+	/*
+	 * AGGREGATE METHODS
+	 * These methods are used to calculate aggregate attributes across multiple Segments.
+	 * 
+	 */
+	
+	
+	public double getSampleStdDevArea()
+	{
+		//get max Area
+		int maxArea = 0;
+		for(Segment s : segmentTable)
+		{
+			int area = s.getArea();
+			if(area > maxArea)
+			{
+				maxArea = area;
+			}
+		}
+		double[] freq = new double[maxArea + 1];
+		
+		//populate freq
+		for(Segment s : segmentTable)
+		{
+			freq[s.getArea()]++;
+		}
+		
+		//get standard deviation
+		return getStandardDev(freq);
+	}
+	
+	public double getSampleStdDevPerimeter()
+	{
+		//get max Perimeter
+		int max = 0;
+		for(Segment s : segmentTable)
+		{
+			int perimeter = s.getPerimeter();
+			if(perimeter > max)
+			{
+				max = perimeter;
+			}
+		}
+		double[] freq = new double[max + 1];
+		
+		//populate freq
+		for(Segment s : segmentTable)
+		{
+			freq[s.getPerimeter()]++;
+		}
+		
+		//get standard deviation
+		return getStandardDev(freq);
+	}
+	
+	/*
+	 * Aggregate helper methods for Standard Deviation
+	 */
+	
+	public double getStandardDev(double[] arr)
+	{
+		double mean = getMean(arr);
+		double squaredSum = 0;
+		double totalNum = 0;
+		
+		for(int i = 0; i < arr.length; i++)
+		{
+			for(int j = 0; j < arr[i]; j++)
+			{
+				squaredSum = squaredSum + Math.pow((i - mean), 2);
+				totalNum++;
+			}
+		}
+		double result = squaredSum / totalNum;
+		result = Math.sqrt(result);
+		return result;
+	}
+	
+	public double getMean(double[] arr)
+	{
+		double sum = 0;
+		double totalNum = 0;
+		for(int i = 0; i < arr.length; i++)
+		{
+			for(int j = 0; j < arr[i]; j++)
+			{
+				sum = sum + i;
+				totalNum++;
+			}
+		}
+		return (sum / totalNum);
 	}
 }

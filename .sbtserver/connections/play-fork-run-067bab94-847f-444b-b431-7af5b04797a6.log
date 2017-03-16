@@ -1,0 +1,946 @@
+New log file opened at Thu Mar 16 01:59:15 EDT 2017 by 11880@akzysk-W370ST
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.964286)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.416742)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 12.552375)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 35)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.452529)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 8.307692)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.817929)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.526623)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.01996)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 26)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.223072)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.53022)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.477678)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.610865)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.295018)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 132)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.628319)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 7.964923)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.696198)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.58155)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 17)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 27)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.659347)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 9.07142)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 27)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 7.659417)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 56)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 54)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 27)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.981481)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.241329)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 13.75022)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 36)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 40)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.75)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.282743)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.135345)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.436332)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.607681)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 40)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 57)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.964912)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.154711)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.969847)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 31)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 42)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.952381)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.220838)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.487096)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 74)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 87)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 35)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.988506)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.122858)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 11.201227)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 30)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.846154)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.520501)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.189394)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.487338)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.728999)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.97995)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 3)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.310281)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.316957)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 26)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 29)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.416742)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.398964)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.72698)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.695423)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 40)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.477678)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 16)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 50)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.343612)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.494872)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 45)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.247219)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 59)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.928571)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.448799)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.77932)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 67)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.446143)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.795832)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 49)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.628319)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.151423)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 32)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.669215)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.425259)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 27)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 45)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.39647)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 10.350018)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 30)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.785398)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.629481)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 42)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.610865)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.51754)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 51)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.349066)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.805952)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 34)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 70)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.087195)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.314347)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 58)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.623126)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.981424)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 52)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.523599)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 8.989191)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 40)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.628319)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.418723)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 25)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 48)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 41)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.136354)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.27299)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 22)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.863636)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.389454)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 8.812617)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.436332)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.244994)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 21)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 39)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.541408)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 8.5875)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 26)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.993052)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 22)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 26)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 33)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.408965)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.597557)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 37)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 10.11138)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 38)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.523599)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.377422)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.446804)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.690416)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.392699)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.031129)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 27)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.426636)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.753424)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 17)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.698132)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.455069)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 4)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.436332)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.489898)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 31)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.445222)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 21)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 26)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.427428)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.4)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 16)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 35)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.947368)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.556958)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.836254)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 33)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.639641)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.239983)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.473631)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.095445)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.436332)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.32665)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.408407)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.813689)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.310281)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.433013)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 16)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 29)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 22)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.862069)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.239075)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.307189)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 44)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 48)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 60)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.833333)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.239983)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 19.510579)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.011563)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 30)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.44949)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 121)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 95)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 41)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.852632)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.16848)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 19.492741)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 47)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.623126)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 13.124405)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 81)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 50)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 64)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.88)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.40715)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 19.790566)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.872665)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.947881)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 60)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.698132)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 7.631145)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.687419)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 54)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.349066)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.429101)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 37)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 29)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.211122)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.620264)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 34)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 25)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.941176)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.250023)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.425138)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 40)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 50)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.98)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.201062)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.247081)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 26)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.565801)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 17)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.928571)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.448799)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.452299)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 32)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 51)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.154604)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.681795)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 17)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 36)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.164837)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.243021)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.894737)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.348099)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.458258)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 22)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 30)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.337526)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 7.791666)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.484091)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.628319)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.32665)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.687419)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 16)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.875)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.441786)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.845833)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 16)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 43)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.620562)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 6.679902)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 21)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 91)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.904762)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.341942)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.477678)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Adding to existing public/wekafiles/training.arff file)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Added Segments from Sample 152 to set public/wekafiles/training.arff)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,currentSampleId:153)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,(currentSampleId NAME):AndrewViews.jpg)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 16)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.392699)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.887078)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.446143)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.43242)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 25)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.594858)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.260393)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.628319)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.97996)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 17)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.628319)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 4.409082)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 18)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 40)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.777778)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.465421)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 10.735132)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 1)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 24)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 45)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.928571)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.384685)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 8.568353)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 6)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 10)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 38)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.753982)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 2.733537)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 41)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 25)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 45)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.824354)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 11.107554)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 90)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 78)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 51)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.782051)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.185893)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 8.399067)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.519272)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.826225)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 57)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.665139)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 7.779814)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 20)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.436332)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.344156)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 15)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 48)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.837758)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.56976)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 45)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.854724)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 33)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.698132)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.074446)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 21)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.519272)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 5.966574)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 25)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.520501)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.60272)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 74)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 35)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 60)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.971429)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.759111)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 21.146352)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 5)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 28)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.775702)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.854724)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 19)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 22)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.894737)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.452529)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 1.277942)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 1483)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 238)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 45)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.668067)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.329001)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 7.582985)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 7)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 23)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.72698)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 0.699854)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 13)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 29)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.817929)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.62042)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 61)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 38)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 57)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 0.947368)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.530851)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 10.746199)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 9)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 11)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 29)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.934689)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.614101)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Adding to existing public/wekafiles/training.arff file)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Added Segments from Sample 153 to set public/wekafiles/training.arff)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,currentSampleId:154)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,(currentSampleId NAME):andrew_headshot.jpg)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,TEST PRINT)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,area : 8)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,perimeter : 14)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,meanR : 114)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,convexity : 1.0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,circularity : 0.512913)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,stdDevR : 3.966658)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,bloodStatus : notBlood)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Adding to existing public/wekafiles/training.arff file)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Added Segments from Sample 154 to set public/wekafiles/training.arff)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,currentSampleId:null)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,currentSampleId:null)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,currentSampleId:null)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message ExecutionWaiting(257,jobStop 12,ClientInfo(1a4d5e2d-b9fa-4a21-8027-0832a7f1dfca,activator,Activator,3,Vector())) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message ExecutionStarting(257) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,> jobStop 12)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,Evaluating tasks: *:jobStop)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,Running task... Cancel: sbt.server.ServerTaskCancellation@4808ede6, check cycles: false)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,cancel strategy start enabled=true lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(257),jobStop 12,Set(LiveClient(activator 1a4d5e2d-b9fa-4a21-8027-0832a7f1dfca)),sbt.server.WorkCancellationStatus$$anon$1@754a563f))))) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message TaskStarted(257,44889,Some(AttributeKey[void]("jobStop") in Scope(Global))) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message TaskFinished(257,44889,Some(AttributeKey[void]("jobStop") in Scope(Global)),true,None) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message TaskStarted(257,44888,None) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message TaskFinished(257,44888,None,true,None) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Stopping Play fork run ...)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message TaskStarted(257,44887,None) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message TaskFinished(257,44887,None,true,None) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,cancel strategy finish enabled=false lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(257),jobStop 12,Set(LiveClient(activator 1a4d5e2d-b9fa-4a21-8027-0832a7f1dfca)),sbt.server.WorkCancellationStatus$$anon$1@754a563f))))) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogSuccess(Total time: 0 s, completed Mar 16, 2017 2:00:03 AM)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,> server-post-command-cleanup)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message ExecutionSuccess(257) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,application - ApplicationTimer demo: Stopping application at 2017-03-16T06:00:03.341Z after 93s.)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,application - Shutting down connection pool.)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,JVM exiting, shutting down Play fork run ...)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Play fork run already stopped ...)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobLogEvent(12,LogMessage(info,Forked Play process exited with status: 0)) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6
+Dropping message BackgroundJobFinished(253,12) to dead client play-fork-run-067bab94-847f-444b-b431-7af5b04797a6

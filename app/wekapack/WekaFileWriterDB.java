@@ -160,4 +160,56 @@ public class WekaFileWriterDB
 		data.add(new DenseInstance(1.0, vals));
 	}
 	
+	/*
+	 * BETTER VERSIONS OF THESE METHODS
+	 * 
+	 */
+	
+	
+	//takes input of type SegAttributesMultiple. Alternatively can be taken from a SAT at index 0.
+	public void initAttributes(DBSegment seg, ArrayList<String> attrNames)
+	{
+		int i;
+		// 1. set up attributes
+		atts = new ArrayList<Attribute>();
+		// - numeric
+		//pick and choose attributes within for-loop. Some will be omitted
+		for(String name : attrNames)
+		{
+		    if(name.equals("bloodStatus"))
+		    {
+		    	// - nominal
+		    	attVals = new ArrayList<String>();
+		    	attVals.add("blood");
+		    	attVals.add("notBlood");
+		    	atts.add(new Attribute(name, attVals));
+		    }
+		    else
+		    {
+		    	atts.add(new Attribute(name));
+		    }
+		}
+	}
+	
+	//populate a single instance
+	public void populateDataSingle(DBSegment seg, ArrayList<String> attrValues, ArrayList<String> attrNames)
+	{
+		vals = new double[data.numAttributes()];
+		int i = 0;
+		for(String strVal : attrValues)
+		{
+			//System.out.println(i + " : " + strVal);
+			if(attrNames.get(i).equals("bloodStatus"))
+			{
+				vals[i] = attVals.indexOf(strVal);
+			}
+			else
+			{
+				vals[i] = Double.parseDouble(strVal);
+			}
+			i++;
+		}
+		data.add(new DenseInstance(1.0, vals));
+	}
+	
 }

@@ -25,6 +25,7 @@ POST	/requestDeleteSample		controllers.SamplesController.requestDeleteSample
 POST	/confirmSampleDelete		controllers.ConfirmSampleDeleteController.confirmSampleDelete
 POST	/viewSample					controllers.SamplesController.viewSample
 POST	/addToDataset				controllers.SamplesController.addToDataset
+POST	/populateTrainingSet		controllers.SamplesController.populateTrainingSet
 POST	/backToSample				controllers.SegmentsController.backToSamples
 POST	/viewExamination			controllers.SegmentsController.viewExamination
 POST	/backToSegments				controllers.ExaminationController.backToSegments

@@ -19,13 +19,23 @@ public class DBSegment
 	private String stdDevR;
 	private String bloodStatus;
 
+	/*
+	 * THESE 2 METHODS ARE THE PRIMARY COMMUNICATION WITH WEKA:
+	 * getAttributeNamesAsList()
+	 * getAttributeValuesAsList()
+	 * 
+	 */
 	public ArrayList<String> getAttributeNamesAsList()
 	{
 		ArrayList<String> list = new ArrayList<String>();
-		list.add("area");
-		list.add("width");
-		list.add("height");
-		list.add("perimeter");
+		list.add("areaByPerimeter");
+		//list.add("width");
+		//list.add("height");
+		//list.add("perimeter");
+		list.add("convexity");
+		list.add("circularity");
+		list.add("meanR");
+		list.add("stdDevR");
 		list.add("bloodStatus");
 		
 		return list;
@@ -34,10 +44,14 @@ public class DBSegment
 	public ArrayList<String> getAttributeValuesAsList()
 	{
 		ArrayList<String> list = new ArrayList<String>();
-		list.add(area);
-		list.add(width);
-		list.add(height);
-		list.add(perimeter);
+		list.add(((Double)(Double.parseDouble(area) / Double.parseDouble(perimeter))).toString());
+		//list.add(width);
+		//list.add(height);
+		//list.add(perimeter);
+		list.add(convexity);
+		list.add(circularity);
+		list.add(meanR);
+		list.add(stdDevR);
 		list.add(bloodStatus);
 		
 		return list;

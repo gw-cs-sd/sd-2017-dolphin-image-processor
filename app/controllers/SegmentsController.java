@@ -21,6 +21,7 @@ import services.DolphinAnalyzer;
 import services.ImageSegmenter;
 import services.Segment;
 import services.SegmentTable;
+import services.SegmentTableFilterer;
 import services.Threshold;
 import views.html.*;
 
@@ -73,6 +74,10 @@ public class SegmentsController extends Controller
 		is.calculateSegments();
 		System.out.println("3.3 of X: Segmentation: ImageSegmenter produces SegmentTable");
 		SegmentTable st = is.getSegmentTable();
+		
+		System.out.println("3.4 of X: FILTERING: Filter out segments with Area <= 4");
+        SegmentTableFilterer stf = new SegmentTableFilterer();
+        stf.removeSegmentsOfLessArea(st, 4);
 		
 		ArrayList<Segment> segList = st.getSegmentTableAsList();
 		for(Segment s : segList)

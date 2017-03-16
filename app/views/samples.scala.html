@@ -34,6 +34,36 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	</td>
     </tr>
 </table>
+<table class="tg">
+  <tr>
+  	<th>
+  	Machine Learning
+  	</th>
+  </tr>
+  <tr>
+   <td class="tg-0idt">
+   <form action='populateTrainingSet' method='POST' enctype="multipart/form-data" id="populateTrainingSetForm">
+	<p><b>Attributes</b></p>
+	<input type="checkbox" id="area" value="area" name="area"><label for="area"> area</label><br>
+	<input type="checkbox" id="width" value="width" name="width"><label for="width"> width</label><br>
+	<input type="checkbox" id="height" value="height" name="height"><label for="height"> height</label><br>
+	<input type="checkbox" id="perimeter" value="perimeter" name="perimeter"><label for="perimeter"> perimeter</label><br>
+	<input type="checkbox" id="meanR" value="meanR" name="meanR"><label for="meanR"> meanR</label><br>
+	<input type="checkbox" id="meanG" value="meanG" name="meanG"><label for="meanG"> meanG</label><br>
+	<input type="checkbox" id="meanB" value="meanB" name="meanB"><label for="meanB"> meanB</label><br>
+	<input type="checkbox" id="convexity" value="convexity" name="convexity"><label for="convexity"> convexity</label><br>
+	<input type="checkbox" id="circularity" value="circularity" name="circularity"><label for="circularity"> circularity</label><br>
+	<input type="checkbox" id="stdDevR" value="stdDevR" name ="stdDevR"><label for="stdDevR"> stdDevR</label><br>
+	<p><b>Samples</b></p>
+	@for((sample,i) <- samples.zipWithIndex) {
+	<input type="checkbox" id=i value="@sample.getSampleId()" name="@sample.getSampleId()"><label for=i> @sample.getName()</label><br>
+	}
+	<br>
+	<button type="submit" form="populateTrainingSetForm" value="@userId"  name="userId" >Populate Training Set</button>
+	</form>  
+  	</td>
+  </tr>
+</table>
 <table id="tg-cFHod" class="tg">
 <tr>
     <th class="tg-9hbo">id</th>

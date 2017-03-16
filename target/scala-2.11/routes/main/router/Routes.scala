@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Sat Mar 04 15:21:18 EST 2017
+// @DATE:Wed Mar 15 23:16:25 EDT 2017
 
 package router
 
@@ -30,9 +30,9 @@ class Routes(
   SamplesController_6: controllers.SamplesController,
   // @LINE:25
   ConfirmSampleDeleteController_3: controllers.ConfirmSampleDeleteController,
-  // @LINE:28
+  // @LINE:29
   SegmentsController_1: controllers.SegmentsController,
-  // @LINE:30
+  // @LINE:31
   ExaminationController_0: controllers.ExaminationController,
   val prefix: String
 ) extends GeneratedRouter {
@@ -53,9 +53,9 @@ class Routes(
     SamplesController_6: controllers.SamplesController,
     // @LINE:25
     ConfirmSampleDeleteController_3: controllers.ConfirmSampleDeleteController,
-    // @LINE:28
+    // @LINE:29
     SegmentsController_1: controllers.SegmentsController,
-    // @LINE:30
+    // @LINE:31
     ExaminationController_0: controllers.ExaminationController
   ) = this(errorHandler, UsersController_4, CountController_2, AsyncController_5, Assets_7, ConfirmUserDeleteController_8, SamplesController_6, ConfirmSampleDeleteController_3, SegmentsController_1, ExaminationController_0, "/")
 
@@ -86,6 +86,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """confirmSampleDelete""", """controllers.ConfirmSampleDeleteController.confirmSampleDelete"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewSample""", """controllers.SamplesController.viewSample"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addToDataset""", """controllers.SamplesController.addToDataset"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """populateTrainingSet""", """controllers.SamplesController.populateTrainingSet"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backToSample""", """controllers.SegmentsController.backToSamples"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewExamination""", """controllers.SegmentsController.viewExamination"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backToSegments""", """controllers.ExaminationController.backToSegments"""),
@@ -355,10 +356,27 @@ class Routes(
   )
 
   // @LINE:28
-  private[this] lazy val controllers_SegmentsController_backToSamples15_route = Route("POST",
+  private[this] lazy val controllers_SamplesController_populateTrainingSet15_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("populateTrainingSet")))
+  )
+  private[this] lazy val controllers_SamplesController_populateTrainingSet15_invoker = createInvoker(
+    SamplesController_6.populateTrainingSet,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SamplesController",
+      "populateTrainingSet",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """populateTrainingSet"""
+    )
+  )
+
+  // @LINE:29
+  private[this] lazy val controllers_SegmentsController_backToSamples16_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("backToSample")))
   )
-  private[this] lazy val controllers_SegmentsController_backToSamples15_invoker = createInvoker(
+  private[this] lazy val controllers_SegmentsController_backToSamples16_invoker = createInvoker(
     SegmentsController_1.backToSamples,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -371,11 +389,11 @@ class Routes(
     )
   )
 
-  // @LINE:29
-  private[this] lazy val controllers_SegmentsController_viewExamination16_route = Route("POST",
+  // @LINE:30
+  private[this] lazy val controllers_SegmentsController_viewExamination17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("viewExamination")))
   )
-  private[this] lazy val controllers_SegmentsController_viewExamination16_invoker = createInvoker(
+  private[this] lazy val controllers_SegmentsController_viewExamination17_invoker = createInvoker(
     SegmentsController_1.viewExamination,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -388,11 +406,11 @@ class Routes(
     )
   )
 
-  // @LINE:30
-  private[this] lazy val controllers_ExaminationController_backToSegments17_route = Route("POST",
+  // @LINE:31
+  private[this] lazy val controllers_ExaminationController_backToSegments18_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("backToSegments")))
   )
-  private[this] lazy val controllers_ExaminationController_backToSegments17_invoker = createInvoker(
+  private[this] lazy val controllers_ExaminationController_backToSegments18_invoker = createInvoker(
     ExaminationController_0.backToSegments,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -405,11 +423,11 @@ class Routes(
     )
   )
 
-  // @LINE:31
-  private[this] lazy val controllers_ExaminationController_clickImage18_route = Route("POST",
+  // @LINE:32
+  private[this] lazy val controllers_ExaminationController_clickImage19_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("clickImage")))
   )
-  private[this] lazy val controllers_ExaminationController_clickImage18_invoker = createInvoker(
+  private[this] lazy val controllers_ExaminationController_clickImage19_invoker = createInvoker(
     ExaminationController_0.clickImage,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -422,11 +440,11 @@ class Routes(
     )
   )
 
-  // @LINE:32
-  private[this] lazy val controllers_ExaminationController_revertToOriginal19_route = Route("POST",
+  // @LINE:33
+  private[this] lazy val controllers_ExaminationController_revertToOriginal20_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("revertToOriginal")))
   )
-  private[this] lazy val controllers_ExaminationController_revertToOriginal19_invoker = createInvoker(
+  private[this] lazy val controllers_ExaminationController_revertToOriginal20_invoker = createInvoker(
     ExaminationController_0.revertToOriginal,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -533,33 +551,39 @@ class Routes(
       }
   
     // @LINE:28
-    case controllers_SegmentsController_backToSamples15_route(params) =>
+    case controllers_SamplesController_populateTrainingSet15_route(params) =>
       call { 
-        controllers_SegmentsController_backToSamples15_invoker.call(SegmentsController_1.backToSamples)
+        controllers_SamplesController_populateTrainingSet15_invoker.call(SamplesController_6.populateTrainingSet)
       }
   
     // @LINE:29
-    case controllers_SegmentsController_viewExamination16_route(params) =>
+    case controllers_SegmentsController_backToSamples16_route(params) =>
       call { 
-        controllers_SegmentsController_viewExamination16_invoker.call(SegmentsController_1.viewExamination)
+        controllers_SegmentsController_backToSamples16_invoker.call(SegmentsController_1.backToSamples)
       }
   
     // @LINE:30
-    case controllers_ExaminationController_backToSegments17_route(params) =>
+    case controllers_SegmentsController_viewExamination17_route(params) =>
       call { 
-        controllers_ExaminationController_backToSegments17_invoker.call(ExaminationController_0.backToSegments)
+        controllers_SegmentsController_viewExamination17_invoker.call(SegmentsController_1.viewExamination)
       }
   
     // @LINE:31
-    case controllers_ExaminationController_clickImage18_route(params) =>
+    case controllers_ExaminationController_backToSegments18_route(params) =>
       call { 
-        controllers_ExaminationController_clickImage18_invoker.call(ExaminationController_0.clickImage)
+        controllers_ExaminationController_backToSegments18_invoker.call(ExaminationController_0.backToSegments)
       }
   
     // @LINE:32
-    case controllers_ExaminationController_revertToOriginal19_route(params) =>
+    case controllers_ExaminationController_clickImage19_route(params) =>
       call { 
-        controllers_ExaminationController_revertToOriginal19_invoker.call(ExaminationController_0.revertToOriginal)
+        controllers_ExaminationController_clickImage19_invoker.call(ExaminationController_0.clickImage)
+      }
+  
+    // @LINE:33
+    case controllers_ExaminationController_revertToOriginal20_route(params) =>
+      call { 
+        controllers_ExaminationController_revertToOriginal20_invoker.call(ExaminationController_0.revertToOriginal)
       }
   }
 }

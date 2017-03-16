@@ -152,6 +152,10 @@ public class Segment
 		int area = this.getArea();
 		int perimeter = this.getPerimeter();
 		double circularity = (double)(4 * Math.PI * area) / (double)(perimeter * perimeter);
+		if(circularity > 1.0)
+		{
+			circularity = 1.0;
+		}
 		return circularity;
 	}
 	
