@@ -34,15 +34,15 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	</td>
     </tr>
 </table>
+<form action='populateDataSets' method='POST' enctype="multipart/form-data" id="populateDataSetsForm">
 <table class="tg">
   <tr>
-  	<th>
+  	<th colspan="3">
   	Machine Learning
   	</th>
   </tr>
   <tr>
    <td class="tg-0idt">
-   <form action='populateTrainingSet' method='POST' enctype="multipart/form-data" id="populateTrainingSetForm">
 	<p><b>Attributes</b></p>
 	<input type="checkbox" id="area" value="area" name="area"><label for="area"> area</label><br>
 	<input type="checkbox" id="width" value="width" name="width"><label for="width"> width</label><br>
@@ -54,16 +54,34 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
 	<input type="checkbox" id="convexity" value="convexity" name="convexity"><label for="convexity"> convexity</label><br>
 	<input type="checkbox" id="circularity" value="circularity" name="circularity"><label for="circularity"> circularity</label><br>
 	<input type="checkbox" id="stdDevR" value="stdDevR" name ="stdDevR"><label for="stdDevR"> stdDevR</label><br>
-	<p><b>Samples</b></p>
+	<input type="checkbox" id="relativeX" value="relativeX" name ="relativeX"><label for="relativeX"> relativeX</label><br>
+	<input type="checkbox" id="relativeY" value="relativeY" name ="relativeY"><label for="relativeY"> relativeY</label><br>
+	<input type="checkbox" id="relativeArea" value="relativeArea" name ="relativeArea"><label for="relativeArea"> relativeArea</label><br>
+	<input type="checkbox" id="segmentCount" value="segmentCount" name ="segmentCount"><label for="segmentCount"> segmentCount</label><br>
+	</td>
+	<td class="tg-0idt">
+	<p><b>Training Samples</b></p>
 	@for((sample,i) <- samples.zipWithIndex) {
-	<input type="checkbox" id=i value="@sample.getSampleId()" name="@sample.getSampleId()"><label for=i> @sample.getName()</label><br>
+	<input type="checkbox" id=i value="@sample.getSampleId()" name="training@sample.getSampleId()"><label for=i> @sample.getName()</label><br>
 	}
 	<br>
-	<button type="submit" form="populateTrainingSetForm" value="@userId"  name="userId" >Populate Training Set</button>
-	</form>  
+  	</td>
+  	<td class="tg-0idt">
+	<p><b>Test Samples</b></p>
+	@for((sample,i) <- samples.zipWithIndex) {
+	<input type="checkbox" id=i value="@sample.getSampleId()" name="test@sample.getSampleId()"><label for=i> @sample.getName()</label><br>
+	}
+	<br>
+  </td>
+  </tr>
+  <tr>
+  	<td class="tg-0idt" colspan="3">
+  	<button type="submit" form="populateDataSetsForm" value="@userId"  name="userId" >Populate Data Sets</button><br>
+  	<button type="submit" form="populateDataSetsForm" value="@userId"  name="clearUserId" >Clear Data Sets</button>
   	</td>
   </tr>
 </table>
+</form>
 <table id="tg-cFHod" class="tg">
 <tr>
     <th class="tg-9hbo">id</th>
@@ -99,10 +117,12 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
         <form action='viewSample' method='POST' enctype="multipart/form-data" id="viewSampleForm">
     	<button type="submit" form="viewSampleForm" value="@sample.getSampleId()"  name="sampleId" >View</button>
     	</form>
+    	<!--  COMMENT OUT OLD "ADD TO TRAINING" AND "ADD TO TEST" BUTTONS
     	<form action='addToDataset' method='POST' enctype="multipart/form-data" id="addToDatasetForm">
     	<button type="submit" form="addToDatasetForm" value="@sample.getSampleId()"  name="trainingSampleId" >Add to TRAINING</button>
     	<button type="submit" form="addToDatasetForm" value="@sample.getSampleId()"  name="testSampleId" >Add to TEST</button>
     	</form>
+    	-->
     	&nbsp
     	<form action='requestDeleteSample' method='POST' enctype="multipart/form-data" id="deleteSampleForm">
     	<button type="submit" form="deleteSampleForm" value="@sample.getSampleId()"  name="sampleId" >Delete</button>

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Wed Mar 15 23:16:25 EDT 2017
+// @DATE:Thu Mar 16 17:58:27 EDT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -53,32 +53,22 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:28
+    def populateDataSets: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.populateDataSets",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "populateDataSets"})
+        }
+      """
+    )
+  
     // @LINE:22
     def backToUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SamplesController.backToUsers",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "backToUsers"})
-        }
-      """
-    )
-  
-    // @LINE:28
-    def populateTrainingSet: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SamplesController.populateTrainingSet",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "populateTrainingSet"})
-        }
-      """
-    )
-  
-    // @LINE:27
-    def addToDataset: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SamplesController.addToDataset",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addToDataset"})
         }
       """
     )
@@ -99,26 +89,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "requestDeleteSample"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:9
-  class ReverseCountController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:9
-    def count: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CountController.count",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
         }
       """
     )
@@ -283,26 +253,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "confirmSampleDelete"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:11
-  class ReverseAsyncController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:11
-    def message: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AsyncController.message",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "message"})
         }
       """
     )

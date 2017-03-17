@@ -17,6 +17,10 @@ public class DBSegment
 	private String convexity;
 	private String circularity;
 	private String stdDevR;
+	private String relativeX;
+	private String relativeY;
+	private String relativeArea;
+	private String segmentCount;
 	private String bloodStatus;
 
 	/*
@@ -25,6 +29,7 @@ public class DBSegment
 	 * getAttributeValuesAsList()
 	 * 
 	 */
+	
 	public ArrayList<String> getAttributeNamesAsList()
 	{
 		ArrayList<String> list = new ArrayList<String>();
@@ -141,7 +146,30 @@ public class DBSegment
 	public void setStdDevR(String stdDevR) {
 		this.stdDevR = stdDevR;
 	}
-
+	public String getRelativeX() {
+		return relativeX;
+	}
+	public void setRelativeX(String relativeX) {
+		this.relativeX = relativeX;
+	}
+	public String getRelativeY() {
+		return relativeY;
+	}
+	public void setRelativeY(String relativeY) {
+		this.relativeY = relativeY;
+	}
+	public String getRelativeArea() {
+		return relativeArea;
+	}
+	public void setRelativeArea(String relativeArea) {
+		this.relativeArea = relativeArea;
+	}
+	public String getSegmentCount() {
+		return segmentCount;
+	}
+	public void setSegmentCount(String segmentCount) {
+		this.segmentCount = segmentCount;
+	}
 	public String getBloodStatus() {
 		return bloodStatus;
 	}

@@ -128,6 +128,18 @@ public class SegAttributesTable {
 				{
 					segment.setStdDevR(s.getValue().toString());
 				}
+				if(s.getName().equals("RelativeX"))
+				{
+					segment.setRelativeX(s.getValue().toString());
+				}
+				if(s.getName().equals("RelativeY"))
+				{
+					segment.setRelativeY(s.getValue().toString());
+				}
+				if(s.getName().equals("RelativeArea"))
+				{
+					segment.setRelativeArea(s.getValue().toString());
+				}
 				
 			}
 			db.addSegment(segment);

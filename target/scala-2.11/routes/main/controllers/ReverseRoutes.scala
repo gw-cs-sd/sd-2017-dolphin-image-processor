@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Wed Mar 15 23:16:25 EDT 2017
+// @DATE:Thu Mar 16 17:58:27 EDT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -41,22 +41,16 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "addSample")
     }
   
+    // @LINE:28
+    def populateDataSets(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "populateDataSets")
+    }
+  
     // @LINE:22
     def backToUsers(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToUsers")
-    }
-  
-    // @LINE:28
-    def populateTrainingSet(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "populateTrainingSet")
-    }
-  
-    // @LINE:27
-    def addToDataset(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "addToDataset")
     }
   
     // @LINE:26
@@ -69,21 +63,6 @@ package controllers {
     def requestDeleteSample(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "requestDeleteSample")
-    }
-  
-  }
-
-  // @LINE:9
-  class ReverseCountController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:9
-    def count(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "count")
     }
   
   }
@@ -203,21 +182,6 @@ package controllers {
     def confirmSampleDelete(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "confirmSampleDelete")
-    }
-  
-  }
-
-  // @LINE:11
-  class ReverseAsyncController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:11
-    def message(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "message")
     }
   
   }

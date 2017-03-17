@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Wed Mar 15 23:16:25 EDT 2017
+// @DATE:Thu Mar 16 17:58:27 EDT 2017
 
 package router
 
@@ -17,19 +17,15 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  UsersController_4: controllers.UsersController,
-  // @LINE:9
-  CountController_2: controllers.CountController,
-  // @LINE:11
-  AsyncController_5: controllers.AsyncController,
+  UsersController_3: controllers.UsersController,
   // @LINE:14
-  Assets_7: controllers.Assets,
+  Assets_5: controllers.Assets,
   // @LINE:21
-  ConfirmUserDeleteController_8: controllers.ConfirmUserDeleteController,
+  ConfirmUserDeleteController_6: controllers.ConfirmUserDeleteController,
   // @LINE:22
-  SamplesController_6: controllers.SamplesController,
+  SamplesController_4: controllers.SamplesController,
   // @LINE:25
-  ConfirmSampleDeleteController_3: controllers.ConfirmSampleDeleteController,
+  ConfirmSampleDeleteController_2: controllers.ConfirmSampleDeleteController,
   // @LINE:29
   SegmentsController_1: controllers.SegmentsController,
   // @LINE:31
@@ -40,30 +36,26 @@ class Routes(
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    UsersController_4: controllers.UsersController,
-    // @LINE:9
-    CountController_2: controllers.CountController,
-    // @LINE:11
-    AsyncController_5: controllers.AsyncController,
+    UsersController_3: controllers.UsersController,
     // @LINE:14
-    Assets_7: controllers.Assets,
+    Assets_5: controllers.Assets,
     // @LINE:21
-    ConfirmUserDeleteController_8: controllers.ConfirmUserDeleteController,
+    ConfirmUserDeleteController_6: controllers.ConfirmUserDeleteController,
     // @LINE:22
-    SamplesController_6: controllers.SamplesController,
+    SamplesController_4: controllers.SamplesController,
     // @LINE:25
-    ConfirmSampleDeleteController_3: controllers.ConfirmSampleDeleteController,
+    ConfirmSampleDeleteController_2: controllers.ConfirmSampleDeleteController,
     // @LINE:29
     SegmentsController_1: controllers.SegmentsController,
     // @LINE:31
     ExaminationController_0: controllers.ExaminationController
-  ) = this(errorHandler, UsersController_4, CountController_2, AsyncController_5, Assets_7, ConfirmUserDeleteController_8, SamplesController_6, ConfirmSampleDeleteController_3, SegmentsController_1, ExaminationController_0, "/")
+  ) = this(errorHandler, UsersController_3, Assets_5, ConfirmUserDeleteController_6, SamplesController_4, ConfirmSampleDeleteController_2, SegmentsController_1, ExaminationController_0, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, UsersController_4, CountController_2, AsyncController_5, Assets_7, ConfirmUserDeleteController_8, SamplesController_6, ConfirmSampleDeleteController_3, SegmentsController_1, ExaminationController_0, prefix)
+    new Routes(errorHandler, UsersController_3, Assets_5, ConfirmUserDeleteController_6, SamplesController_4, ConfirmSampleDeleteController_2, SegmentsController_1, ExaminationController_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -72,8 +64,6 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.UsersController.initialRender"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """count""", """controllers.CountController.count"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     ("""POST""", this.prefix, """controllers.UsersController.initialRender"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addNewUser""", """controllers.UsersController.addNewUser"""),
@@ -85,8 +75,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """requestDeleteSample""", """controllers.SamplesController.requestDeleteSample"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """confirmSampleDelete""", """controllers.ConfirmSampleDeleteController.confirmSampleDelete"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewSample""", """controllers.SamplesController.viewSample"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addToDataset""", """controllers.SamplesController.addToDataset"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """populateTrainingSet""", """controllers.SamplesController.populateTrainingSet"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """populateDataSets""", """controllers.SamplesController.populateDataSets"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backToSample""", """controllers.SegmentsController.backToSamples"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewExamination""", """controllers.SegmentsController.viewExamination"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backToSegments""", """controllers.ExaminationController.backToSegments"""),
@@ -104,7 +93,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_UsersController_initialRender0_invoker = createInvoker(
-    UsersController_4.initialRender,
+    UsersController_3.initialRender,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UsersController",
@@ -116,47 +105,12 @@ class Routes(
     )
   )
 
-  // @LINE:9
-  private[this] lazy val controllers_CountController_count1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("count")))
-  )
-  private[this] lazy val controllers_CountController_count1_invoker = createInvoker(
-    CountController_2.count,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.CountController",
-      "count",
-      Nil,
-      "GET",
-      """GET     /                           controllers.HomeController.index
- An example controller showing how to use dependency injection""",
-      this.prefix + """count"""
-    )
-  )
-
-  // @LINE:11
-  private[this] lazy val controllers_AsyncController_message2_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("message")))
-  )
-  private[this] lazy val controllers_AsyncController_message2_invoker = createInvoker(
-    AsyncController_5.message,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.AsyncController",
-      "message",
-      Nil,
-      "GET",
-      """ An example controller showing how to write asynchronous code""",
-      this.prefix + """message"""
-    )
-  )
-
   // @LINE:14
-  private[this] lazy val controllers_Assets_versioned3_route = Route("GET",
+  private[this] lazy val controllers_Assets_versioned1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
-    Assets_7.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned1_invoker = createInvoker(
+    Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -169,11 +123,11 @@ class Routes(
   )
 
   // @LINE:17
-  private[this] lazy val controllers_UsersController_initialRender4_route = Route("POST",
+  private[this] lazy val controllers_UsersController_initialRender2_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_UsersController_initialRender4_invoker = createInvoker(
-    UsersController_4.initialRender,
+  private[this] lazy val controllers_UsersController_initialRender2_invoker = createInvoker(
+    UsersController_3.initialRender,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UsersController",
@@ -186,11 +140,11 @@ class Routes(
   )
 
   // @LINE:18
-  private[this] lazy val controllers_UsersController_addNewUser5_route = Route("POST",
+  private[this] lazy val controllers_UsersController_addNewUser3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addNewUser")))
   )
-  private[this] lazy val controllers_UsersController_addNewUser5_invoker = createInvoker(
-    UsersController_4.addNewUser,
+  private[this] lazy val controllers_UsersController_addNewUser3_invoker = createInvoker(
+    UsersController_3.addNewUser,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UsersController",
@@ -203,11 +157,11 @@ class Routes(
   )
 
   // @LINE:19
-  private[this] lazy val controllers_UsersController_requestDeleteUser6_route = Route("POST",
+  private[this] lazy val controllers_UsersController_requestDeleteUser4_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("requestDeleteUser")))
   )
-  private[this] lazy val controllers_UsersController_requestDeleteUser6_invoker = createInvoker(
-    UsersController_4.requestDeleteUser,
+  private[this] lazy val controllers_UsersController_requestDeleteUser4_invoker = createInvoker(
+    UsersController_3.requestDeleteUser,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UsersController",
@@ -220,11 +174,11 @@ class Routes(
   )
 
   // @LINE:20
-  private[this] lazy val controllers_UsersController_loginUser7_route = Route("POST",
+  private[this] lazy val controllers_UsersController_loginUser5_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("loginUser")))
   )
-  private[this] lazy val controllers_UsersController_loginUser7_invoker = createInvoker(
-    UsersController_4.loginUser,
+  private[this] lazy val controllers_UsersController_loginUser5_invoker = createInvoker(
+    UsersController_3.loginUser,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UsersController",
@@ -237,11 +191,11 @@ class Routes(
   )
 
   // @LINE:21
-  private[this] lazy val controllers_ConfirmUserDeleteController_confirm8_route = Route("POST",
+  private[this] lazy val controllers_ConfirmUserDeleteController_confirm6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("confirm")))
   )
-  private[this] lazy val controllers_ConfirmUserDeleteController_confirm8_invoker = createInvoker(
-    ConfirmUserDeleteController_8.confirm,
+  private[this] lazy val controllers_ConfirmUserDeleteController_confirm6_invoker = createInvoker(
+    ConfirmUserDeleteController_6.confirm,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ConfirmUserDeleteController",
@@ -254,11 +208,11 @@ class Routes(
   )
 
   // @LINE:22
-  private[this] lazy val controllers_SamplesController_backToUsers9_route = Route("POST",
+  private[this] lazy val controllers_SamplesController_backToUsers7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("backToUsers")))
   )
-  private[this] lazy val controllers_SamplesController_backToUsers9_invoker = createInvoker(
-    SamplesController_6.backToUsers,
+  private[this] lazy val controllers_SamplesController_backToUsers7_invoker = createInvoker(
+    SamplesController_4.backToUsers,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SamplesController",
@@ -271,11 +225,11 @@ class Routes(
   )
 
   // @LINE:23
-  private[this] lazy val controllers_SamplesController_addSample10_route = Route("POST",
+  private[this] lazy val controllers_SamplesController_addSample8_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addSample")))
   )
-  private[this] lazy val controllers_SamplesController_addSample10_invoker = createInvoker(
-    SamplesController_6.addSample,
+  private[this] lazy val controllers_SamplesController_addSample8_invoker = createInvoker(
+    SamplesController_4.addSample,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SamplesController",
@@ -288,11 +242,11 @@ class Routes(
   )
 
   // @LINE:24
-  private[this] lazy val controllers_SamplesController_requestDeleteSample11_route = Route("POST",
+  private[this] lazy val controllers_SamplesController_requestDeleteSample9_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("requestDeleteSample")))
   )
-  private[this] lazy val controllers_SamplesController_requestDeleteSample11_invoker = createInvoker(
-    SamplesController_6.requestDeleteSample,
+  private[this] lazy val controllers_SamplesController_requestDeleteSample9_invoker = createInvoker(
+    SamplesController_4.requestDeleteSample,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SamplesController",
@@ -305,11 +259,11 @@ class Routes(
   )
 
   // @LINE:25
-  private[this] lazy val controllers_ConfirmSampleDeleteController_confirmSampleDelete12_route = Route("POST",
+  private[this] lazy val controllers_ConfirmSampleDeleteController_confirmSampleDelete10_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("confirmSampleDelete")))
   )
-  private[this] lazy val controllers_ConfirmSampleDeleteController_confirmSampleDelete12_invoker = createInvoker(
-    ConfirmSampleDeleteController_3.confirmSampleDelete,
+  private[this] lazy val controllers_ConfirmSampleDeleteController_confirmSampleDelete10_invoker = createInvoker(
+    ConfirmSampleDeleteController_2.confirmSampleDelete,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ConfirmSampleDeleteController",
@@ -322,11 +276,11 @@ class Routes(
   )
 
   // @LINE:26
-  private[this] lazy val controllers_SamplesController_viewSample13_route = Route("POST",
+  private[this] lazy val controllers_SamplesController_viewSample11_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("viewSample")))
   )
-  private[this] lazy val controllers_SamplesController_viewSample13_invoker = createInvoker(
-    SamplesController_6.viewSample,
+  private[this] lazy val controllers_SamplesController_viewSample11_invoker = createInvoker(
+    SamplesController_4.viewSample,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SamplesController",
@@ -338,45 +292,28 @@ class Routes(
     )
   )
 
-  // @LINE:27
-  private[this] lazy val controllers_SamplesController_addToDataset14_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addToDataset")))
-  )
-  private[this] lazy val controllers_SamplesController_addToDataset14_invoker = createInvoker(
-    SamplesController_6.addToDataset,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.SamplesController",
-      "addToDataset",
-      Nil,
-      "POST",
-      """""",
-      this.prefix + """addToDataset"""
-    )
-  )
-
   // @LINE:28
-  private[this] lazy val controllers_SamplesController_populateTrainingSet15_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("populateTrainingSet")))
+  private[this] lazy val controllers_SamplesController_populateDataSets12_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("populateDataSets")))
   )
-  private[this] lazy val controllers_SamplesController_populateTrainingSet15_invoker = createInvoker(
-    SamplesController_6.populateTrainingSet,
+  private[this] lazy val controllers_SamplesController_populateDataSets12_invoker = createInvoker(
+    SamplesController_4.populateDataSets,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SamplesController",
-      "populateTrainingSet",
+      "populateDataSets",
       Nil,
       "POST",
-      """""",
-      this.prefix + """populateTrainingSet"""
+      """POST	/addToDataset				controllers.SamplesController.addToDataset""",
+      this.prefix + """populateDataSets"""
     )
   )
 
   // @LINE:29
-  private[this] lazy val controllers_SegmentsController_backToSamples16_route = Route("POST",
+  private[this] lazy val controllers_SegmentsController_backToSamples13_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("backToSample")))
   )
-  private[this] lazy val controllers_SegmentsController_backToSamples16_invoker = createInvoker(
+  private[this] lazy val controllers_SegmentsController_backToSamples13_invoker = createInvoker(
     SegmentsController_1.backToSamples,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -390,10 +327,10 @@ class Routes(
   )
 
   // @LINE:30
-  private[this] lazy val controllers_SegmentsController_viewExamination17_route = Route("POST",
+  private[this] lazy val controllers_SegmentsController_viewExamination14_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("viewExamination")))
   )
-  private[this] lazy val controllers_SegmentsController_viewExamination17_invoker = createInvoker(
+  private[this] lazy val controllers_SegmentsController_viewExamination14_invoker = createInvoker(
     SegmentsController_1.viewExamination,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -407,10 +344,10 @@ class Routes(
   )
 
   // @LINE:31
-  private[this] lazy val controllers_ExaminationController_backToSegments18_route = Route("POST",
+  private[this] lazy val controllers_ExaminationController_backToSegments15_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("backToSegments")))
   )
-  private[this] lazy val controllers_ExaminationController_backToSegments18_invoker = createInvoker(
+  private[this] lazy val controllers_ExaminationController_backToSegments15_invoker = createInvoker(
     ExaminationController_0.backToSegments,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -424,10 +361,10 @@ class Routes(
   )
 
   // @LINE:32
-  private[this] lazy val controllers_ExaminationController_clickImage19_route = Route("POST",
+  private[this] lazy val controllers_ExaminationController_clickImage16_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("clickImage")))
   )
-  private[this] lazy val controllers_ExaminationController_clickImage19_invoker = createInvoker(
+  private[this] lazy val controllers_ExaminationController_clickImage16_invoker = createInvoker(
     ExaminationController_0.clickImage,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -441,10 +378,10 @@ class Routes(
   )
 
   // @LINE:33
-  private[this] lazy val controllers_ExaminationController_revertToOriginal20_route = Route("POST",
+  private[this] lazy val controllers_ExaminationController_revertToOriginal17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("revertToOriginal")))
   )
-  private[this] lazy val controllers_ExaminationController_revertToOriginal20_invoker = createInvoker(
+  private[this] lazy val controllers_ExaminationController_revertToOriginal17_invoker = createInvoker(
     ExaminationController_0.revertToOriginal,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -463,127 +400,109 @@ class Routes(
     // @LINE:6
     case controllers_UsersController_initialRender0_route(params) =>
       call { 
-        controllers_UsersController_initialRender0_invoker.call(UsersController_4.initialRender)
-      }
-  
-    // @LINE:9
-    case controllers_CountController_count1_route(params) =>
-      call { 
-        controllers_CountController_count1_invoker.call(CountController_2.count)
-      }
-  
-    // @LINE:11
-    case controllers_AsyncController_message2_route(params) =>
-      call { 
-        controllers_AsyncController_message2_invoker.call(AsyncController_5.message)
+        controllers_UsersController_initialRender0_invoker.call(UsersController_3.initialRender)
       }
   
     // @LINE:14
-    case controllers_Assets_versioned3_route(params) =>
+    case controllers_Assets_versioned1_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned3_invoker.call(Assets_7.versioned(path, file))
+        controllers_Assets_versioned1_invoker.call(Assets_5.versioned(path, file))
       }
   
     // @LINE:17
-    case controllers_UsersController_initialRender4_route(params) =>
+    case controllers_UsersController_initialRender2_route(params) =>
       call { 
-        controllers_UsersController_initialRender4_invoker.call(UsersController_4.initialRender)
+        controllers_UsersController_initialRender2_invoker.call(UsersController_3.initialRender)
       }
   
     // @LINE:18
-    case controllers_UsersController_addNewUser5_route(params) =>
+    case controllers_UsersController_addNewUser3_route(params) =>
       call { 
-        controllers_UsersController_addNewUser5_invoker.call(UsersController_4.addNewUser)
+        controllers_UsersController_addNewUser3_invoker.call(UsersController_3.addNewUser)
       }
   
     // @LINE:19
-    case controllers_UsersController_requestDeleteUser6_route(params) =>
+    case controllers_UsersController_requestDeleteUser4_route(params) =>
       call { 
-        controllers_UsersController_requestDeleteUser6_invoker.call(UsersController_4.requestDeleteUser)
+        controllers_UsersController_requestDeleteUser4_invoker.call(UsersController_3.requestDeleteUser)
       }
   
     // @LINE:20
-    case controllers_UsersController_loginUser7_route(params) =>
+    case controllers_UsersController_loginUser5_route(params) =>
       call { 
-        controllers_UsersController_loginUser7_invoker.call(UsersController_4.loginUser)
+        controllers_UsersController_loginUser5_invoker.call(UsersController_3.loginUser)
       }
   
     // @LINE:21
-    case controllers_ConfirmUserDeleteController_confirm8_route(params) =>
+    case controllers_ConfirmUserDeleteController_confirm6_route(params) =>
       call { 
-        controllers_ConfirmUserDeleteController_confirm8_invoker.call(ConfirmUserDeleteController_8.confirm)
+        controllers_ConfirmUserDeleteController_confirm6_invoker.call(ConfirmUserDeleteController_6.confirm)
       }
   
     // @LINE:22
-    case controllers_SamplesController_backToUsers9_route(params) =>
+    case controllers_SamplesController_backToUsers7_route(params) =>
       call { 
-        controllers_SamplesController_backToUsers9_invoker.call(SamplesController_6.backToUsers)
+        controllers_SamplesController_backToUsers7_invoker.call(SamplesController_4.backToUsers)
       }
   
     // @LINE:23
-    case controllers_SamplesController_addSample10_route(params) =>
+    case controllers_SamplesController_addSample8_route(params) =>
       call { 
-        controllers_SamplesController_addSample10_invoker.call(SamplesController_6.addSample)
+        controllers_SamplesController_addSample8_invoker.call(SamplesController_4.addSample)
       }
   
     // @LINE:24
-    case controllers_SamplesController_requestDeleteSample11_route(params) =>
+    case controllers_SamplesController_requestDeleteSample9_route(params) =>
       call { 
-        controllers_SamplesController_requestDeleteSample11_invoker.call(SamplesController_6.requestDeleteSample)
+        controllers_SamplesController_requestDeleteSample9_invoker.call(SamplesController_4.requestDeleteSample)
       }
   
     // @LINE:25
-    case controllers_ConfirmSampleDeleteController_confirmSampleDelete12_route(params) =>
+    case controllers_ConfirmSampleDeleteController_confirmSampleDelete10_route(params) =>
       call { 
-        controllers_ConfirmSampleDeleteController_confirmSampleDelete12_invoker.call(ConfirmSampleDeleteController_3.confirmSampleDelete)
+        controllers_ConfirmSampleDeleteController_confirmSampleDelete10_invoker.call(ConfirmSampleDeleteController_2.confirmSampleDelete)
       }
   
     // @LINE:26
-    case controllers_SamplesController_viewSample13_route(params) =>
+    case controllers_SamplesController_viewSample11_route(params) =>
       call { 
-        controllers_SamplesController_viewSample13_invoker.call(SamplesController_6.viewSample)
-      }
-  
-    // @LINE:27
-    case controllers_SamplesController_addToDataset14_route(params) =>
-      call { 
-        controllers_SamplesController_addToDataset14_invoker.call(SamplesController_6.addToDataset)
+        controllers_SamplesController_viewSample11_invoker.call(SamplesController_4.viewSample)
       }
   
     // @LINE:28
-    case controllers_SamplesController_populateTrainingSet15_route(params) =>
+    case controllers_SamplesController_populateDataSets12_route(params) =>
       call { 
-        controllers_SamplesController_populateTrainingSet15_invoker.call(SamplesController_6.populateTrainingSet)
+        controllers_SamplesController_populateDataSets12_invoker.call(SamplesController_4.populateDataSets)
       }
   
     // @LINE:29
-    case controllers_SegmentsController_backToSamples16_route(params) =>
+    case controllers_SegmentsController_backToSamples13_route(params) =>
       call { 
-        controllers_SegmentsController_backToSamples16_invoker.call(SegmentsController_1.backToSamples)
+        controllers_SegmentsController_backToSamples13_invoker.call(SegmentsController_1.backToSamples)
       }
   
     // @LINE:30
-    case controllers_SegmentsController_viewExamination17_route(params) =>
+    case controllers_SegmentsController_viewExamination14_route(params) =>
       call { 
-        controllers_SegmentsController_viewExamination17_invoker.call(SegmentsController_1.viewExamination)
+        controllers_SegmentsController_viewExamination14_invoker.call(SegmentsController_1.viewExamination)
       }
   
     // @LINE:31
-    case controllers_ExaminationController_backToSegments18_route(params) =>
+    case controllers_ExaminationController_backToSegments15_route(params) =>
       call { 
-        controllers_ExaminationController_backToSegments18_invoker.call(ExaminationController_0.backToSegments)
+        controllers_ExaminationController_backToSegments15_invoker.call(ExaminationController_0.backToSegments)
       }
   
     // @LINE:32
-    case controllers_ExaminationController_clickImage19_route(params) =>
+    case controllers_ExaminationController_clickImage16_route(params) =>
       call { 
-        controllers_ExaminationController_clickImage19_invoker.call(ExaminationController_0.clickImage)
+        controllers_ExaminationController_clickImage16_invoker.call(ExaminationController_0.clickImage)
       }
   
     // @LINE:33
-    case controllers_ExaminationController_revertToOriginal20_route(params) =>
+    case controllers_ExaminationController_revertToOriginal17_route(params) =>
       call { 
-        controllers_ExaminationController_revertToOriginal20_invoker.call(ExaminationController_0.revertToOriginal)
+        controllers_ExaminationController_revertToOriginal17_invoker.call(ExaminationController_0.revertToOriginal)
       }
   }
 }

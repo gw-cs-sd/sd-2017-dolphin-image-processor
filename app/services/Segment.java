@@ -221,6 +221,16 @@ public class Segment
 	}
 	
 	/*============================================================================
+	 * METHODS WITH RESPECT TO A SEGMENTCOUNT
+	 *============================================================================
+	 */
+	
+	public int getSegmentCount(int segmentCount)
+	{
+		return segmentCount;
+	}
+	
+	/*============================================================================
 	 * METHODS WITH RESPECT TO AN IMAGEPLUS
 	 *============================================================================
 	 */
@@ -261,6 +271,30 @@ public class Segment
 		Roi roi = new Roi(minX, minY, width, height);
 		imp.setRoi(roi);
 		return roi;
+	}
+	
+	public double getRelativeX(ImagePlus imp)
+	{
+		double meanX = this.getMeanX();
+		double maxX = imp.getWidth() - 1;
+		
+		return meanX / maxX;
+	}
+	
+	public double getRelativeY(ImagePlus imp)
+	{
+		double meanY = this.getMeanY();
+		double maxY = imp.getHeight() - 1;
+		return meanY / maxY;
+	}
+	
+	public double getRelativeArea(ImagePlus imp)
+	{
+		double segArea = this.getArea();
+		double width = imp.getWidth();
+		double height = imp.getHeight();
+		double totalArea = width * height;
+		return segArea / totalArea;
 	}
 	
 	/*============================================================================

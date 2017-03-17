@@ -298,8 +298,8 @@ public class MySQLCon
 			//insert a new sample into the database
 			conn = DB.getConnection();
 			st = conn.prepareStatement("INSERT into segment "
-					+ "(sampleId, label, area, width, height, perimeter, meanR, meanG, meanB, convexity, circularity, stdDevR, bloodStatus)"
-					+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+					+ "(sampleId, label, area, width, height, perimeter, meanR, meanG, meanB, convexity, circularity, stdDevR, relativeX, relativeY, relativeArea, segmentCount, bloodStatus)"
+					+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			st.setString(1, segment.getSampleId());
 			st.setString(2, segment.getLabel());
 			st.setString(3, segment.getArea());
@@ -312,7 +312,11 @@ public class MySQLCon
 			st.setString(10, segment.getConvexity());
 			st.setString(11, segment.getCircularity());
 			st.setString(12, segment.getStdDevR());
-			st.setString(13, segment.getBloodStatus());
+			st.setString(13, segment.getRelativeX());
+			st.setString(14, segment.getRelativeY());
+			st.setString(15, segment.getRelativeArea());
+			st.setString(16, segment.getSegmentCount());
+			st.setString(17, segment.getBloodStatus());
 			//System.out.println("segment blood status = " + segment.getBloodStatus());
 			st.execute();
 			st.close();
@@ -323,26 +327,6 @@ public class MySQLCon
 			System.out.println(e);
 		}
 	}
-	
-	/*
-	public void populateSegmentBloodStatus(DBSample sample)
-	{
-		try
-		{
-			//populate all segments for this sample with its bloodStatus
-			conn = DB.getConnection();
-			st = conn.prepareStatement("UPDATE segment SET bloodStatus = ? WHERE sampleId = ?");
-			st.setString(1, sample.getBloodStatus());
-			st.setString(2, sample.getSampleId());
-			st.execute();
-			conn.close();
-		}
-		catch (Exception e)
-		{
-			System.out.println(e);
-		}
-	}
-	*/
 	
 	public void deleteSample(String sampleId)
 	{
@@ -407,7 +391,11 @@ public class MySQLCon
 				segment.setConvexity(((Double)rs.getDouble(11)).toString());
 				segment.setCircularity(((Double)rs.getDouble(12)).toString());
 				segment.setStdDevR(((Double)rs.getDouble(13)).toString());
-				segment.setBloodStatus(rs.getString(14));
+				segment.setRelativeX(((Double)rs.getDouble(14)).toString());
+				segment.setRelativeY(((Double)rs.getDouble(15)).toString());
+				segment.setRelativeArea(((Double)rs.getDouble(16)).toString());
+				segment.setSegmentCount(((Integer)rs.getInt(17)).toString());
+				segment.setBloodStatus(rs.getString(18));
 				segments.add(segment);
 			}
 			st.close();

@@ -48,9 +48,15 @@ public class SegmentAttributor {
 		attributes.add(this.getCircularity(seg));
 		attributes.add(this.getConvexity(seg, imp));
 		attributes.add(this.getStandardDevR(seg));
+		
 		attributes.add(this.getSampleStdDevArea(seg));
 		attributes.add(this.getSampleStdDevPerimeter(seg));
 		
+		attributes.add(this.getRelativeX(seg, imp));
+		attributes.add(this.getRelativeY(seg, imp));
+		attributes.add(this.getRelativeArea(seg, imp));
+		
+		attributes.add(this.getSegmentCount(seg, segmentTable.getSegmentTableAsList().size()));
 		
 		return attributes;
 	}
@@ -109,6 +115,22 @@ public class SegmentAttributor {
 	
 	public SegmentAttribute getSampleStdDevPerimeter(Segment seg){
 		return new SegmentAttribute("SAMPLEstdDevPerimeter", segmentTable.getSampleStdDevPerimeter());
+	}
+	
+	public SegmentAttribute getRelativeX(Segment seg, ImagePlus orig) {
+		return new SegmentAttribute("RelativeX", seg.getRelativeX(orig));
+	}
+	
+	public SegmentAttribute getRelativeY(Segment seg, ImagePlus orig) {
+		return new SegmentAttribute("RelativeY", seg.getRelativeY(orig));
+	}
+	
+	public SegmentAttribute getRelativeArea(Segment seg, ImagePlus orig) {
+		return new SegmentAttribute("RelativeArea", seg.getRelativeArea(orig));
+	}
+	
+	public SegmentAttribute getSegmentCount(Segment seg, int segmentCount) {
+		return new SegmentAttribute("SegmentCount", seg.getSegmentCount(segmentCount));
 	}
 	
 }

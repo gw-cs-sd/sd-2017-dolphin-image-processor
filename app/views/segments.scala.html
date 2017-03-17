@@ -46,6 +46,10 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	<th class="tg-amwm">Convexity</th>
     	<th class="tg-amwm">Circularity</th>
     	<th class="tg-amwm">StdDevR</th>
+    	<th class="tg-amwm">RelativeX</th>
+    	<th class="tg-amwm">RelativeY</th>
+    	<th class="tg-amwm">RelativeArea</th>
+    	<th class="tg-amwm">SegmentCount</th>
     	<th class="tg-amwm">Blood Status</th>
     </tr>
 
@@ -63,6 +67,10 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getConvexity()</td>
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getCircularity()</td>
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getStdDevR()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getRelativeX()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getRelativeY()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getRelativeArea()</td>
+     		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getSegmentCount()</td>
      		<td @if(i % 2==0) {class="tg-j0tj"} else {class="tg-baqh"}>@segment.getBloodStatus()</td>
     	</tr>
 	}

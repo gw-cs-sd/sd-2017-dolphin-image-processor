@@ -166,16 +166,17 @@ public class SamplesController extends Controller
 		System.out.println("10.2 of X: Segmentation: ImageSegmenter produces SegmentTable");
 		SegmentTable st = is.getSegmentTable();	        
         
-        int segmentCount = st.size();
-        sample.setSegmentCount(((Integer)segmentCount).toString());
-        
         System.out.println("10.3 of X: FILTERING: Filter out segments with Area <= 4");
         SegmentTableFilterer stf = new SegmentTableFilterer();
         stf.removeSegmentsOfLessArea(st, 4);
+        
+        int segmentCount = st.size();
+        sample.setSegmentCount(((Integer)segmentCount).toString());
 
 		System.out.println("11.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
 		SegmentAttributor sa = new SegmentAttributor(st, imp);
 		SegAttributesTable sat = sa.getSegAttributesTable();
+		
 		//sat.printTable();
 		
 		System.out.println("12.0 of X: DB SAVE SAMPLE: Add this sample to the sample table in the database");
@@ -187,6 +188,7 @@ public class SamplesController extends Controller
 		//System.out.println("13.1 of X: DB SAVE SEGMENTS: Add bloodStatus to all the segments of this sample in DB");
 		//db.populateSegmentBloodStatus(sample);
 		
+		/*
 		System.out.println("14.0 of X: WEKA: Convert SAT to .ARFF and save file");
 		WekaFileWriter wfw = new WekaFileWriter();
 		wfw.saveSATasARFF(sat);
@@ -196,20 +198,42 @@ public class SamplesController extends Controller
 		ArrayList<DBSegment> wekaSegments = db.getSegments(sampleId);
 		WekaFileWriterDB wfwdb = new WekaFileWriterDB();
 		wfwdb.saveDBSegmentsasInstances(wekaSegments);
+		*/
 		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
 	}
 	
-	public Result populateTrainingSet()
+	public Result populateDataSets()
 	{
 		System.out.println("1 of X: GATHER DATA FROM HTML");
 		DynamicForm requestData = formFactory.form().bindFromRequest();
         String userId = requestData.get("userId");
         System.out.println("userId:"+userId);
         
-        TrainingSetBuilder tsb = new TrainingSetBuilder();
-        tsb.populateTrainingSet(requestData);
+        if(Strings.isNullOrEmpty(userId))
+        {
+        	userId = requestData.get("clearUserId");
+        	if(Strings.isNullOrEmpty(requestData.get("clearUserId")))
+        	{
+        		
+        	}
+        	else
+        	{
+        		//user requested to clear data set
+        		return clearDataSets(userId);
+        	}
+        }
+        
+        DataSetBuilder dsb = new DataSetBuilder();
+        Instances train = dsb.populateTrainingSet(requestData);
+        Instances test = dsb.populateTestSet(requestData);
+        
+        //run weka test
+        /*
+        WekaTester wekaTester = new WekaTester();
+        wekaTester.runClassifier(train, test);
+        */
         
         MySQLCon db = new MySQLCon();
 		
@@ -217,6 +241,20 @@ public class SamplesController extends Controller
 		return ok(html);
 	}
 	
+	public Result clearDataSets(String userId)
+	{
+        DataSetBuilder dsb = new DataSetBuilder();
+        dsb.deleteTrainingSet();
+        dsb.deleteTestSet();
+        
+        MySQLCon db = new MySQLCon();
+		
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		return ok(html);
+	}
+	
+	//COMMENT OUT OLD "ADD TO TRAINING" AND "ADD TO TEST" BUTTONS
+	/*
 	public Result addToDataset()
 	{
 		DynamicForm requestData = formFactory.form().bindFromRequest();
@@ -248,7 +286,9 @@ public class SamplesController extends Controller
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
 	}
+	*/
 	
+	/*
 	public void appendSegmentsToFile(ArrayList<DBSegment> list, String filepath)
 	{
 		WekaFileWriterDB wfw = new WekaFileWriterDB();
@@ -271,6 +311,7 @@ public class SamplesController extends Controller
 			System.out.println("Creating new " + filepath);
 		}
 	}
+	*/
 	
 	public Result requestDeleteSample()
 	{

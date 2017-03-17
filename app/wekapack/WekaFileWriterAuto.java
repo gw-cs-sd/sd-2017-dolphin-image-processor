@@ -22,12 +22,26 @@ public class WekaFileWriterAuto {
 	ArrayList<String> attributeNames;
 	ArrayList<String> attributeFormValues;
 	
+	public WekaFileWriterAuto()
+	{
+	}
 	
 	public WekaFileWriterAuto(ArrayList<String> attrNames, ArrayList<String> attrValues)
 	{
+		setAttributeNames(attrNames);
+		setAttributeFormValues(attrValues);
+	}
+	
+	public void setAttributeNames(ArrayList<String> attrNames)
+	{
 		attributeNames = attrNames;
+	}
+	
+	public void setAttributeFormValues(ArrayList<String> attrValues)
+	{
 		attributeFormValues = attrValues;
 	}
+	
 	
 	public Instances getInstances()
 	{
@@ -85,6 +99,7 @@ public class WekaFileWriterAuto {
 			DataSource source = new DataSource(filepath);
 			readData = source.getDataSet();
 			// setting class attribute if the data format does not provide this information
+			readData.setClassIndex(data.numAttributes() - 1);
 		}
 		catch(Exception e)
 		{
@@ -206,14 +221,32 @@ public class WekaFileWriterAuto {
 			{
 				attributeValues.add(seg.getStdDevR());
 			}
+			if(formValue.equals("relativeX"))
+			{
+				attributeValues.add(seg.getRelativeX());
+			}
+			if(formValue.equals("relativeY"))
+			{
+				attributeValues.add(seg.getRelativeY());
+			}
+			if(formValue.equals("relativeArea"))
+			{
+				attributeValues.add(seg.getRelativeArea());
+			}
+			if(formValue.equals("segmentCount"))
+			{
+				attributeValues.add(seg.getSegmentCount());
+			}
 		}
 		attributeValues.add(seg.getBloodStatus());
 		
+		/*
 		System.out.println("TEST PRINT");
 		for(int i = 0; i < attributeNames.size(); i++)
 		{
 			System.out.println(attributeNames.get(i) + " : " + attributeValues.get(i));
 		}
+		*/
 		return attributeValues;
 	}
 }

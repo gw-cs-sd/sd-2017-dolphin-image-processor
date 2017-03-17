@@ -6,9 +6,9 @@
 GET     /                           controllers.UsersController.initialRender
 #GET     /                           controllers.HomeController.index
 # An example controller showing how to use dependency injection
-GET     /count                      controllers.CountController.count
+#GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
-GET     /message                    controllers.AsyncController.message
+#GET     /message                    controllers.AsyncController.message
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
@@ -24,8 +24,8 @@ POST	/addSample					controllers.SamplesController.addSample
 POST	/requestDeleteSample		controllers.SamplesController.requestDeleteSample
 POST	/confirmSampleDelete		controllers.ConfirmSampleDeleteController.confirmSampleDelete
 POST	/viewSample					controllers.SamplesController.viewSample
-POST	/addToDataset				controllers.SamplesController.addToDataset
-POST	/populateTrainingSet		controllers.SamplesController.populateTrainingSet
+#POST	/addToDataset				controllers.SamplesController.addToDataset
+POST	/populateDataSets			controllers.SamplesController.populateDataSets
 POST	/backToSample				controllers.SegmentsController.backToSamples
 POST	/viewExamination			controllers.SegmentsController.viewExamination
 POST	/backToSegments				controllers.ExaminationController.backToSegments
