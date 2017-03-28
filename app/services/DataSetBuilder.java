@@ -35,6 +35,12 @@ public class DataSetBuilder
         attributeNames = buildAttributeNamesList();
         attributeFormValues = buildAttributeFormValuesList(requestData, attributeNames);
         
+        //check if all elements in attributeFormValues are null; i.e. no attributes have been chosen
+        if(allElementsAreNull(attributeFormValues))
+        {
+        	System.out.println("ATTRIBUTE FORM VALUES: ALL ELEMENTS ARE NULL!");
+        }
+        
         MySQLCon db = new MySQLCon();
         
         //Check all the user's samples to see which ones he/she chose to populate
@@ -178,5 +184,18 @@ public class DataSetBuilder
 	{
 		String filepath = "public/wekafiles/test.arff";
 		deleteDataSet(filepath);
+	}
+	
+	//check if all values in an arraylist are NULL
+	public boolean allElementsAreNull(ArrayList<String> list)
+	{
+		for(String s : list)
+		{
+			if(s != null)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 }

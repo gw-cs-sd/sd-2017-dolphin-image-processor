@@ -25,6 +25,7 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	<br>
 		<input type="radio" name="bloodStatusRadio" value="notBlood"> Not Blood<br>
 		<input type="radio" name="bloodStatusRadio" value="blood" checked> Blood<br>
+		<input type="radio" name="bloodStatusRadio" value="unknown"> You Tell Me<br>
     	</form>
     	</td>
     	<td class="tg-j0tj" style="text-align: center;">
@@ -82,6 +83,15 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
   </tr>
 </table>
 </form>
+<form action='runClassifier' method='POST' enctype="multipart/form-data" id="runClassifierForm">
+<table id="tg-cFHod" class="tg">
+<tr>
+	<td class="tg-0idt">
+		<button type="submit" form="runClassifier" value="@userId"  name="userId" >Run Classifier</button>
+	</td>
+</tr>
+</table>
+</form>
 <table id="tg-cFHod" class="tg">
 <tr>
     <th class="tg-9hbo">id</th>
@@ -132,6 +142,40 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
   }
 </table>
 <script type="text/javascript" charset="utf-8">
+function checkAllAttributes()
+{
+	document.getElementById("area").checked = true;
+	document.getElementById("width").checked = true;
+	document.getElementById("height").checked = true;
+	document.getElementById("perimeter").checked = true;
+	document.getElementById("meanR").checked = true;
+	document.getElementById("meanG").checked = true;
+	document.getElementById("meanB").checked = true;
+	document.getElementById("convexity").checked = true;
+	document.getElementById("circularity").checked = true;
+	document.getElementById("stdDevR").checked = true;
+	document.getElementById("relativeX").checked = true;
+	document.getElementById("relativeY").checked = true;
+	document.getElementById("relativeArea").checked = true;
+	document.getElementById("segmentCount").checked = true;
+}
+function uncheckAllAttributes()
+{
+	document.getElementById("area").checked = false;
+	document.getElementById("width").checked = false;
+	document.getElementById("height").checked = false;
+	document.getElementById("perimeter").checked = false;
+	document.getElementById("meanR").checked = false;
+	document.getElementById("meanG").checked = false;
+	document.getElementById("meanB").checked = false;
+	document.getElementById("convexity").checked = false;
+	document.getElementById("circularity").checked = false;
+	document.getElementById("stdDevR").checked = false;
+	document.getElementById("relativeX").checked = false;
+	document.getElementById("relativeY").checked = false;
+	document.getElementById("relativeArea").checked = false;
+	document.getElementById("segmentCount").checked = false;
+}
 var TgTableSort=window.TgTableSort||function(n,t){"use strict";
 function r(n,t){
 	for(var e=[],o=n.childNodes,i=0;i<o.length;++i){

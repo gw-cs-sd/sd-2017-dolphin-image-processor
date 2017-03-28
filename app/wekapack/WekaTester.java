@@ -25,7 +25,9 @@ public class WekaTester
 			// evaluate classifier and print some statistics
 			Evaluation eval = new Evaluation(train);
 			eval.evaluateModel(cls, test);
-			System.out.println(eval.toSummaryString("\nResults\n======\n", false));
+			System.out.println(eval.toSummaryString("\nSummary Results\n======\n", false));
+			
+			System.out.println(eval.toMatrixString("\nMatrix Results\n======\n"));
 		}
 		catch(Exception e)
 		{

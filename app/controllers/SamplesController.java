@@ -49,8 +49,17 @@ public class SamplesController extends Controller
         String bloodStatus = requestData.get("bloodStatusRadio");
         System.out.println("bloodStatus:"+bloodStatus);
         
+        boolean classifyThisSample = false;
+        
 		MySQLCon db = new MySQLCon();
 		DBSample sample = new DBSample();
+		
+		//if bloodStatus is unknown, need to assign it correctly
+		if(bloodStatus.equals("unknown"))
+		{
+			bloodStatus = "notBlood";
+			classifyThisSample = true;
+		}
 		
 		System.out.println("2 of X: OPEN FILE FROM REMOTE get source image");
 		//
@@ -200,6 +209,26 @@ public class SamplesController extends Controller
 		wfwdb.saveDBSegmentsasInstances(wekaSegments);
 		*/
 		
+		System.out.println("14.0 of X: CLASSIFY THE SAMPLE, classifyThisSample = " + classifyThisSample);
+		
+		if(classifyThisSample)
+		{
+			/*
+			 * need to somehow get the segments from this sample into a test set
+			 * and then check it against an existing training set
+			 * 
+			 * read the attributes of the training set?
+			 * and then use those attributes in the test set?
+			 */
+		}
+		/*
+		DataSetBuilder dsb = new DataSetBuilder();
+		//CHANGE THIS TO A PERMANENT TRAINING SET!
+		WekaFileWriterAuto wfw = new WekaFileWriterAuto();
+		Instances train = wfw.readDataFromFile("public/wekafiles/training.arff");
+		Instances test = wfw.readDataFromFile("public/wekafiles/test.arff");
+		*/
+		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
 	}
@@ -243,11 +272,40 @@ public class SamplesController extends Controller
 	
 	public Result clearDataSets(String userId)
 	{
+		
+		
         DataSetBuilder dsb = new DataSetBuilder();
         dsb.deleteTrainingSet();
         dsb.deleteTestSet();
         
         MySQLCon db = new MySQLCon();
+		
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		return ok(html);
+	}
+	
+	public Result runClassifier()
+	{
+		System.out.println("1 of X: GATHER DATA FROM HTML");
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+        String userId = requestData.get("userId");
+        System.out.println("userId:"+userId);
+        
+		WekaFileWriterAuto wfw = new WekaFileWriterAuto();
+		Instances train = wfw.readDataFromFile("public/wekafiles/training.arff");
+		Instances test = wfw.readDataFromFile("public/wekafiles/test.arff");
+		
+		if(train == null || test == null)
+		{
+			System.out.println("Error: Training or Test set do not exist");
+		}
+		else
+		{
+			WekaTester wekaTester = new WekaTester();
+		    wekaTester.runClassifier(train, test);
+		}
+		
+		MySQLCon db = new MySQLCon();
 		
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
