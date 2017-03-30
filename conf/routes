@@ -27,6 +27,7 @@ POST	/viewSample					controllers.SamplesController.viewSample
 #POST	/addToDataset				controllers.SamplesController.addToDataset
 POST	/populateDataSets			controllers.SamplesController.populateDataSets
 POST	/runClassifier				controllers.SamplesController.runClassifier
+POST	/runClassifierSample		controllers.SamplesController.runClassifierSample
 POST	/backToSample				controllers.SegmentsController.backToSamples
 POST	/viewExamination			controllers.SegmentsController.viewExamination
 POST	/backToSegments				controllers.ExaminationController.backToSegments

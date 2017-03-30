@@ -87,7 +87,7 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
 <table id="tg-cFHod" class="tg">
 <tr>
 	<td class="tg-0idt">
-		<button type="submit" form="runClassifier" value="@userId"  name="userId" >Run Classifier</button>
+		<button type="submit" form="runClassifierForm" value="@userId"  name="userId" >Run Classifier</button>
 	</td>
 </tr>
 </table>
@@ -136,6 +136,10 @@ th.tg-sort-header::-moz-selection { background:transparent; }th.tg-sort-header::
     	&nbsp
     	<form action='requestDeleteSample' method='POST' enctype="multipart/form-data" id="deleteSampleForm">
     	<button type="submit" form="deleteSampleForm" value="@sample.getSampleId()"  name="sampleId" >Delete</button>
+    	</form>
+    	&nbsp
+    	<form action='runClassifierSample' method='POST' enctype="multipart/form-data" id="runClassifierSampleForm">
+    	<button type="submit" form="runClassifierSampleForm" value="@sample.getSampleId()"  name="sampleId" >Run Classifier</button>
     	</form>
     </td>
   </tr>

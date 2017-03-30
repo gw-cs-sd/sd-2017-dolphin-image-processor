@@ -7,7 +7,7 @@ import weka.core.Instances;
 public class WekaTester
 {
 	
-	public void runClassifier(Instances train, Instances test)
+	public Evaluation runClassifier(Instances train, Instances test)
 	{
 		/*
 		Instances train = readDataFromFile("public/wekafiles/training.arff");
@@ -18,12 +18,13 @@ public class WekaTester
 		
 		// train classifier
 		Classifier cls = new J48();
+		Evaluation eval = null;
 		try
 		{
 			cls.buildClassifier(train);
 			
 			// evaluate classifier and print some statistics
-			Evaluation eval = new Evaluation(train);
+			eval = new Evaluation(train);
 			eval.evaluateModel(cls, test);
 			System.out.println(eval.toSummaryString("\nSummary Results\n======\n", false));
 			
@@ -33,6 +34,8 @@ public class WekaTester
 		{
 			System.out.println(e);
 		}
+		
+		return eval;
 	}
 	
 	public Instances readDataFromFile(String filepath)

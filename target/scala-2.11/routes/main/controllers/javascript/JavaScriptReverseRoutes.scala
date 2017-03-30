@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Tue Mar 28 01:39:46 EDT 2017
+// @DATE:Wed Mar 29 22:56:51 EDT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -49,6 +49,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "runClassifier"})
+        }
+      """
+    )
+  
+    // @LINE:30
+    def runClassifierSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SamplesController.runClassifierSample",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "runClassifierSample"})
         }
       """
     )
@@ -105,7 +115,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:32
+  // @LINE:33
   class ReverseExaminationController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -113,7 +123,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:34
+    // @LINE:35
     def revertToOriginal: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.revertToOriginal",
       """
@@ -123,7 +133,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:33
+    // @LINE:34
     def clickImage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.clickImage",
       """
@@ -133,7 +143,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:32
+    // @LINE:33
     def backToSegments: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.backToSegments",
       """
@@ -145,7 +155,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:30
+  // @LINE:31
   class ReverseSegmentsController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -153,7 +163,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:31
+    // @LINE:32
     def viewExamination: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SegmentsController.viewExamination",
       """
@@ -163,7 +173,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:30
+    // @LINE:31
     def backToSamples: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SegmentsController.backToSamples",
       """

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Tue Mar 28 01:39:46 EDT 2017
+// @DATE:Wed Mar 29 22:56:51 EDT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -41,6 +41,12 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "runClassifier")
     }
   
+    // @LINE:30
+    def runClassifierSample(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "runClassifierSample")
+    }
+  
     // @LINE:23
     def addSample(): Call = {
       import ReverseRouteContext.empty
@@ -73,26 +79,26 @@ package controllers {
   
   }
 
-  // @LINE:32
+  // @LINE:33
   class ReverseExaminationController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:34
+    // @LINE:35
     def revertToOriginal(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "revertToOriginal")
     }
   
-    // @LINE:33
+    // @LINE:34
     def clickImage(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "clickImage")
     }
   
-    // @LINE:32
+    // @LINE:33
     def backToSegments(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToSegments")
@@ -100,20 +106,20 @@ package controllers {
   
   }
 
-  // @LINE:30
+  // @LINE:31
   class ReverseSegmentsController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:31
+    // @LINE:32
     def viewExamination(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "viewExamination")
     }
   
-    // @LINE:30
+    // @LINE:31
     def backToSamples(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToSample")

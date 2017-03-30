@@ -410,6 +410,26 @@ public class MySQLCon
 	
 	public String updateBloodStatus(String sampleId, String bloodStatus)
 	{
+		updateBloodStatusSegments(sampleId, bloodStatus);
+		try
+		{
+			conn = DB.getConnection();
+			st = conn.prepareStatement("UPDATE sample SET bloodStatus = ? where sampleId = ?");
+			st.setString(1, bloodStatus);
+			st.setString(2, sampleId);
+			st.execute();
+			st.close();
+			conn.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return bloodStatus;
+	}
+	
+	public String updateBloodStatusSegments(String sampleId, String bloodStatus)
+	{
 		try
 		{
 			conn = DB.getConnection();

@@ -211,6 +211,7 @@ public class SamplesController extends Controller
 		
 		System.out.println("14.0 of X: CLASSIFY THE SAMPLE, classifyThisSample = " + classifyThisSample);
 		
+		System.out.println("classifyThisSample == " + classifyThisSample);
 		if(classifyThisSample)
 		{
 			/*
@@ -220,6 +221,11 @@ public class SamplesController extends Controller
 			 * read the attributes of the training set?
 			 * and then use those attributes in the test set?
 			 */
+			
+			SingleUploadTrainer sut = new SingleUploadTrainer();
+	        String permTrainingFilepath = "public/wekafiles/training.arff";
+	        //String singleUploadTestFilepath = "public/wekafiles/test.arff";
+			sut.trainSingleSample(sampleId, permTrainingFilepath, true);
 		}
 		/*
 		DataSetBuilder dsb = new DataSetBuilder();
@@ -272,8 +278,6 @@ public class SamplesController extends Controller
 	
 	public Result clearDataSets(String userId)
 	{
-		
-		
         DataSetBuilder dsb = new DataSetBuilder();
         dsb.deleteTrainingSet();
         dsb.deleteTestSet();
@@ -284,6 +288,7 @@ public class SamplesController extends Controller
 		return ok(html);
 	}
 	
+	//this is shitty and broken
 	public Result runClassifier()
 	{
 		System.out.println("1 of X: GATHER DATA FROM HTML");
@@ -304,9 +309,41 @@ public class SamplesController extends Controller
 			WekaTester wekaTester = new WekaTester();
 		    wekaTester.runClassifier(train, test);
 		}
-		
+        
 		MySQLCon db = new MySQLCon();
 		
+		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
+		return ok(html);
+	}
+	
+	public Result runClassifierSample()
+	{
+		System.out.println("1 of X: GATHER DATA FROM HTML");
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+        String sampleId = requestData.get("sampleId");
+        System.out.println("sampleId:"+sampleId);
+        
+		WekaFileWriterAuto wfw = new WekaFileWriterAuto();
+		Instances train = wfw.readDataFromFile("public/wekafiles/training.arff");
+		Instances test = wfw.readDataFromFile("public/wekafiles/test.arff");
+		
+		if(train == null || test == null)
+		{
+			System.out.println("Error: Training or Test set do not exist");
+		}
+		else
+		{
+			WekaTester wekaTester = new WekaTester();
+		    wekaTester.runClassifier(train, test);
+		    
+		    SingleUploadTrainer sut = new SingleUploadTrainer();
+	        String permTrainingFilepath = "public/wekafiles/training.arff";
+			sut.trainSingleSample(sampleId, permTrainingFilepath, false);
+		}
+        
+		MySQLCon db = new MySQLCon();
+		
+		String userId = db.getSample(sampleId).getUserId();
 		Content html = samples.render(userId, db.getUserName(userId), db.getSamples(userId));
 		return ok(html);
 	}
