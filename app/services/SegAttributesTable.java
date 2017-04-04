@@ -81,6 +81,7 @@ public class SegAttributesTable {
 			DBSegment segment = new DBSegment();
 			segment.setSampleId(sampleId);
 			segment.setLabel(((Integer)i).toString());
+			segment.setSegmentCount(sample.getSegmentCount());
 			
 			segment.setBloodStatus(sample.getBloodStatus());
 			//System.out.println("segment blood status = " + segment.getBloodStatus());

@@ -1,5 +1,5 @@
-New log file opened at Wed Mar 29 21:01:24 EDT 2017 by 6764@akzysk-W370ST
-jvm 6764@akzysk-W370ST
+New log file opened at Mon Apr 03 21:04:06 EDT 2017 by 1500@akzysk-W370ST
+jvm 1500@akzysk-W370ST
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.121-b13
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Andrew\play-java-1\project, returning: (play-java-1-build)
 Loading project definition from C:\Users\Andrew\play-java-1\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@54705f72, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@14f8409e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -73,4 +73,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 6764@akzysk-W370ST logs at Wed Mar 29 21:02:11 EDT 2017, goodbye.
+Closing the 1500@akzysk-W370ST logs at Mon Apr 03 21:04:34 EDT 2017, goodbye.

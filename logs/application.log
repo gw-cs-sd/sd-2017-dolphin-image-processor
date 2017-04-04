@@ -1,397 +1,54 @@
-2017-03-29 21:03:26,844 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-03-29 21:03:27,963 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 21:03:29,027 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-03-30T01:03:29.024Z
-2017-03-29 21:03:31,256 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-03-29 22:05:13,546 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-03-30T02:05:13.546Z after 3704s.
-2017-03-29 22:05:13,550 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
-2017-03-29 22:05:14,050 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
-2017-03-29 22:05:14,123 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:05:14,128 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2017-03-30T02:05:14.127Z
-2017-03-29 22:05:14,622 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
-2017-03-29 22:07:10,723 [ERROR] from application in application-akka.actor.default-dispatcher-6 - 
-
-! @73g10c512 - Internal server error, for (POST) [/addSample] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: java.lang.NullPointerException]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:280)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:206)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:98)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.complete(Promise.scala:55)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.scala$concurrent$impl$Promise$DefaultPromise$$dispatchOrAddCallback(Promise.scala:280)
-	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:270)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.concurrent.CompletionException: java.lang.NullPointerException
-	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
-	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
-	at java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:21)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:18)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.tryFailure(Promise.scala:112)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryFailure(Promise.scala:153)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:83)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:77)
-	... 15 common frames omitted
-Caused by: java.lang.NullPointerException: null
-	at services.SegAttributesTable.saveSegmentsToDB(SegAttributesTable.java:85)
-	at controllers.SamplesController.addSample(SamplesController.java:195)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.apply(Routes.scala:469)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.apply(Routes.scala:469)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	... 13 common frames omitted
-2017-03-29 22:08:38,909 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Stopping application at 2017-03-30T02:08:38.909Z after 204s.
-2017-03-29 22:08:38,909 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
-2017-03-29 22:08:39,304 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
-2017-03-29 22:08:39,598 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:08:39,623 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2017-03-30T02:08:39.623Z
-2017-03-29 22:08:39,951 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
-2017-03-29 22:08:57,075 [ERROR] from application in application-akka.actor.default-dispatcher-4 - 
-
-! @73g10i6bd - Internal server error, for (POST) [/addSample] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: java.lang.NullPointerException]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:280)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:206)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:98)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.complete(Promise.scala:55)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.scala$concurrent$impl$Promise$DefaultPromise$$dispatchOrAddCallback(Promise.scala:280)
-	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:270)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.concurrent.CompletionException: java.lang.NullPointerException
-	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
-	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
-	at java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:21)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:18)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.tryFailure(Promise.scala:112)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryFailure(Promise.scala:153)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:83)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:77)
-	... 15 common frames omitted
-Caused by: java.lang.NullPointerException: null
-	at wekapack.WekaFileWriterAuto.populateDataSingle(WekaFileWriterAuto.java:160)
-	at wekapack.WekaFileWriterAuto.populateData(WekaFileWriterAuto.java:151)
-	at services.SingleUploadTrainer.trainSingleSample(SingleUploadTrainer.java:44)
-	at controllers.SamplesController.addSample(SamplesController.java:228)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.apply(Routes.scala:469)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.apply(Routes.scala:469)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	... 13 common frames omitted
-2017-03-29 22:12:00,987 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Stopping application at 2017-03-30T02:12:00.987Z after 201s.
-2017-03-29 22:12:00,989 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2017-03-29 22:12:01,339 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2017-03-29 22:12:01,621 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:12:01,637 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Starting application at 2017-03-30T02:12:01.637Z
-2017-03-29 22:12:01,916 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
-2017-03-29 22:16:02,728 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-03-30T02:16:02.728Z after 241s.
-2017-03-29 22:16:02,729 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2017-03-29 22:16:02,975 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2017-03-29 22:16:03,109 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:16:03,113 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-03-30T02:16:03.113Z
-2017-03-29 22:16:03,346 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2017-03-29 22:21:08,241 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-03-30T02:21:08.241Z after 305s.
-2017-03-29 22:21:08,241 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2017-03-29 22:21:08,477 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2017-03-29 22:21:08,562 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:21:08,565 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-03-30T02:21:08.565Z
-2017-03-29 22:21:08,834 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2017-03-29 22:25:21,561 [INFO] from application in application-akka.actor.default-dispatcher-24 - ApplicationTimer demo: Stopping application at 2017-03-30T02:25:21.561Z after 253s.
-2017-03-29 22:25:21,562 [INFO] from application in application-akka.actor.default-dispatcher-24 - Shutting down connection pool.
-2017-03-29 22:25:21,821 [INFO] from application in application-akka.actor.default-dispatcher-24 - Creating Pool for datasource 'default'
-2017-03-29 22:25:21,902 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-24 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:25:21,917 [INFO] from application in application-akka.actor.default-dispatcher-24 - ApplicationTimer demo: Starting application at 2017-03-30T02:25:21.917Z
-2017-03-29 22:25:22,132 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-24 - Application started (Dev)
-2017-03-29 22:28:18,054 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Stopping application at 2017-03-30T02:28:18.054Z after 177s.
-2017-03-29 22:28:18,056 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2017-03-29 22:28:18,342 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2017-03-29 22:28:18,469 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:28:18,472 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Starting application at 2017-03-30T02:28:18.472Z
-2017-03-29 22:28:18,620 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
-2017-03-29 22:44:23,263 [INFO] from application in application-akka.actor.default-dispatcher-86 - ApplicationTimer demo: Stopping application at 2017-03-30T02:44:23.263Z after 965s.
-2017-03-29 22:44:23,263 [INFO] from application in application-akka.actor.default-dispatcher-86 - Shutting down connection pool.
-2017-03-29 22:44:23,466 [INFO] from application in application-akka.actor.default-dispatcher-86 - Creating Pool for datasource 'default'
-2017-03-29 22:44:23,529 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-86 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 22:44:23,543 [INFO] from application in application-akka.actor.default-dispatcher-86 - ApplicationTimer demo: Starting application at 2017-03-30T02:44:23.543Z
-2017-03-29 22:44:23,740 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-86 - Application started (Dev)
-2017-03-29 22:49:19,604 [ERROR] from application in application-akka.actor.default-dispatcher-4 - 
-
-! @73g16021i - Internal server error, for (POST) [/populateDataSets] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: java.lang.NullPointerException]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:280)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:206)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:98)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.complete(Promise.scala:55)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.scala$concurrent$impl$Promise$DefaultPromise$$dispatchOrAddCallback(Promise.scala:280)
-	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:270)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:409)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.concurrent.CompletionException: java.lang.NullPointerException
-	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
-	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
-	at java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:21)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:18)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.tryFailure(Promise.scala:112)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryFailure(Promise.scala:153)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:83)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:77)
-	... 15 common frames omitted
-Caused by: java.lang.NullPointerException: null
-	at services.DataSetBuilder.appendSegmentsToFile(DataSetBuilder.java:155)
-	at services.DataSetBuilder.populateDataSet(DataSetBuilder.java:62)
-	at services.DataSetBuilder.populateTrainingSet(DataSetBuilder.java:75)
-	at controllers.SamplesController.populateDataSets(SamplesController.java:264)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(Routes.scala:493)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(Routes.scala:493)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	... 13 common frames omitted
-2017-03-29 23:01:51,826 [INFO] from application in application-akka.actor.default-dispatcher-27 - ApplicationTimer demo: Stopping application at 2017-03-30T03:01:51.825Z after 1048s.
-2017-03-29 23:01:51,827 [INFO] from application in application-akka.actor.default-dispatcher-27 - Shutting down connection pool.
-2017-03-29 23:01:52,084 [INFO] from application in application-akka.actor.default-dispatcher-27 - Creating Pool for datasource 'default'
-2017-03-29 23:01:53,216 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-27 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 23:01:53,236 [INFO] from application in application-akka.actor.default-dispatcher-27 - ApplicationTimer demo: Starting application at 2017-03-30T03:01:53.236Z
-2017-03-29 23:01:53,464 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-27 - Application started (Dev)
-2017-03-29 23:06:24,561 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2017-03-30T03:06:24.561Z after 271s.
-2017-03-29 23:06:24,562 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
-2017-03-29 23:06:24,785 [INFO] from application in application-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
-2017-03-29 23:06:24,922 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-10 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 23:06:24,934 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Starting application at 2017-03-30T03:06:24.934Z
-2017-03-29 23:06:25,177 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-10 - Application started (Dev)
-2017-03-29 23:10:35,288 [INFO] from application in application-akka.actor.default-dispatcher-16 - ApplicationTimer demo: Stopping application at 2017-03-30T03:10:35.288Z after 251s.
-2017-03-29 23:10:35,290 [INFO] from application in application-akka.actor.default-dispatcher-16 - Shutting down connection pool.
-2017-03-29 23:10:35,581 [INFO] from application in application-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
-2017-03-29 23:10:35,640 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-16 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
-2017-03-29 23:10:35,644 [INFO] from application in application-akka.actor.default-dispatcher-16 - ApplicationTimer demo: Starting application at 2017-03-30T03:10:35.644Z
-2017-03-29 23:10:35,931 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-16 - Application started (Dev)
-2017-03-29 23:20:42,899 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-164 - ApplicationTimer demo: Stopping application at 2017-03-30T03:20:42.899Z after 607s.
-2017-03-29 23:20:42,899 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-164 - Shutting down connection pool.
+2017-04-03 21:06:10,032 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-04-03 21:06:12,422 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:06:13,884 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-04-04T01:06:13.845Z
+2017-04-03 21:06:16,189 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-04-03 21:15:35,275 [INFO] from application in application-akka.actor.default-dispatcher-14 - ApplicationTimer demo: Stopping application at 2017-04-04T01:15:35.275Z after 562s.
+2017-04-03 21:15:35,291 [INFO] from application in application-akka.actor.default-dispatcher-14 - Shutting down connection pool.
+2017-04-03 21:15:35,582 [INFO] from application in application-akka.actor.default-dispatcher-14 - Creating Pool for datasource 'default'
+2017-04-03 21:15:35,677 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-14 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:15:35,691 [INFO] from application in application-akka.actor.default-dispatcher-14 - ApplicationTimer demo: Starting application at 2017-04-04T01:15:35.691Z
+2017-04-03 21:15:36,012 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-14 - Application started (Dev)
+2017-04-03 21:17:57,438 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-04-04T01:17:57.437Z after 142s.
+2017-04-03 21:17:57,439 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2017-04-03 21:17:57,875 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2017-04-03 21:17:59,724 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:17:59,741 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-04-04T01:17:59.741Z
+2017-04-03 21:18:00,036 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-04-03 21:22:25,641 [INFO] from application in application-akka.actor.default-dispatcher-81 - ApplicationTimer demo: Stopping application at 2017-04-04T01:22:25.641Z after 266s.
+2017-04-03 21:22:25,643 [INFO] from application in application-akka.actor.default-dispatcher-81 - Shutting down connection pool.
+2017-04-03 21:22:25,983 [INFO] from application in application-akka.actor.default-dispatcher-81 - Creating Pool for datasource 'default'
+2017-04-03 21:22:26,149 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-81 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:22:26,160 [INFO] from application in application-akka.actor.default-dispatcher-81 - ApplicationTimer demo: Starting application at 2017-04-04T01:22:26.159Z
+2017-04-03 21:22:26,327 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-81 - Application started (Dev)
+2017-04-03 21:23:45,044 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2017-04-04T01:23:45.044Z after 79s.
+2017-04-03 21:23:45,045 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2017-04-03 21:23:45,164 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2017-04-03 21:23:45,336 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:23:45,340 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-04-04T01:23:45.340Z
+2017-04-03 21:23:45,490 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2017-04-03 21:27:34,105 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Stopping application at 2017-04-04T01:27:34.105Z after 229s.
+2017-04-03 21:27:34,106 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2017-04-03 21:27:34,334 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
+2017-04-03 21:27:34,524 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:27:34,537 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Starting application at 2017-04-04T01:27:34.537Z
+2017-04-03 21:27:34,833 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2017-04-03 21:33:30,585 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2017-04-04T01:33:30.584Z after 356s.
+2017-04-03 21:33:30,586 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2017-04-03 21:33:30,850 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2017-04-03 21:33:33,422 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:33:33,443 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-04-04T01:33:33.442Z
+2017-04-03 21:33:33,668 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2017-04-03 21:36:09,492 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-04-04T01:36:09.492Z after 156s.
+2017-04-03 21:36:09,494 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2017-04-03 21:36:09,744 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2017-04-03 21:36:09,877 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 21:36:09,885 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-04-04T01:36:09.885Z
+2017-04-03 21:36:10,035 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-04-03 23:41:20,566 [INFO] from application in application-akka.actor.default-dispatcher-288 - ApplicationTimer demo: Stopping application at 2017-04-04T03:41:20.520Z after 7511s.
+2017-04-03 23:41:20,879 [INFO] from application in application-akka.actor.default-dispatcher-288 - Shutting down connection pool.
+2017-04-03 23:41:33,773 [INFO] from application in application-akka.actor.default-dispatcher-288 - Creating Pool for datasource 'default'
+2017-04-03 23:41:34,493 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-288 - Database [default] connected at jdbc:mysql://localhost:3306/dolphin?useSSL=false
+2017-04-03 23:41:35,841 [INFO] from application in application-akka.actor.default-dispatcher-288 - ApplicationTimer demo: Starting application at 2017-04-04T03:41:35.841Z
+2017-04-03 23:41:39,817 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-288 - Application started (Dev)
+2017-04-03 23:46:13,273 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-86 - ApplicationTimer demo: Stopping application at 2017-04-04T03:46:13.272Z after 278s.
+2017-04-03 23:46:13,274 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-86 - Shutting down connection pool.

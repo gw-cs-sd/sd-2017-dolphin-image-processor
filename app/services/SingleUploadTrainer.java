@@ -41,6 +41,8 @@ public class SingleUploadTrainer {
 		//write the actual segment values into an Instances object
 		MySQLCon db = new MySQLCon();
 		ArrayList<DBSegment> segments = db.getSegments(sampleId);
+		
+		
 		wfw.saveDBSegmentsasInstances(segments);
 		Instances singleUploadTestSet = wfw.populateData(segments);
 		//wfw.writeDataToFile(singleUploadTestSet, singleUploadTestFilepath);
@@ -69,6 +71,16 @@ public class SingleUploadTrainer {
 				System.out.println("This image is NOT BLOOD with " + confidence + "% confidence.");
 				classifiedBloodStatus = "notBlood";
 			}
+			
+			//if there are no segments in the sample, classify it as NOT BLOOD
+			DBSample sample = db.getSample(sampleId);
+			int segmentCount = Integer.parseInt(sample.getSegmentCount());
+			if(segmentCount == 0)
+			{
+				System.out.println("segmentCount == 0");
+				classifiedBloodStatus = "notBlood";
+			}
+			
 				//update DB with the newly classified blood status
 				db.updateBloodStatus(sampleId, classifiedBloodStatus);
 		}

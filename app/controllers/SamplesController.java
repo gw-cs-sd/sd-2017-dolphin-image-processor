@@ -180,7 +180,10 @@ public class SamplesController extends Controller
         stf.removeSegmentsOfLessArea(st, 4);
         
         int segmentCount = st.size();
-        sample.setSegmentCount(((Integer)segmentCount).toString());
+        String segmentCountStr = Integer.toString(segmentCount);
+        //sample.setSegmentCount(Integer.toString(st.size()));
+        sample.setSegmentCount(segmentCountStr);
+        System.out.println("10.4 of X: SegmentCount = " + segmentCountStr);
 
 		System.out.println("11.0 of X: Calculate Segment Attributes: SegmentAttributor produces SegAttributesTable");
 		SegmentAttributor sa = new SegmentAttributor(st, imp);

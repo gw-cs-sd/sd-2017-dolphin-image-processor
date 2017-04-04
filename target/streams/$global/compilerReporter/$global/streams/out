@@ -1,3 +1,3 @@
-[error] C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:228:  error: method trainSingleSample in class SingleUploadTrainer cannot be applied to given types;
-[error] 			sut.trainSingleSample(sampleId, permTrainingFilepath);
-[error] 			   ^
+[error] C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: ')' expected
+[error]         sample.setSegmentCount((Integer.toString(segmentCount));
+[error]                                                                ^
