@@ -1,4 +1,4 @@
-@(sampleId: String, origImagePath: String, examImagePath: String, buttonVisibility: String)
+@(sampleId: String, origImagePath: String, examImagePath: String, evalSummary: String, buttonVisibility: String)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +8,12 @@
   		visibility: @buttonVisibility
   		}
   		body{text-align:center}
+  		pre {
+    		text-align: left;
+    		white-space: pre-line;
+    		display: inline-block;
+    		font-size:14px;
+  		}
   		</style>
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
@@ -31,12 +37,19 @@
     <input type="hidden" value="@examImagePath" name="examImagePath">
     </form>
     
-    <a href="javascript:showhide('uniquename')">
-    		Is this an image of a bloodstain?
-    </a>
+<!--     <a href="javascript:showhide('uniquename')"> -->
+<!--     		Is this an image of a bloodstain? -->
+<!--     </a> -->
     
-    <div id="uniquename" style="display:none;">
-    	<p>Content goes here.</p>
+<!--     <div id="uniquename" style="display:none;"> -->
+<!--     	<p>Content goes here.</p> -->
+<!--     </div> -->
+    
+    <form action="evaluate" method='POST' enctype="multipart/form-data" id="evaluateForm">
+    <button type="submit" form="evaluateForm" value="@sampleId"  name="sampleId" >Classify</button>
+    </form>
+    <div style="text-align: center;">
+    	<pre>@evalSummary</pre>
     </div>
      
 

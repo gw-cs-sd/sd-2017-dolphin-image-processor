@@ -30,6 +30,8 @@ POST	/runClassifier				controllers.SamplesController.runClassifier
 POST	/runClassifierSample		controllers.SamplesController.runClassifierSample
 POST	/backToSample				controllers.SegmentsController.backToSamples
 POST	/viewExamination			controllers.SegmentsController.viewExamination
+POST	/evaluateSample				controllers.SegmentsController.evaluateSample
 POST	/backToSegments				controllers.ExaminationController.backToSegments
 POST	/clickImage					controllers.ExaminationController.clickImage
 POST	/revertToOriginal			controllers.ExaminationController.revertToOriginal
+POST	/evaluate					controllers.ExaminationController.evaluate

@@ -23,6 +23,7 @@ import services.ImageSegmenter;
 import services.Pixel;
 import services.Segment;
 import services.SegmentTable;
+import services.SingleUploadTrainer;
 import services.Threshold;
 import views.html.examination;
 import views.html.index;
@@ -93,7 +94,7 @@ public class ExaminationController extends Controller
 		
 		hasBeenClicked = false;
 		
-		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList);
+		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList, "");
 		return ok(html);
 	}
 	
@@ -129,7 +130,7 @@ public class ExaminationController extends Controller
 		//CASE: We are not viewing the Original Exam image, so do not any zooming
 		if(viewingOriginalExam == false)
 		{
-			Content html = examination.render(sampleId, origImagePath, examImagePath, "visible");
+			Content html = examination.render(sampleId, origImagePath, examImagePath, "", "visible");
 			return ok(html);
 		}
 		//Determine the Segment who owns the pixel who was clicked
@@ -141,7 +142,7 @@ public class ExaminationController extends Controller
 		{
 			System.out.println("containingSegment == null, render page again with no zoom");
 			viewingOriginalExam = true;
-			Content html = examination.render(sampleId, origImagePath, examImagePath, "hidden");
+			Content html = examination.render(sampleId, origImagePath, examImagePath, "", "hidden");
 			return ok(html);
 		}
 		//Tell the program that we are not viewing the original image
@@ -166,7 +167,7 @@ public class ExaminationController extends Controller
 	    fs.saveAsJpeg("public/dolphinImages/subExamination.jpg");
 		
 		String buttonVisibility = "visible";
-		Content html = examination.render(sampleId, origImagePath, examImagePath, buttonVisibility);
+		Content html = examination.render(sampleId, origImagePath, examImagePath, "", buttonVisibility);
 		return ok(html);
 	}
 	
@@ -240,7 +241,25 @@ public class ExaminationController extends Controller
 	    
 	    viewingOriginalExam = true;
 		
-		Content html = examination.render(sampleId, origImagePath, examImagePath, buttonVisibility);
+		Content html = examination.render(sampleId, origImagePath, examImagePath, "", buttonVisibility);
+		return ok(html);
+	}
+	
+	public Result evaluate()
+	{
+		//probably broken
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+		String sampleId = requestData.get("sampleId");
+		String origImagePath = requestData.get("origImagePath");
+		String examImagePath = requestData.get("examImagePath");
+		String buttonVisibility = "hidden";
+		
+		SingleUploadTrainer sut = new SingleUploadTrainer();
+        String permTrainingFilepath = "public/wekafiles/training.arff";
+        //String singleUploadTestFilepath = "public/wekafiles/test.arff";
+		String evalSummary = sut.trainSingleSample(sampleId, permTrainingFilepath, false);
+		
+		Content html = examination.render(sampleId, origImagePath, examImagePath, evalSummary, buttonVisibility);
 		return ok(html);
 	}
 	

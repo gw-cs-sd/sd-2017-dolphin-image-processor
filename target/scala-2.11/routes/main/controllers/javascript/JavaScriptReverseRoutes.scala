@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Wed Mar 29 22:56:51 EDT 2017
+// @DATE:Tue Apr 04 12:52:35 EDT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -115,7 +115,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:33
+  // @LINE:34
   class ReverseExaminationController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -123,7 +123,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:35
+    // @LINE:36
     def revertToOriginal: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.revertToOriginal",
       """
@@ -133,7 +133,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
+    // @LINE:35
     def clickImage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.clickImage",
       """
@@ -143,7 +143,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:33
+    // @LINE:37
+    def evaluate: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ExaminationController.evaluate",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "evaluate"})
+        }
+      """
+    )
+  
+    // @LINE:34
     def backToSegments: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExaminationController.backToSegments",
       """
@@ -169,6 +179,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "viewExamination"})
+        }
+      """
+    )
+  
+    // @LINE:33
+    def evaluateSample: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SegmentsController.evaluateSample",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "evaluateSample"})
         }
       """
     )

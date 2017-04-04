@@ -478,7 +478,7 @@ public class SamplesController extends Controller
 		System.out.println("6 OF X: GET LIST[DBSEGMENT]");
 		ArrayList<DBSegment> segmentList = db.getSegments(sampleId);
 		
-		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList);
+		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList, "");
 		return ok(html);
 	}
 	

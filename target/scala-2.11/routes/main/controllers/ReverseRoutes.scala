@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Andrew/play-java-1/conf/routes
-// @DATE:Wed Mar 29 22:56:51 EDT 2017
+// @DATE:Tue Apr 04 12:52:35 EDT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -79,26 +79,32 @@ package controllers {
   
   }
 
-  // @LINE:33
+  // @LINE:34
   class ReverseExaminationController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:35
+    // @LINE:36
     def revertToOriginal(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "revertToOriginal")
     }
   
-    // @LINE:34
+    // @LINE:35
     def clickImage(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "clickImage")
     }
   
-    // @LINE:33
+    // @LINE:37
+    def evaluate(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "evaluate")
+    }
+  
+    // @LINE:34
     def backToSegments(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "backToSegments")
@@ -117,6 +123,12 @@ package controllers {
     def viewExamination(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "viewExamination")
+    }
+  
+    // @LINE:33
+    def evaluateSample(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "evaluateSample")
     }
   
     // @LINE:31

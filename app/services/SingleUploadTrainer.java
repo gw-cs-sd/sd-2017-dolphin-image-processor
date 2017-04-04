@@ -18,7 +18,7 @@ public class SingleUploadTrainer {
 		
 	}
 	
-	public Instances trainSingleSample(String sampleId, String permTrainingFilepath, boolean update)
+	public String trainSingleSample(String sampleId, String permTrainingFilepath, boolean update)
 	{
 		System.out.println("TRAIN SINGLE SAMPLE");
 		WekaFileWriterAuto wfw = new WekaFileWriterAuto();
@@ -43,8 +43,8 @@ public class SingleUploadTrainer {
 		ArrayList<DBSegment> segments = db.getSegments(sampleId);
 		
 		
-		wfw.saveDBSegmentsasInstances(segments);
-		Instances singleUploadTestSet = wfw.populateData(segments);
+		Instances singleUploadTestSet = wfw.saveDBSegmentsasInstances(segments);
+		//Instances singleUploadTestSet = wfw.populateData(segments);
 		//wfw.writeDataToFile(singleUploadTestSet, singleUploadTestFilepath);
 		
 		//run evaluation with this training and test set
@@ -85,6 +85,48 @@ public class SingleUploadTrainer {
 				db.updateBloodStatus(sampleId, classifiedBloodStatus);
 		}
 		
-		return singleUploadTestSet;
+		//================================================================
+		//FOR EXAMINATION VIEW IN THE DEMO
+		DBSample samp = db.getSample(sampleId);
+		String realBloodStatus = samp.getBloodStatus();
+		double percentNotBlood;
+		double percentBlood;
+		if(realBloodStatus.equals("notBlood"))
+		{
+			percentNotBlood = eval.pctCorrect();
+			percentBlood = eval.pctIncorrect();
+		}
+		else
+		{
+			percentNotBlood = eval.pctIncorrect();
+			percentBlood = eval.pctCorrect();
+		}
+		
+		String classifiedBloodStatus;
+		if(percentBlood > percentNotBlood)
+		{
+			classifiedBloodStatus = "blood";
+		}
+		else
+		{
+			classifiedBloodStatus = "notBlood";
+		}
+		
+		String matrixStr = "";
+		try
+		{
+			matrixStr = eval.toMatrixString();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		String output = ("\nCLASSIFICATION: " + classifiedBloodStatus
+						+ "\n\nSummary Results\n======\n" + eval.toSummaryString()
+						+ "\nMatrix Results\n======\n" + matrixStr);
+		//================================================================
+		
+		return output;
 	}
 }

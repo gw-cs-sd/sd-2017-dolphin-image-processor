@@ -1,3 +1,3 @@
-[error] C:\Users\Andrew\play-java-1\app\controllers\SamplesController.java:184:  error: ')' expected
-[error]         sample.setSegmentCount((Integer.toString(segmentCount));
-[error]                                                                ^
+[error] C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java:173:  error: cannot find symbol
+[error] 		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList, evalSummary);
+[error] 		                                                                                                                ^

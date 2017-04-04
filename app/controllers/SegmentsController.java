@@ -22,6 +22,7 @@ import services.ImageSegmenter;
 import services.Segment;
 import services.SegmentTable;
 import services.SegmentTableFilterer;
+import services.SingleUploadTrainer;
 import services.Threshold;
 import views.html.*;
 
@@ -95,7 +96,7 @@ public class SegmentsController extends Controller
 	    fs.saveAsJpeg("public/dolphinImages/subExamination.jpg");
 		
 		String buttonVisibility = "hidden";
-		Content html = examination.render(sampleId, imagePath, examImpPath, buttonVisibility);
+		Content html = examination.render(sampleId, imagePath, examImpPath, "", buttonVisibility);
 		return ok(html);
 	}
 	
@@ -109,5 +110,70 @@ public class SegmentsController extends Controller
 	        	flash("error", "Missing file");
 		}
 		return imp;
+	}
+	
+	public Result evaluateSample()
+	{
+		//copied from SamplesController.viewSample... shitty
+		DynamicForm requestData = formFactory.form().bindFromRequest();
+		String sampleId = requestData.get("sampleId");//works
+		MySQLCon db = new MySQLCon();
+		
+		System.out.println("1 OF X: GET USERID");
+		
+		String userId = db.getSample(sampleId).getUserId();
+		
+		System.out.println("2 OF X: GET USERNAME");
+		
+		String userName = db.getUserName(userId);
+		
+		System.out.println("3 OF X: GET SAMPLE");
+		
+		DBSample sample = db.getSample(sampleId);
+		
+		System.out.println("4 OF X: GET IMAGE PATH");
+		String directory = "dolphinImages/users/"+userName;
+		String filename = db.getSample(sampleId).getName();
+		String imagePath = directory + "/" + filename;
+		
+		System.out.println("5 OF X: GET DISPLAY WIDTH AND HEIGHT");
+		
+		String displayWidth = db.getSample(sampleId).getWidth();
+		String displayHeight = db.getSample(sampleId).getHeight();
+		
+		Integer width = Integer.parseInt(displayWidth);
+		Integer height = Integer.parseInt(displayHeight);
+		
+		//fit image to scale --> longest side becomes 300 pixels long
+		Integer scaler;
+		if(width >= height)
+		{
+			scaler = width / 300;
+		}
+		else
+		{
+			scaler = height / 300;
+		}
+		if(scaler <= 0)
+		{
+			scaler = 1;
+		}
+		width = width / scaler;
+		height = height / scaler;
+		displayWidth = width.toString();
+		displayHeight = height.toString();
+		
+		System.out.println("6 OF X: GET LIST[DBSEGMENT]");
+		ArrayList<DBSegment> segmentList = db.getSegments(sampleId);
+		
+		System.out.println("7 OF X: EVALUATE SAMPLE");
+		
+		SingleUploadTrainer sut = new SingleUploadTrainer();
+        String permTrainingFilepath = "public/wekafiles/training.arff";
+        //String singleUploadTestFilepath = "public/wekafiles/test.arff";
+		String evalSummary = sut.trainSingleSample(sampleId, permTrainingFilepath, false);
+		
+		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList, evalSummary);
+		return ok(html);
 	}
 }
