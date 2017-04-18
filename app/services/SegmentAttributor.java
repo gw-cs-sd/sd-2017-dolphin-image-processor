@@ -58,6 +58,8 @@ public class SegmentAttributor {
 		
 		attributes.add(this.getSegmentCount(seg, segmentTable.getSegmentTableAsList().size()));
 		
+		//attributes.add(this.getAverageEdgeAngle(seg));
+		
 		return attributes;
 	}
 	
@@ -131,6 +133,10 @@ public class SegmentAttributor {
 	
 	public SegmentAttribute getSegmentCount(Segment seg, int segmentCount) {
 		return new SegmentAttribute("SegmentCount", seg.getSegmentCount(segmentCount));
+	}
+	
+	public SegmentAttribute getAverageEdgeAngle(Segment seg) {
+		return new SegmentAttribute("AverageEdgeAngle", seg.getAverageEdgeAngle());
 	}
 	
 }

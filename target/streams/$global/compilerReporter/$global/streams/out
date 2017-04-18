@@ -1,3 +1,6 @@
-[error] C:\Users\Andrew\play-java-1\app\controllers\SegmentsController.java:173:  error: cannot find symbol
-[error] 		Content html = segments.render(sampleId, userName, sample, imagePath, displayWidth, displayHeight, segmentList, evalSummary);
-[error] 		                                                                                                                ^
+[error] C:\Users\Andrew\play-java-1\app\services\Segment.java:295:  error: variable i is already defined in method getAvgPerimeterAngle()
+[error] 		for(int i = 0; i < width; i++)
+[error] 		        ^
+[error] C:\Users\Andrew\play-java-1\app\services\Segment.java:297:  error: variable j is already defined in method getAvgPerimeterAngle()
+[error] 			for(int j = 0; j < height; j++)
+[error] 			        ^

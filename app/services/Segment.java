@@ -220,6 +220,93 @@ public class Segment
 		return hist.getStandardDevB();
 	}
 	
+	public double getAverageEdgeAngle()
+	{
+		int minX = getMinX();
+		int minY = getMinY();
+		int width = getWidth() + 2;
+		int height = getHeight() + 2;
+		int[][] boundingBox = new int[width][height];
+		ArrayList<Pixel> arr = this.getSegmentAsList();
+		for(Pixel p : arr)
+		{
+			boundingBox[p.getX() - minX + 1][p.getY() - minY + 1] = 1;
+		}
+		int xStart = 0;
+		while(!pixelIsOuterBorder(boundingBox, width, height, xStart, 1))
+		{
+			xStart++;
+		}
+		
+		ConvexHullCalculator angleCalculator = new ConvexHullCalculator(); //used for calculating angle (radians)
+		ArrayList<Double> angleList = new ArrayList<Double>(); //contains the angles iteratively
+		boolean done = false;
+		int i = xStart;
+		int j = 1;
+		int currentState = 0;
+		int currentX = i;
+		int currentY = j;
+		while(!done)
+		{
+			System.out.println("CURRENT STATE = " + currentState);
+			System.out.println("i = " + i);
+			System.out.println("j = " + j);
+			System.out.println("currentX = " + currentX);
+			System.out.println("currentY = " + currentY);
+			switch(currentState)
+			{
+			case 0:	currentX = i + 1;
+					currentY = j;
+					break;
+			case 1:	currentX = i + 1;
+					currentY = j + 1;
+					break;
+			case 2:	currentX = i;
+					currentY = j + 1;
+					break;
+			case 3:	currentX = i - 1;
+					currentY = j + 1;
+					break;
+			case 4:	currentX = i - 1;
+					currentY = j;
+					break;
+			case 5:	currentX = i - 1;
+					currentY = j - 1;
+					break;
+			case 6:	currentX = i;
+					currentY = j - 1;
+					break;
+			case 7:	currentX = i + 1;
+					currentY = j - 1;
+					break;
+			}
+			
+			double xDiff = currentX - i;
+			double yDiff = currentY - j;
+			double angle = angleCalculator.angle(xDiff, yDiff);
+			if(pixelIsOuterBorder(boundingBox, width, height, currentX, currentY))
+			{
+				angleList.add(angle);
+				boundingBox[i][j] = 2; //mark pixel i,j as visited
+				i = currentX;
+				j = currentY;
+				currentState = 0;
+			}
+			else
+			{
+				currentState++;
+			}
+			
+			if(currentState >= 8)
+			{
+				done = true;
+			}
+		}
+		double averageAngle = angleList.stream().mapToDouble(a -> a).average().getAsDouble(); //playing with java 8 stream
+		System.out.println("AVERAGE EDGE ANGLE = " + averageAngle);
+		return averageAngle;
+	}
+	
 	/*============================================================================
 	 * METHODS WITH RESPECT TO A SEGMENTCOUNT
 	 *============================================================================
