@@ -73,11 +73,11 @@ a {
 				</div>
 				<div id="inside_div"> 
 					<p>
-						<strong>Overview:</strong><br><br>
+						<strong>Overview:</strong><br>
 						The Dolphin image processor is an analysis tool for crime scene investigation. Dolphin allows the intended user, a forensic scientist or crime scene investigator, to upload images of crime scene evidence to determine whether an image contains bloodstains, as well as analyze information about the bloodstains. The purpose of Dolphin is to apply a modern image processing and machine learning approach to help crime scene investigators make expedient and accurate analyses.
 						Dolphin is implemented using the Play Framework, with Java for the back-end, a MySQL database to store derived data from uploaded samples, and Weka for machine learning.
-						<br>
-						<strong>Process:</strong><br><br>
+						<br><br>
+						<strong>Process:</strong><br>
 						When the user uploads an image, they may choose to label the image as blood or notBlood (supervised learning), or prompt the application to label it using the existing training set (unsupervised learning).
 						<br>
 						When an image is uploaded, the application steps through a process to threshold and segment the image. Thresholding identifies pixels that are likely to be part of a bloodstain by their color, which is sufficiently red. Segmentation identifies the "segments" of the image, i.e. the contiguous sets of pixels in the thresholded image. Various attributes are calculated from the segments, such as area, perimeter, convexity, circularity, and average RGB values. These attributes are stored in the database, where they may be used as characteristics to train the system to recognize blood and notBlood.
